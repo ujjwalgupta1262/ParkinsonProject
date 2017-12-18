@@ -1,5 +1,5 @@
 clear; close all; clc
-data = importdata('data39_2.txt');
+data = importdata('data_1_2.txt');
 %reading data into matrices
 len = data(1,1);
 %Removing first row
@@ -59,8 +59,8 @@ y_vel_on_shiftUp = y_vel_on(2 : end, :);
 y_vel_on_shiftDown = y_vel_on(1 : end - 1,:);
 
 %horizontal and vertical accelaration and total accelaration
-x_acc_on = abs(x_vel_on_shiftUp - x_vel_on_shiftDown)./time_interval_on(2 : end, :);
-y_acc_on = abs(y_vel_on_shiftUp - y_vel_on_shiftDown)./time_interval_on(2 : end, :);
+x_acc_on = abs(x_vel_on_shiftUp - x_vel_on_shiftDown)/7.5;  %divide by 7.5
+y_acc_on = abs(y_vel_on_shiftUp - y_vel_on_shiftDown)/7.5;  %divide by 7.5
 acc_on = sqrt(x_acc_on.^2 + y_acc_on.^2);
 
 %shifted x_acc an y_acc
@@ -71,8 +71,8 @@ y_acc_on_shiftUp = y_acc_on(2 : end, :);
 y_acc_on_shiftDown = y_acc_on(1 : end - 1,:);
 
 %horizontal and vertical jerk and total jerk
-x_jerk_on = abs(x_acc_on_shiftUp - x_acc_on_shiftDown)./time_interval_on(3:end, :);
-y_jerk_on = abs(y_acc_on_shiftUp - y_acc_on_shiftDown)./time_interval_on(3:end, :);
+x_jerk_on = abs(x_acc_on_shiftUp - x_acc_on_shiftDown)/7.5;     %divide by 7.5
+y_jerk_on = abs(y_acc_on_shiftUp - y_acc_on_shiftDown)/7.5;		%divide by 7.5
 jerk_on = sqrt(x_jerk_on.^2 + y_jerk_on.^2);
 
 %total stroke length and total on-surface time and stroke speed 
@@ -122,7 +122,7 @@ else
 end;
 
 %NCP and relative NCP
-smooth_pressure = conv(pressure_on, ones(1,9)/1, 'same');
+%smooth_pressure = conv(pressure_on, ones(1,9)/1, 'same');
 NCP = 0;
 for i = 2 : length(pressure_on) - 1
 	if((pressure_on(i) > pressure_on(i + 1) && pressure_on(i) > pressure_on(i - 1)) || (pressure_on(i) < pressure_on(i + 1) && pressure_on(i) < pressure_on(i - 1)))
@@ -145,6 +145,7 @@ time_off = time_off - time_off(1);
 time_shiftUp_off = time_off(2 : end,:);
 time_shiftDown_off = time_off(1 : end - 1, :);
 time_interval_off = time_shiftUp_off - time_shiftDown_off;
+off_surface_time = total_time - on_surface_time;
 
 %Kinematic features
 %shifted x_coors and y_coors
@@ -175,8 +176,8 @@ y_vel_off_shiftUp = y_vel_off(2 : end, :);
 y_vel_off_shiftDown = y_vel_off(1 : end - 1,:);
 
 %horizontal and vertical accelaration and total accelaration
-x_acc_off = abs(x_vel_off_shiftUp - x_vel_off_shiftDown)./time_interval_off(2 : end, :);
-y_acc_off = abs(y_vel_off_shiftUp - y_vel_off_shiftDown)./time_interval_off(2 : end, :);
+x_acc_off = abs(x_vel_off_shiftUp - x_vel_off_shiftDown)/7.5;
+y_acc_off = abs(y_vel_off_shiftUp - y_vel_off_shiftDown)/7.5;
 acc_off = sqrt(x_acc_off.^2 + y_acc_off.^2);
 
 %shifted x_acc an y_acc
@@ -187,15 +188,15 @@ y_acc_off_shiftUp = y_acc_off(2 : end, :);
 y_acc_off_shiftDown = y_acc_off(1 : end - 1,:);
 
 %horizontal and vertical jerk and total jerk
-x_jerk_off = abs(x_acc_off_shiftUp - x_acc_off_shiftDown)./time_interval_off(3:end, :);
-y_jerk_off = abs(y_acc_off_shiftUp - y_acc_off_shiftDown)./time_interval_off(3:end, :);
+x_jerk_off = abs(x_acc_off_shiftUp - x_acc_off_shiftDown)/7.5;
+y_jerk_off = abs(y_acc_off_shiftUp - y_acc_off_shiftDown)/7.5;
 jerk_off = sqrt(x_jerk_off.^2 + y_jerk_off.^2);
 
 %total stroke length and total off-surface time and stroke speed 
 displacement_off =  (x_shift_up_off - x_shift_down_off).^2 + (y_shift_up_off - y_shift_down_off).^2;
 stroke_length_off = sum(displacement);
 stroke_length_off -= sum(displacement(ind_off,:));
-off_surface_time = sum(time_interval_off);
+%off_surface_time = sum(time_interval_off);
 speed_off = stroke_length/off_surface_time;
 
 %NCV and NCA in air
@@ -222,7 +223,7 @@ norm_offTime = off_surface_time/total_time;
 off_onTime = off_surface_time/on_surface_time;
 end;
 
-disp();
+disp(off_onTime);
 
 
 
