@@ -48,7 +48,7 @@ i2_TKE1_x = sum(IMF_x(1:len - 1,2).^2 - IMF_x(2:len,2).*[IMF_x(len,2) ; IMF_x(1 
 i2_TKE2_x = sum(IMF_x(1:len - 2,2).^2 - IMF_x(3:len,2).*[IMF_x(len - 1,2) ; IMF_x(len,2) ; IMF_x(1 : len - 4,2)]);
 i2_TKE1_y = sum(IMF_y(1:len - 1,2).^2 - IMF_y(2:len,2).*[IMF_y(len,2) ; IMF_y(1 : len-2,2)]);
 i2_TKE2_y = sum(IMF_y(1:len - 2,2).^2 - IMF_y(3:len,2).*[IMF_y(len - 1,2) ; IMF_y(len,2) ; IMF_y(1 : len - 4,2)]);
-%SNR using conventional energies and IMFs
+%Intrinsic SNR using conventional energies and later IMFs
 i_CE_x = [];
 i_CE_y = [];
 for i = 3:size(IMF_x,2)
@@ -59,7 +59,7 @@ for i = 3:size(IMF_y,2)
 end;
 SNR_ICE_x = sum(i_CE_x)/(i1_CE_x + i2_CE_x);
 SNR_ICE_y = sum(i_CE_y)/(i1_CE_y + i2_CE_y);
-%SNR using Teager-Kaiser energies and IMFs
+%Intrinsic SNR using Teager-Kaiser energies and later IMFs
 i_TKE1_x = [];
 i_TKE2_x = [];
 i_TKE1_y = [];
