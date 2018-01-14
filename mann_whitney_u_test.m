@@ -590,48 +590,42 @@ snr_itke2_y_hc=[];
 
 
 %---------------------------------defining filename->>dividing to PD and HC-------------------------------%
-filename=["00001__1_1.svc","00002__1_1.svc","00003__1_1.svc","00004__1_1.svc","00005__1_1.svc","00006__1_1.svc","00007__1_1.svc","00008__1_1.svc","00009__1_1.svc","00010__1_1.svc",
-"00013__1_1.svc","00014__1_1.svc","00015__1_1.svc","00016__1_1.svc","00017__1_1.svc","00018__1_1.svc","00019__1_1.svc","00020__1_1.svc","00022__1_1.svc","00023__1_1.svc",
-"00024__1_1.svc","00025__1_1.svc","00033__1_1.svc","00034__1_1.svc","00036__1_1.svc","00043__1_1.svc","00044__1_1.svc","00048__1_1.svc","00053__1_1.svc","00054__1_1.svc",
-"00055__1_1.svc","00074__1_1.svc","00075__1_1.svc","00077__1_1.svc","00078__1_1.svc","00080__1_1.svc","00098__1_1.svc",
+filename=["00001__1_1.svc";"00002__1_1.svc";"00003__1_1.svc";"00004__1_1.svc";"00005__1_1.svc";"00006__1_1.svc";"00007__1_1.svc";"00008__1_1.svc";"00009__1_1.svc";"00010__1_1.svc";
+"00013__1_1.svc";"00014__1_1.svc";"00015__1_1.svc";"00016__1_1.svc";"00017__1_1.svc";"00018__1_1.svc";"00019__1_1.svc";"00020__1_1.svc";"00022__1_1.svc";"00023__1_1.svc";
+"00024__1_1.svc";"00025__1_1.svc";"00033__1_1.svc";"00034__1_1.svc";"00036__1_1.svc";"00043__1_1.svc";"00044__1_1.svc";"00048__1_1.svc";"00053__1_1.svc";"00054__1_1.svc";
+"00055__1_1.svc";"00074__1_1.svc";"00075__1_1.svc";"00077__1_1.svc";"00078__1_1.svc";"00080__1_1.svc";"00098__1_1.svc";
 
-"00026__1_1.svc","00027__1_1.svc","00028__1_1.svc","00029__1_1.svc","00030__1_1.svc","00031__1_1.svc","00032__1_1.svc","00039__1_1.svc","00040__1_1.svc",
-"00041__1_1.svc",,"00049__1_1.svc","00051__1_1.svc","00052__1_1.svc","00057__1_1.svc","00060__1_1.svc","00061__1_1.svc","00062__1_1.svc","00066__1_1.svc",
-"00067__1_1.svc","00069__1_1.svc","00070__1_1.svc","00071__1_1.svc","00072__1_1.svc","00073__1_1.svc","00076__1_1.svc","00082__1_1.svc","00083__1_1.svc",
-"00084__1_1.svc","00085__1_1.svc","00087__1_1.svc","00089__1_1.svc","00090__1_1.svc","00091__1_1.svc","00092__1_1.svc","00094__1_1.svc",
-"00095__1_1.svc","00096__1_1.svc","00097__1_1.svc"];
+"00026__1_1.svc";"00027__1_1.svc";"00028__1_1.svc";"00029__1_1.svc";"00030__1_1.svc";"00031__1_1.svc";"00032__1_1.svc";"00039__1_1.svc";"00040__1_1.svc";
+"00041__1_1.svc";"00049__1_1.svc";"00051__1_1.svc";"00052__1_1.svc";"00057__1_1.svc";"00060__1_1.svc";"00061__1_1.svc";"00062__1_1.svc";"00066__1_1.svc";
+"00067__1_1.svc";"00069__1_1.svc";"00070__1_1.svc";"00071__1_1.svc";"00072__1_1.svc";"00073__1_1.svc";"00076__1_1.svc";"00082__1_1.svc";"00083__1_1.svc";
+"00084__1_1.svc";"00085__1_1.svc";"00087__1_1.svc";"00089__1_1.svc";"00090__1_1.svc";"00091__1_1.svc";"00092__1_1.svc";"00094__1_1.svc";
+"00095__1_1.svc";"00096__1_1.svc";"00097__1_1.svc"];
 
 for k=1:length(filename)
  
   %--------------------------------------PD------------------------------------------------------------%
   if(k<38)
   
- [pressure_rate,x_vel_on,y_vel_on,time_interval_on,time_interval_off,speed,ncv_on,
-  nca_on,rel_NCV_on,rel_NCA_on,norm_onTime,ncp,rel_NCP,ncv_off,nca_off,rel_NCV_off,rel_NCA_off
-  norm_offTime,off_onTime,arithMean,geoMean,trimMean,percentiles,moments,kurto,ranges,
-  medians,modes,stdDevs,robustRange,interQuartiles,x_shannon,y_shannon,x_renyi2,y_renyi2,
-  x_renyi3,y_renyi3,snr_ce_x,snr_ce_y,snr_tke1_x,snr_tke1_y,x_shannon_i1,y_shannon_i1
-  x_renyi2_i1,y_renyi2_i1,x_renyi3_i1,y_renyi3_i1,x_shannon_i2,y_shannon_i2,x_renyi2_i2,
-  y_renyi2_i2,x_renyi3_i2,y_renyi3_i2,snr_ice_x,snr_ice_y,snr_itke1_x,snr_itke1_y,snr_itke2_x,
-  snr_itke2_y]=kinematic_features(filename(k));
+  disp(filename(k,:));
   
+  [pressure_rate,x_vel_on,y_vel_on,time_interval_on,time_interval_off,speed,ncv_on,nca_on,rel_NCV_on,rel_NCA_on,norm_onTime,ncp,rel_NCP,ncv_off,nca_off,rel_NCV_off,rel_NCA_off,norm_offTime,off_onTime,arithMean,geoMean,trimMean,percentiles,moments,kurto,ranges,medians,modes,stdDevs,robustRange,interQuartiles,x_shannon,y_shannon,x_renyi2,y_renyi2,x_renyi3,y_renyi3,snr_ce_x,snr_ce_y,snr_tke1_x,snr_tke1_y,x_shannon_i1,y_shannon_i1,x_renyi2_i1,y_renyi2_i1,x_renyi3_i1,y_renyi3_i1,x_shannon_i2,y_shannon_i2,x_renyi2_i2,y_renyi2_i2,x_renyi3_i2,y_renyi3_i2,snr_ice_x,snr_ice_y,snr_itke1_x,snr_itke1_y,snr_itke2_x,snr_itke2_y]=kinematic_features(filename(k,:));
   
-pressure_rate_pd=[pressure_rate_pd;pressure_rate];
-x_vel_on_pd=[x_vel_on_pd;x_vel_on];
-y_vel_on_pd=[y_vel_on_pd;y_vel_on];
-time_interval_off_pd=[time_interval_off_pd;time_interval_off];
-speed_pd=[speed_pd;speed];
-ncv_on_pd=[ncv_on_pd;ncv_on];
-nca_on_pd=[nca_on_pd;nca_on];
-rel_NCV_on_pd=[rel_NCV_on_pd;rel_NCV_on];
-rel_NCA_on_pd=[rel_NCA_on_pd;rel_NCA_on];
-norm_onTime_pd=[norm_onTime_pd;norm_onTime];
-ncp_pd=[ncp_pd;ncp];
-rel_NCP_pd=[rel_NCP_pd;rel_NCP];
-ncv_off_pd=[ncv_off_pd;ncv_off];
-nca_off_pd=[nca_off_pd;nca_off];
-rel_NCV_off_pd=[rel_NCV_off_pd;rel_NCV_off];
-rel_NCA_off_pd=[rel_NCA_off_pd;rel_NCA_off];
+  pressure_rate_pd=[pressure_rate_pd;pressure_rate];
+  x_vel_on_pd=[x_vel_on_pd;x_vel_on];
+  y_vel_on_pd=[y_vel_on_pd;y_vel_on];
+  time_interval_off_pd=[time_interval_off_pd;time_interval_off];
+  speed_pd=[speed_pd;speed];
+  ncv_on_pd=[ncv_on_pd;ncv_on];
+  nca_on_pd=[nca_on_pd;nca_on];
+  rel_NCV_on_pd=[rel_NCV_on_pd;rel_NCV_on];
+  rel_NCA_on_pd=[rel_NCA_on_pd;rel_NCA_on];
+  norm_onTime_pd=[norm_onTime_pd;norm_onTime];
+  ncp_pd=[ncp_pd;ncp];
+  rel_NCP_pd=[rel_NCP_pd;rel_NCP];
+  ncv_off_pd=[ncv_off_pd;ncv_off];
+  nca_off_pd=[nca_off_pd;nca_off];
+  rel_NCV_off_pd=[rel_NCV_off_pd;rel_NCV_off];
+  rel_NCA_off_pd=[rel_NCA_off_pd;rel_NCA_off];
 norm_offTime_pd=[norm_offTime_pd;norm_offTime];
 off_onTime_pd=[off_onTime_pd;off_onTime];
 
@@ -779,7 +773,7 @@ medians_y_vel_on_pd=[medians_y_vel_on_pd;medians(11)];
 modes_y_vel_on_pd=[modes_y_vel_on_pd;modes(11)];
 stdDevs_y_vel_on_pd=[stdDevs_y_vel_on_pd;stdDevs(11)];
 robustRange_y_vel_on_pd=[robustRange_y_vel_on_pd;robustRange(11)];
-interQuartiles_y_vel_on_pd=[interQuartiles_y_vel_on
+interQuartiles_y_vel_on_pd=[interQuartiles_y_vel_on_pd;interQuartiles_y_vel_on(11)];
 
 arithMean_y_acc_on_pd=[arithMean_y_acc_on_pd;arithMean(12)];
 geoMean_y_acc_on_pd=[geoMean_y_acc_on_pd;geoMean(12)];
@@ -916,15 +910,9 @@ snr_itke2_y_pd=[snr_itke2_y_pd;snr_itke2_y];
   
   
   %--------------------------------------HC-------------------------------------------------------------%
-  else
- [pressure_rate,x_vel_on,y_vel_on,time_interval_on,time_interval_off,speed,ncv_on,
-  nca_on,rel_NCV_on,rel_NCA_on,norm_onTime,ncp,rel_NCP,ncv_off,nca_off,rel_NCV_off,rel_NCA_off
-  norm_offTime,off_onTime,arithMean,geoMean,trimMean,percentiles,moments,kurto,ranges,
-  medians,modes,stdDevs,robustRange,interQuartiles,x_shannon,y_shannon,x_renyi2,y_renyi2,
-  x_renyi3,y_renyi3,snr_ce_x,snr_ce_y,snr_tke1_x,snr_tke1_y,x_shannon_i1,y_shannon_i1
-  x_renyi2_i1,y_renyi2_i1,x_renyi3_i1,y_renyi3_i1,x_shannon_i2,y_shannon_i2,x_renyi2_i2,
-  y_renyi2_i2,x_renyi3_i2,y_renyi3_i2,snr_ice_x,snr_ice_y,snr_itke1_x,snr_itke1_y,snr_itke2_x,
-  snr_itke2_y]=kinematic_features(filename(k));
+elseif(k>37)
+ 
+ [pressure_rate,x_vel_on,y_vel_on,time_interval_on,time_interval_off,speed,ncv_on,nca_on,rel_NCV_on,rel_NCA_on,norm_onTime,ncp,rel_NCP,ncv_off,nca_off,rel_NCV_off,rel_NCA_off,norm_offTime,off_onTime,arithMean,geoMean,trimMean,percentiles,moments,kurto,ranges,medians,modes,stdDevs,robustRange,interQuartiles,x_shannon,y_shannon,x_renyi2,y_renyi2,x_renyi3,y_renyi3,snr_ce_x,snr_ce_y,snr_tke1_x,snr_tke1_y,x_shannon_i1,y_shannon_i1,x_renyi2_i1,y_renyi2_i1,x_renyi3_i1,y_renyi3_i1,x_shannon_i2,y_shannon_i2,x_renyi2_i2,y_renyi2_i2,x_renyi3_i2,y_renyi3_i2,snr_ice_x,snr_ice_y,snr_itke1_x,snr_itke1_y,snr_itke2_x,snr_itke2_y]=kinematic_features(filename(k,:));
      
 pressure_rate_hc=[pressure_rate_hc;pressure_rate];
 x_vel_on_hc=[x_vel_on_hc;x_vel_on];
@@ -1089,7 +1077,7 @@ medians_y_vel_on_hc=[medians_y_vel_on_hc;medians(11)];
 modes_y_vel_on_hc=[modes_y_vel_on_hc;modes(11)];
 stdDevs_y_vel_on_hc=[stdDevs_y_vel_on_hc;stdDevs(11)];
 robustRange_y_vel_on_hc=[robustRange_y_vel_on_hc;robustRange(11)];
-interQuartiles_y_vel_on_hc=[interQuartiles_y_vel_on
+interQuartiles_y_vel_on_hc=[interQuartiles_y_vel_on_hc,interQuartiles_y_vel_on(11)];
 
 arithMean_y_acc_on_hc=[arithMean_y_acc_on_hc;arithMean(12)];
 geoMean_y_acc_on_hc=[geoMean_y_acc_on_hc;geoMean(12)];
@@ -1426,7 +1414,7 @@ end;      %end of 'for' loop
  endif;
  
  feature_name="kurto_strokespeed _t1";
- if(u_test(kurto_strokespeed _pd,kurto_strokespeed _hc)<0.05)   %---condition for passing the test---%
+ if(u_test(kurto_strokespeed_pd,kurto_strokespeed_hc)<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -1526,7 +1514,7 @@ end;      %end of 'for' loop
  endif;
  
  feature_name="kurto_vel_on _t1";
- if(u_test(kurto_vel_on _pd,kurto_vel_on _hc)<0.05)   %---condition for passing the test---%
+ if(u_test(kurto_vel_on_pd,kurto_vel_on_hc)<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -1626,7 +1614,7 @@ end;      %end of 'for' loop
  endif;
  
  feature_name="kurto_vel_off _t1";
- if(u_test(kurto_vel_off _pd,kurto_vel_off _hc)<0.05)   %---condition for passing the test---%
+ if(u_test(kurto_vel_off_pd,kurto_vel_off_hc)<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -1726,7 +1714,7 @@ end;      %end of 'for' loop
  endif;
  
  feature_name="kurto_acc_on _t1";
- if(u_test(kurto_acc_on _pd,kurto_acc_on _hc)<0.05)   %---condition for passing the test---%
+ if(u_test(kurto_acc_on_pd,kurto_acc_on_hc)<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -1826,7 +1814,7 @@ end;      %end of 'for' loop
  endif;
  
  feature_name="kurto_acc_off _t1";
- if(u_test(kurto_acc_off _pd,kurto_acc_off _hc)<0.05)   %---condition for passing the test---%
+ if(u_test(kurto_acc_off_pd,kurto_acc_off_hc)<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -1926,7 +1914,7 @@ end;      %end of 'for' loop
  endif;
  
  feature_name="kurto_jerk_on _t1";
- if(u_test(kurto_jerk_on _pd,kurto_jerk_on _hc)<0.05)   %---condition for passing the test---%
+ if(u_test(kurto_jerk_on_pd,kurto_jerk_on_hc)<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -2026,7 +2014,7 @@ end;      %end of 'for' loop
  endif;
  
  feature_name="kurto_jerk_off _t1";
- if(u_test(kurto_jerk_off _pd,kurto_jerk_off _hc)<0.05)   %---condition for passing the test---%
+ if(u_test(kurto_jerk_off_pd,kurto_jerk_off_hc)<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -2126,7 +2114,7 @@ end;      %end of 'for' loop
  endif;
  
  feature_name="kurto_x_vel_on _t1";
- if(u_test(kurto_x_vel_on _pd,kurto_x_vel_on _hc)<0.05)   %---condition for passing the test---%
+ if(u_test(kurto_x_vel_on_pd,kurto_x_vel_on_hc)<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -2226,7 +2214,7 @@ end;      %end of 'for' loop
  endif;
  
  feature_name="kurto_x_vel_on _t1";
- if(u_test(kurto_x_vel_on _pd,kurto_x_vel_on _hc)<0.05)   %---condition for passing the test---%
+ if(u_test(kurto_x_vel_on_pd,kurto_x_vel_on_hc)<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -2326,7 +2314,7 @@ end;      %end of 'for' loop
  endif;
  
  feature_name="kurto_x_acc_on _t1";
- if(u_test(kurto_x_acc_on _pd,kurto_x_acc_on _hc)<0.05)   %---condition for passing the test---%
+ if(u_test(kurto_x_acc_on_pd,kurto_x_acc_on_hc)<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -2426,7 +2414,7 @@ end;      %end of 'for' loop
  endif;
  
  feature_name="kurto_x_jerk_on _t1";
- if(u_test(kurto_x_jerk_on _pd,kurto_x_jerk_on _hc)<0.05)   %---condition for passing the test---%
+ if(u_test(kurto_x_jerk_on_pd,kurto_x_jerk_on_hc)<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -2526,7 +2514,7 @@ end;      %end of 'for' loop
  endif;
  
  feature_name="kurto_y_vel_on _t1";
- if(u_test(kurto_y_vel_on _pd,kurto_y_vel_on _hc)<0.05)   %---condition for passing the test---%
+ if(u_test(kurto_y_vel_on_pd,kurto_y_vel_on_hc)<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -2626,7 +2614,7 @@ end;      %end of 'for' loop
  endif;
  
  feature_name="kurto_y_acc_on _t1";
- if(u_test(kurto_y_acc_on _pd,kurto_y_acc_on _hc)<0.05)   %---condition for passing the test---%
+ if(u_test(kurto_y_acc_on_pd,kurto_y_acc_on_hc)<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -2726,7 +2714,7 @@ end;      %end of 'for' loop
  endif;
  
  feature_name="kurto_y_jerk_on _t1";
- if(u_test(kurto_y_jerk_on _pd,kurto_y_jerk_on _hc)<0.05)   %---condition for passing the test---%
+ if(u_test(kurto_y_jerk_on_pd,kurto_y_jerk_on_hc)<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -5719,4 +5707,3 @@ end;      %end of 'for' loop
  
  save failed.txt failed;
  
-endfunction
