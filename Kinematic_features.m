@@ -1,5 +1,5 @@
 clear; close all; clc
-data = importdata('data_1_2.txt');
+data = importdata('data_1_1.txt');
 %reading data into matrices
 len = data(1,1);
 %Removing first row
@@ -261,6 +261,7 @@ modes = [modes ; mode(stroke_speed)];
 stdDevs = [stdDevs ; std(stroke_speed)];
 
 robustRange = [robustRange ; prctile(stroke_speed,99) - prctile(stroke_speed,1)];
+disp(stroke_speed);
 
 interQuartiles = [interQuartiles ; iqr(stroke_speed)];
 
