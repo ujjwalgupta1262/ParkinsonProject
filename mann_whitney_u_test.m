@@ -64,29 +64,29 @@ norm_offTime_hc=[];
 off_onTime_pd=[];
 off_onTime_hc=[];
 
-arithMean_strokespeed_pd=[];
-arithMean_strokespeed_hc=[];
-geoMean_strokespeed_pd=[];
-geoMean_strokespeed_hc=[];
-trimMean_strokespeed_pd=[];
-trimMean_strokespeed_hc=[];
-percentiles_strokespeed_pd=[];
-percentiles_strokespeed_hc=[];
-moments_strokespeed_pd=[];
-kurto_strokespeed_pd=[];
-kurto_strokespeed_hc=[];
-ranges_strokespeed_pd=[];
-ranges_strokespeed_hc=[];
-medians_strokespeed_pd=[];
-medians_strokespeed_hc=[];
-modes_strokespeed_pd=[];
-modes_strokespeed_hc=[];
-stdDevs_strokespeed_pd=[];
-stdDevs_strokespeed_hc=[];
-robustRange_strokespeed_pd=[];
-robustRange_strokespeed_hc=[];
-interQuartiles_strokespeed_pd=[];
-interQuartiles_strokespeed_hc=[];
+%arithMean_strokespeed_pd=[];
+%arithMean_strokespeed_hc=[];
+%geoMean_strokespeed_pd=[];
+%geoMean_strokespeed_hc=[];
+%trimMean_strokespeed_pd=[];
+%trimMean_strokespeed_hc=[];
+%percentiles_strokespeed_pd=[];
+%percentiles_strokespeed_hc=[];
+%moments_strokespeed_pd=[];
+%kurto_strokespeed_pd=[];
+%kurto_strokespeed_hc=[];
+%ranges_strokespeed_pd=[];
+%ranges_strokespeed_hc=[];
+%medians_strokespeed_pd=[];
+%medians_strokespeed_hc=[];
+%modes_strokespeed_pd=[];
+%modes_strokespeed_hc=[];
+%stdDevs_strokespeed_pd=[];
+%stdDevs_strokespeed_hc=[];
+%robustRange_strokespeed_pd=[];
+%robustRange_strokespeed_hc=[];
+%interQuartiles_strokespeed_pd=[];
+%interQuartiles_strokespeed_hc=[];
 
 arithMean_vel_on_pd=[];
 arithMean_vel_on_hc=[];
@@ -629,18 +629,18 @@ for k=1:length(filename)
   norm_offTime_pd=[norm_offTime_pd;norm_offTime];
   off_onTime_pd=[off_onTime_pd;off_onTime];
 
-arithMean_strokespeed_pd=[arithMean_strokespeed_pd;arithMean(1)];
-geoMean_strokespeed_pd=[geoMean_strokespeed_pd;geoMean(1)];
-trimMean_strokespeed_pd=[trimMean_strokespeed_pd;trimMean(1)];
-percentiles_strokespeed_pd=[percentiles_strokespeed_pd;percentiles(1)];
-moments_strokespeed_pd=[moments_strokespeed_pd;moments(1)];
-kurto_strokespeed_pd=[kurto_strokespeed_pd;kurto(1)];
-ranges_strokespeed_pd=[ranges_strokespeed_pd;ranges(1)];
-medians_strokespeed_pd=[medians_strokespeed_pd;medians(1)];
-modes_strokespeed_pd=[modes_strokespeed_pd;modes(1)];
-stdDevs_strokespeed_pd=[stdDevs_strokespeed_pd;stdDevs(1)];
-robustRange_strokespeed_pd=[robustRange_strokespeed_pd;robustRange(1)];
-interQuartiles_strokespeed_pd=[interQuartiles_strokespeed_pd;interQuartiles(1)];
+%arithMean_strokespeed_pd=[arithMean_strokespeed_pd;arithMean(1)];
+%geoMean_strokespeed_pd=[geoMean_strokespeed_pd;geoMean(1)];
+%trimMean_strokespeed_pd=[trimMean_strokespeed_pd;trimMean(1)];
+%percentiles_strokespeed_pd=[percentiles_strokespeed_pd;percentiles(1)];
+%moments_strokespeed_pd=[moments_strokespeed_pd;moments(1)];
+%kurto_strokespeed_pd=[kurto_strokespeed_pd;kurto(1)];
+%ranges_strokespeed_pd=[ranges_strokespeed_pd;ranges(1)];
+%medians_strokespeed_pd=[medians_strokespeed_pd;medians(1)];
+%modes_strokespeed_pd=[modes_strokespeed_pd;modes(1)];
+%stdDevs_strokespeed_pd=[stdDevs_strokespeed_pd;stdDevs(1)];
+%robustRange_strokespeed_pd=[robustRange_strokespeed_pd;robustRange(1)];
+%interQuartiles_strokespeed_pd=[interQuartiles_strokespeed_pd;interQuartiles(1)];
 
 arithMean_vel_on_pd=[arithMean_vel_on_pd;arithMean(2)];
 geoMean_vel_on_pd=[geoMean_vel_on_pd;geoMean(2)];
@@ -933,18 +933,18 @@ rel_NCA_off_hc=[rel_NCA_off_hc;rel_NCA_off];
 norm_offTime_hc=[norm_offTime_hc;norm_offTime];
 off_onTime_hc=[off_onTime_hc;off_onTime];
 
-arithMean_strokespeed_hc=[arithMean_strokespeed_hc;arithMean(1)];
-geoMean_strokespeed_hc=[geoMean_strokespeed_hc;geoMean(1)];
-trimMean_strokespeed_hc=[trimMean_strokespeed_hc;trimMean(1)];
-percentiles_strokespeed_hc=[percentiles_strokespeed_hc;percentiles(1)];
-moments_strokespeed_hc=[moments_strokespeed_hc;moments(1)];
-kurto_strokespeed_hc=[kurto_strokespeed_hc;kurto(1)];
-ranges_strokespeed_hc=[ranges_strokespeed_hc;ranges(1)];
-medians_strokespeed_hc=[medians_strokespeed_hc;medians(1)];
-modes_strokespeed_hc=[modes_strokespeed_hc;modes(1)];
-stdDevs_strokespeed_hc=[stdDevs_strokespeed_hc;stdDevs(1)];
-robustRange_strokespeed_hc=[robustRange_strokespeed_hc;robustRange(1)];
-interQuartiles_strokespeed_hc=[interQuartiles_strokespeed_hc;interQuartiles(1)];
+%arithMean_strokespeed_hc=[arithMean_strokespeed_hc;arithMean(1)];
+%geoMean_strokespeed_hc=[geoMean_strokespeed_hc;geoMean(1)];
+%trimMean_strokespeed_hc=[trimMean_strokespeed_hc;trimMean(1)];
+%percentiles_strokespeed_hc=[percentiles_strokespeed_hc;percentiles(1)];
+%moments_strokespeed_hc=[moments_strokespeed_hc;moments(1)];
+%kurto_strokespeed_hc=[kurto_strokespeed_hc;kurto(1)];
+%ranges_strokespeed_hc=[ranges_strokespeed_hc;ranges(1)];
+%medians_strokespeed_hc=[medians_strokespeed_hc;medians(1)];
+%modes_strokespeed_hc=[modes_strokespeed_hc;modes(1)];
+%stdDevs_strokespeed_hc=[stdDevs_strokespeed_hc;stdDevs(1)];
+%robustRange_strokespeed_hc=[robustRange_strokespeed_hc;robustRange(1)];
+%interQuartiles_strokespeed_hc=[interQuartiles_strokespeed_hc;interQuartiles(1)];
 
 arithMean_vel_on_hc=[arithMean_vel_on_hc;arithMean(2)];
 geoMean_vel_on_hc=[geoMean_vel_on_hc;geoMean(2)];
@@ -1391,104 +1391,104 @@ end;      %end of 'for' loop
   
  endif;
  
- feature_name="arithMean_strokespeed_t1";
- if(u_test(arithMean_strokespeed_pd,arithMean_strokespeed_hc)<0.05)   %---condition for passing the test---%
+ %feature_name="arithMean_strokespeed_t1";
+ %if(u_test(arithMean_strokespeed_pd,arithMean_strokespeed_hc)<0.05)   %---condition for passing the test---%
  
-  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
+  %passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
- else
+ %else
   
-  failed=[failed;feature_name];
+  %failed=[failed;feature_name];
   
- endif;
+ %endif;
  
- feature_name="geoMean_strokespeed_t1";
- if(u_test(geoMean_strokespeed_pd,geoMean_strokespeed_hc)<0.05)   %---condition for passing the test---%
+ %feature_name="geoMean_strokespeed_t1";
+ %if(u_test(geoMean_strokespeed_pd,geoMean_strokespeed_hc)<0.05)   %---condition for passing the test---%
  
-  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
+  %passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
- else
+ %else
   
-  failed=[failed;feature_name];
+  %failed=[failed;feature_name];
   
- endif;
+ %endif;
  
- feature_name="kurto_strokespeed _t1";
- if(u_test(kurto_strokespeed_pd,kurto_strokespeed_hc)<0.05)   %---condition for passing the test---%
+ %feature_name="kurto_strokespeed _t1";
+ %if(u_test(kurto_strokespeed_pd,kurto_strokespeed_hc)<0.05)   %---condition for passing the test---%
  
-  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
+  %passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
- else
+ %else
   
-  failed=[failed;feature_name];
+  %failed=[failed;feature_name];
   
- endif;
+ %endif;
  
- feature_name="ranges_strokespeed_t1";
- if(u_test(ranges_strokespeed_pd,ranges_strokespeed_hc)<0.05)   %---condition for passing the test---%
+ %feature_name="ranges_strokespeed_t1";
+ %if(u_test(ranges_strokespeed_pd,ranges_strokespeed_hc)<0.05)   %---condition for passing the test---%
  
-  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
+  %passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
- else
+ %else
   
-  failed=[failed;feature_name];
+  %failed=[failed;feature_name];
   
- endif;
+ %endif;
  
- feature_name="medians_strokespeed_t1";
- if(u_test(medians_strokespeed_pd,medians_strokespeed_hc)<0.05)   %---condition for passing the test---%
+ %feature_name="medians_strokespeed_t1";
+ %if(u_test(medians_strokespeed_pd,medians_strokespeed_hc)<0.05)   %---condition for passing the test---%
  
-  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
+  %passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
- else
+ %else
   
-  failed=[failed;feature_name];
+  %failed=[failed;feature_name];
   
- endif;
+ %endif;
  
- feature_name="modes_strokespeed_t1";
- if(u_test(modes_strokespeed_pd,modes_strokespeed_hc)<0.05)   %---condition for passing the test---%
+ %feature_name="modes_strokespeed_t1";
+ %if(u_test(modes_strokespeed_pd,modes_strokespeed_hc)<0.05)   %---condition for passing the test---%
  
-  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
+  %passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
- else
+ %else
   
-  failed=[failed;feature_name];
+  %failed=[failed;feature_name];
   
- endif;
+ %endif;
  
- feature_name="stdDevs_strokespeed_t1";
- if(u_test(stdDevs_strokespeed_pd,stdDevs_strokespeed_hc)<0.05)   %---condition for passing the test---%
+ %feature_name="stdDevs_strokespeed_t1";
+ %if(u_test(stdDevs_strokespeed_pd,stdDevs_strokespeed_hc)<0.05)   %---condition for passing the test---%
  
-  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
+  %passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
- else
+ %else
   
-  failed=[failed;feature_name];
+  %failed=[failed;feature_name];
   
- endif;
+ %endif;
  
- feature_name="robustRange_strokespeed_t1";
- if(u_test(robustRange_strokespeed_pd,robustRange_strokespeed_hc)<0.05)   %---condition for passing the test---%
+ %feature_name="robustRange_strokespeed_t1";
+ %if(u_test(robustRange_strokespeed_pd,robustRange_strokespeed_hc)<0.05)   %---condition for passing the test---%
  
-  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
+  %passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
- else
+ %else
   
-  failed=[failed;feature_name];
+  %failed=[failed;feature_name];
   
- endif;
+ %endif;
  
- feature_name="interQuartiles_strokespeed_t1";
- if(u_test(interQuartiles_strokespeed_pd,interQuartiles_strokespeed_hc)<0.05)   %---condition for passing the test---%
+ %feature_name="interQuartiles_strokespeed_t1";
+ %if(u_test(interQuartiles_strokespeed_pd,interQuartiles_strokespeed_hc)<0.05)   %---condition for passing the test---%
  
-  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
+  %passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
- else
+ %else
   
-  failed=[failed;feature_name];
+  %failed=[failed;feature_name];
   
- endif;
+ %endif;
  
  
  feature_name="arithMean_vel_on_t1";
@@ -2790,213 +2790,213 @@ end;      %end of 'for' loop
   
  endif;
  
- feature_name="trimMean5_strokespeed_t1";
- if(u_test(trimMean_strokespeed_pd(:,1),trimMean_strokespeed_hc(:,1))<0.05)   %---condition for passing the test---%
+ %feature_name="trimMean5_strokespeed_t1";
+ %if(u_test(trimMean_strokespeed_pd(:,1),trimMean_strokespeed_hc(:,1))<0.05)   %---condition for passing the test---%
  
-  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
+  %passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
- else
+ %else
   
-  failed=[failed;feature_name];
+  %failed=[failed;feature_name];
   
- endif;
+ %endif;
  
- feature_name="trimMean10_strokespeed_t1";
- if(u_test(trimMean_strokespeed_pd(:,2),trimMean_strokespeed_hc(:,2))<0.05)   %---condition for passing the test---%
+ %feature_name="trimMean10_strokespeed_t1";
+ %if(u_test(trimMean_strokespeed_pd(:,2),trimMean_strokespeed_hc(:,2))<0.05)   %---condition for passing the test---%
  
-  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
+  %passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
- else
+ %else
   
-  failed=[failed;feature_name];
+  %failed=[failed;feature_name];
   
- endif;
+ %endif;
  
- feature_name="trimMean20_strokespeed_t1";
- if(u_test(trimMean_strokespeed_pd(:,3),trimMean_strokespeed_hc(:,3))<0.05)   %---condition for passing the test---%
+ %feature_name="trimMean20_strokespeed_t1";
+ %if(u_test(trimMean_strokespeed_pd(:,3),trimMean_strokespeed_hc(:,3))<0.05)   %---condition for passing the test---%
  
-  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
+  %passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
- else
+ %else
   
-  failed=[failed;feature_name];
+  %failed=[failed;feature_name];
   
- endif;
+ %endif;
  
- feature_name="trimMean30_strokespeed_t1";
- if(u_test(trimMean_strokespeed_pd(:,4),trimMean_strokespeed_hc(:,4))<0.05)   %---condition for passing the test---%
+ %feature_name="trimMean30_strokespeed_t1";
+ %if(u_test(trimMean_strokespeed_pd(:,4),trimMean_strokespeed_hc(:,4))<0.05)   %---condition for passing the test---%
  
-  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
+  %passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
- else
+ %else
   
-  failed=[failed;feature_name];
+  %failed=[failed;feature_name];
   
- endif;
+ %endif;
  
- feature_name="trimMean40_strokespeed_t1";
- if(u_test(trimMean_strokespeed_pd(:,5),trimMean_strokespeed_hc(:,5))<0.05)   %---condition for passing the test---%
+ %feature_name="trimMean40_strokespeed_t1";
+ %if(u_test(trimMean_strokespeed_pd(:,5),trimMean_strokespeed_hc(:,5))<0.05)   %---condition for passing the test---%
  
-  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
+  %passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
- else
+ %else
   
-  failed=[failed;feature_name];
+  %failed=[failed;feature_name];
   
- endif;
+ %endif;
  
- feature_name="percentiles1_strokespeed_t1";
- if(u_test(percentiles_strokespeed_pd(:,1),trimMean_strokespeed_hc(:,1))<0.05)   %---condition for passing the test---%
+ %feature_name="percentiles1_strokespeed_t1";
+ %if(u_test(percentiles_strokespeed_pd(:,1),trimMean_strokespeed_hc(:,1))<0.05)   %---condition for passing the test---%
  
-  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
+  %passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
- else
+ %else
   
-  failed=[failed;feature_name];
+  %failed=[failed;feature_name];
   
- endif;
+ %endif;
  
- feature_name="percentiles5_strokespeed_t1";
- if(u_test(percentiles_strokespeed_pd(:,2),trimMean_strokespeed_hc(:,2))<0.05)   %---condition for passing the test---%
+ %feature_name="percentiles5_strokespeed_t1";
+ %if(u_test(percentiles_strokespeed_pd(:,2),trimMean_strokespeed_hc(:,2))<0.05)   %---condition for passing the test---%
  
-  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
+  %passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
- else
+ %else
   
-  failed=[failed;feature_name];
+  %failed=[failed;feature_name];
   
- endif;
- 
- 
- feature_name="percentiles10_strokespeed_t1";
- if(u_test(percentiles_strokespeed_pd(:,3),trimMean_strokespeed_hc(:,3))<0.05)   %---condition for passing the test---%
- 
-  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
-  
- else
-  
-  failed=[failed;feature_name];
-  
- endif;
+ %endif;
  
  
- feature_name="percentiles20_strokespeed_t1";
- if(u_test(percentiles_strokespeed_pd(:,4),trimMean_strokespeed_hc(:,4))<0.05)   %---condition for passing the test---%
+ %feature_name="percentiles10_strokespeed_t1";
+ %if(u_test(percentiles_strokespeed_pd(:,3),trimMean_strokespeed_hc(:,3))<0.05)   %---condition for passing the test---%
  
-  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
+  %passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
- else
+ %else
   
-  failed=[failed;feature_name];
+  %failed=[failed;feature_name];
   
- endif;
- 
- 
- feature_name="percentiles25_strokespeed_t1";
- if(u_test(percentiles_strokespeed_pd(:,5),trimMean_strokespeed_hc(:,5))<0.05)   %---condition for passing the test---%
- 
-  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
-  
- else
-  
-  failed=[failed;feature_name];
-  
- endif;
+ %endif;
  
  
- feature_name="percentiles30_strokespeed_t1";
- if(u_test(percentiles_strokespeed_pd(:,6),trimMean_strokespeed_hc(:,6))<0.05)   %---condition for passing the test---%
+ %feature_name="percentiles20_strokespeed_t1";
+ %if(u_test(percentiles_strokespeed_pd(:,4),trimMean_strokespeed_hc(:,4))<0.05)   %---condition for passing the test---%
  
-  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
+  %passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
- else
+ %else
   
-  failed=[failed;feature_name];
+  %failed=[failed;feature_name];
   
- endif;
- 
- 
- feature_name="percentiles90_strokespeed_t1";
- if(u_test(percentiles_strokespeed_pd(:,7),trimMean_strokespeed_hc(:,7))<0.05)   %---condition for passing the test---%
- 
-  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
-  
- else
-  
-  failed=[failed;feature_name];
-  
- endif;
+ %endif;
  
  
- feature_name="percentiles95_strokespeed_t1";
- if(u_test(percentiles_strokespeed_pd(:,8),trimMean_strokespeed_hc(:,8))<0.05)   %---condition for passing the test---%
+ %feature_name="percentiles25_strokespeed_t1";
+ %if(u_test(percentiles_strokespeed_pd(:,5),trimMean_strokespeed_hc(:,5))<0.05)   %---condition for passing the test---%
  
-  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
+  %passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
- else
+ %else
   
-  failed=[failed;feature_name];
+  %failed=[failed;feature_name];
   
- endif;
- 
- 
- feature_name="percentiles99_strokespeed_t1";
- if(u_test(percentiles_strokespeed_pd(:,9),trimMean_strokespeed_hc(:,9))<0.05)   %---condition for passing the test---%
- 
-  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
-  
- else
-  
-  failed=[failed;feature_name];
-  
- endif;
- 
- feature_name="moments3_strokespeed_t1";
- if(u_test(percentiles_strokespeed_pd(:,1),trimMean_strokespeed_hc(:,1))<0.05)   %---condition for passing the test---%
- 
-  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
-  
- else
-  
-  failed=[failed;feature_name];
-  
- endif;
+ %endif;
  
  
- feature_name="moments4_strokespeed_t1";
- if(u_test(percentiles_strokespeed_pd(:,2),trimMean_strokespeed_hc(:,2))<0.05)   %---condition for passing the test---%
+ %feature_name="percentiles30_strokespeed_t1";
+ %if(u_test(percentiles_strokespeed_pd(:,6),trimMean_strokespeed_hc(:,6))<0.05)   %---condition for passing the test---%
  
-  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
+  %passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
- else
+ %else
   
-  failed=[failed;feature_name];
+  %failed=[failed;feature_name];
   
- endif;
- 
- 
- feature_name="moments5_strokespeed_t1";
- if(u_test(percentiles_strokespeed_pd(:,3),trimMean_strokespeed_hc(:,3))<0.05)   %---condition for passing the test---%
- 
-  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
-  
- else
-  
-  failed=[failed;feature_name];
-  
- endif;
+ %endif;
  
  
- feature_name="moments6_strokespeed_t1";
- if(u_test(percentiles_strokespeed_pd(:,4),trimMean_strokespeed_hc(:,4))<0.05)   %---condition for passing the test---%
+ %feature_name="percentiles90_strokespeed_t1";
+ %if(u_test(percentiles_strokespeed_pd(:,7),trimMean_strokespeed_hc(:,7))<0.05)   %---condition for passing the test---%
  
-  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
+  %passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
- else
+ %else
   
-  failed=[failed;feature_name];
+  %failed=[failed;feature_name];
   
- endif;
+ %endif;
+ 
+ 
+ %feature_name="percentiles95_strokespeed_t1";
+ %if(u_test(percentiles_strokespeed_pd(:,8),trimMean_strokespeed_hc(:,8))<0.05)   %---condition for passing the test---%
+ 
+  %passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
+  
+ %else
+  
+  %failed=[failed;feature_name];
+  
+ %endif;
+ 
+ 
+ %feature_name="percentiles99_strokespeed_t1";
+ %if(u_test(percentiles_strokespeed_pd(:,9),trimMean_strokespeed_hc(:,9))<0.05)   %---condition for passing the test---%
+ 
+  %passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
+  
+ %else
+  
+  %failed=[failed;feature_name];
+  
+ %endif;
+ 
+ %feature_name="moments3_strokespeed_t1";
+ %if(u_test(percentiles_strokespeed_pd(:,1),trimMean_strokespeed_hc(:,1))<0.05)   %---condition for passing the test---%
+ 
+  %passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
+  
+ %else
+  
+  %failed=[failed;feature_name];
+  
+ %endif;
+ 
+ 
+ %feature_name="moments4_strokespeed_t1";
+ %if(u_test(percentiles_strokespeed_pd(:,2),trimMean_strokespeed_hc(:,2))<0.05)   %---condition for passing the test---%
+ 
+  %passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
+  
+ %else
+  
+  %failed=[failed;feature_name];
+  
+ %endif;
+ 
+ 
+ %feature_name="moments5_strokespeed_t1";
+ %if(u_test(percentiles_strokespeed_pd(:,3),trimMean_strokespeed_hc(:,3))<0.05)   %---condition for passing the test---%
+ 
+  %passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
+  
+ %else
+  
+  %failed=[failed;feature_name];
+  
+ %endif;
+ 
+ 
+ %feature_name="moments6_strokespeed_t1";
+ %if(u_test(percentiles_strokespeed_pd(:,4),trimMean_strokespeed_hc(:,4))<0.05)   %---condition for passing the test---%
+ 
+  %passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
+  
+ %else
+  
+  %failed=[failed;feature_name];
+  
+ %endif;
  
  
  feature_name="trimMean5_vel_on_t1";
