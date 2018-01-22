@@ -1,9 +1,25 @@
+<<<<<<< HEAD
 clear; close all; clc
 data = importdata('data_1_1.txt');
+=======
+
+#clear; close all; clc
+
+function [pressure_rate,x_vel_on,y_vel_on,time_interval_on,time_interval_off,speed,ncv_on,nca_on,rel_NCV_on,rel_NCA_on,norm_onTime,ncp,rel_NCP,ncv_off,nca_off,rel_NCV_off,rel_NCA_off,norm_offTime,off_onTime,arithMean,geoMean,trimMean,percentiles,moments,kurto,ranges,medians,modes,stdDevs,robustRange,interQuartiles,x_shannon,y_shannon,x_renyi2,y_renyi2,x_renyi3,y_renyi3,snr_ce_x,snr_ce_y,snr_tke1_x,snr_tke1_y,x_shannon_i1,y_shannon_i1,x_renyi2_i1,y_renyi2_i1,x_renyi3_i1,y_renyi3_i1,x_shannon_i2,y_shannon_i2,x_renyi2_i2,y_renyi2_i2,x_renyi3_i2,y_renyi3_i2,snr_ice_x,snr_ice_y,snr_itke1_x,snr_itke1_y,snr_itke2_x,snr_itke2_y]=kinematic_features(file)
+ 
+pkg load statistics;
+
+
+
+%disp("filename is:");
+fprintf('%s \n',file);
+
+data = importdata(file);
+>>>>>>> 87b68632fa72ef0ca7289b28d99404c0d60f6afa
 %reading data into matrices
 len = data(1,1);
 %Removing first row
-data = data(2 : end,:);
+data = data(2 :end,:);
 total_time = data(len,3) - data(1,3);
 %finding index of rows with button status 1 and 0
 ind0 = find(data(:,4) == 0);
@@ -51,6 +67,13 @@ vel_on(ind_on,:) = [];
 time_interval_on(ind_on,:) = [];
 pressure_rate(ind_on,:) = [];
 
+save pressure_rate.txt pressure_rate;
+
+save x_vel_on.txt x_vel_on;
+save y_vel_on.txt y_vel_on;
+save time_interval_on.txt time_interval_on;
+save time_interval_off.txt time_interval_off;
+
 %shifted x_vel and y_vel
 x_vel_on_shiftUp = x_vel_on(2 : end, :);
 x_vel_on_shiftDown = x_vel_on(1 : end - 1,:);
@@ -82,6 +105,8 @@ stroke_length -= sum(displacement(ind_on,:));
 on_surface_time = sum(time_interval_on);
 speed = stroke_length/on_surface_time;
 
+save speed.txt speed;
+
 %NCV and NCA on surface
 NCV_on = 0;
 NCA_on = 0;
@@ -97,12 +122,21 @@ for i = 2 : length(acc_on) - 1
 	end;
 end;
 
+save ncv_on.txt NCV_on;
+save nca_on.txt NCA_on;
+
 %Relative NCV and NCA on time
+
 rel_NCV_on = NCV_on/on_surface_time;
 rel_NCA_on = NCA_on/on_surface_time;
 
+save rel_NCV_on.txt rel_NCV_on;
+save rel_NCA_on.txt rel_NCA_on;
+
 %normalised on surface time
 norm_onTime = on_surface_time/total_time;
+
+save norm_onTime.txt norm_onTime;
 
 %stroke_speed
 if(length(ind_on) == 0)
@@ -132,8 +166,24 @@ end;
 
 rel_NCP = NCP/on_surface_time;
 
-if(length(ind0) > 0)
+save ncp.txt NCP;
+save rel_NCP.txt rel_NCP;
+
 %----------------------------------------In - Air------------------------------------%
+
+
+vel_off=[];
+acc_off=[];
+jerk_off=[];
+x_vel_off=[];
+x_acc_off=[];
+x_jerk_off=[];
+y_vel_off=[];
+y_acc_off=[];
+y_jerk_off=[];
+
+if(length(ind0) > 0)
+
 %extracting off surface data
 y_coors_off = data_off(:,1);
 x_coors_off = data_off(:,2);
@@ -214,14 +264,25 @@ for i = 2 : length(acc_off) - 1
 	end;
 end;
 
+save ncv_off.txt NCV_off;
+save nca_off.txt NCA_off;
+
 %Relative NCV and NCA in air
 rel_NCV_off = NCV_off/off_surface_time;
 rel_NCA_off = NCA_off/off_surface_time;
 
+save rel_NCV_off.txt rel_NCV_off;
+save rel_NCA_off.txt rel_NCA_off;
+
 %normalised off surface time
 norm_offTime = off_surface_time/total_time;
 off_onTime = off_surface_time/on_surface_time;
+
+save norm_offTime.txt norm_offTime;
+save off_onTime.txt off_onTime;
+
 end;
+
 
 %disp();
 
@@ -291,6 +352,9 @@ robustRange = [robustRange ; prctile(vel_on,99) - prctile(vel_on,1)];
 interQuartiles = [interQuartiles ; iqr(vel_on)];
 
 %----------------Velocity In Air-------------------%
+
+if(length(vel_off)!=0)
+
 arithMean = [arithMean ; mean(vel_off)];
 
 geoMean = [geoMean ; geomean(vel_off(find(vel_off ~= 0)))];
@@ -315,6 +379,7 @@ stdDevs = [stdDevs ; std(vel_off)];
 robustRange = [robustRange ; prctile(vel_off,99) - prctile(vel_off,1)];
 
 interQuartiles = [interQuartiles ; iqr(vel_off)];
+end;
 
 %-----------------Accelaration On Surface---------------%
 arithMean = [arithMean ; mean(acc_on)];
@@ -342,6 +407,9 @@ robustRange = [robustRange ; prctile(acc_on,99) - prctile(acc_on,1)];
 interQuartiles = [interQuartiles ; iqr(acc_on)];
 
 %----------------Accelaration In Air--------------------%
+
+if(length(acc_off)!=0)
+
 arithMean = [arithMean ; mean(acc_off)];
 
 geoMean = [geoMean ; geomean(acc_off(find(acc_off ~= 0)))];
@@ -366,6 +434,7 @@ robustRange = [robustRange ; prctile(acc_off,99) - prctile(acc_off,1)];
 
 interQuartiles = [interQuartiles ; iqr(acc_off)];
 
+end;
 %--------------------Jerk on Surface------------------------%
 arithMean = [arithMean ; mean(jerk_on)];
 
@@ -392,6 +461,8 @@ robustRange = [robustRange ; prctile(jerk_on,99) - prctile(jerk_on,1)];
 interQuartiles = [interQuartiles ; iqr(jerk_on)];
 
 %------------Jerk In Air----------------------------%
+if(length(jerk_off)!=0)
+
 arithMean = [arithMean ; mean(jerk_off)];
 
 geoMean = [geoMean ; geomean(jerk_off(find(jerk_off ~= 0)))];
@@ -416,6 +487,7 @@ robustRange = [robustRange ; prctile(jerk_off,99) - prctile(jerk_off,1)];
 
 interQuartiles = [interQuartiles ; iqr(jerk_off)];
 
+end;
 %---------------Horizontal Velocity on Surface---------------------%
 arithMean = [arithMean ; mean(x_vel_on)];
 
@@ -567,6 +639,8 @@ robustRange = [robustRange ; prctile(y_jerk_on,99) - prctile(y_jerk_on,1)];
 interQuartiles = [interQuartiles ; iqr(y_jerk_on)];
 
 %------------------------------Horizontal Velocity in Air-------------%
+if(length(x_vel_off)!=0)
+
 arithMean = [arithMean ; mean(x_vel_off)];
 
 geoMean = [geoMean ; geomean(x_vel_off(find(x_vel_off ~= 0)))];
@@ -590,7 +664,11 @@ robustRange = [robustRange ; prctile(x_vel_off,99) - prctile(x_vel_off,1)];
 
 interQuartiles = [interQuartiles ; iqr(x_vel_off)];
 
+end;
 %-------------------------Horizontal Accelaration in Air-------------%
+
+if(length(x_acc_off)!=0)
+
 arithMean = [arithMean ; mean(x_acc_off)];
 
 geoMean = [geoMean ; geomean(x_acc_off(find(x_acc_off ~= 0)))];
@@ -614,7 +692,11 @@ robustRange = [robustRange ; prctile(x_acc_off,99) - prctile(x_acc_off,1)];
 
 interQuartiles = [interQuartiles ; iqr(x_acc_off)];
 
+end;
 %----------------------------Horizontal Jerk in Air-------------------%
+
+if(length(x_jerk_off)!=0)
+
 arithMean = [arithMean ; mean(x_jerk_off)];
 
 geoMean = [geoMean ; geomean(x_jerk_off(find(x_jerk_off ~= 0)))];
@@ -638,7 +720,11 @@ robustRange = [robustRange ; prctile(x_jerk_off,99) - prctile(x_jerk_off,1)];
 
 interQuartiles = [interQuartiles ; iqr(x_jerk_off)];
 
+end;
 %-------------------------Vertical Velocity in Air-----------------------%
+
+if(length(y_vel_off)!=0)
+
 arithMean = [arithMean ; mean(y_vel_off)];
 
 geoMean = [geoMean ; geomean(y_vel_off(find(y_vel_off ~= 0)))];
@@ -662,7 +748,12 @@ robustRange = [robustRange ; prctile(y_vel_off,99) - prctile(y_vel_off,1)];
 
 interQuartiles = [interQuartiles ; iqr(y_vel_off)];
 
+end;
+
 %---------------------------Vertical Accelaration in Air-------------------%
+
+if(length(y_acc_off)!=0)
+
 arithMean = [arithMean ; mean(y_acc_off)];
 
 geoMean = [geoMean ; geomean(y_acc_off(find(y_acc_off ~= 0)))];
@@ -678,6 +769,7 @@ kurto = [kurto; kurtosis(y_acc_off)];
 ranges = [ranges ; range(y_acc_off)];
 
 medians = [medians ; median(y_acc_off)];
+
 modes = [modes ; mode(y_acc_off(find(y_acc_off ~= 0)))];
 
 stdDevs = [stdDevs ; std(y_acc_off)];
@@ -686,7 +778,10 @@ robustRange = [robustRange ; prctile(y_acc_off,99) - prctile(y_acc_off,1)];
 
 interQuartiles = [interQuartiles ; iqr(y_acc_off)];
 
+end;
 %--------------------------Vertical Jerk in Air------------------------%
+if(length(y_jerk_off)!=0)
+
 arithMean = [arithMean ; mean(y_jerk_off)];
 
 geoMean = [geoMean ; geomean(y_jerk_off(find(y_jerk_off ~= 0)))];
@@ -709,3 +804,146 @@ stdDevs = [stdDevs ; std(y_jerk_off)];
 robustRange = [robustRange ; prctile(y_jerk_off,99) - prctile(y_jerk_off,1)];
 
 interQuartiles = [interQuartiles ; iqr(y_jerk_off)];
+
+end;
+
+save arithmean.txt arithMean;
+save geomean.txt geoMean;
+save trimmean.txt trimMean;
+save percentiles.txt percentiles;
+save moments.txt moments;
+save kurto.txt kurto;
+save ranges.txt ranges;
+save medians.txt medians;
+save modes.txt modes;
+save stdDevs.txt stdDevs;
+save robustrange.txt robustRange;
+save interquartiles.txt interQuartiles;
+
+
+%------------------------------Entropy_SNR-----------------------%
+y_coor = data(:,1);
+x_coor = data(:,2);
+%Shannon and Renyi entropy for x and y coordinates
+[shannon_x, renyi2_x, renyi3_x] = entropy(x_coor);
+[shannon_y, renyi2_y, renyi3_y] = entropy(y_coor);
+
+save x_shannon.txt shannon_x;
+save y_shannon.txt shannon_y;
+save x_renyi2.txt renyi2_x;
+save y_renyi2.txt renyi2_y;
+save x_renyi3.txt renyi3_x;
+save y_renyi3.txt renyi3_y;
+
+%conventional energies of x and y coordinates
+CE_x = sum(x_coor.^2);
+CE_y = sum(y_coor.^2);
+%Teager-Kaiser energies of x and y coordinates
+TKE1_x = sum(x_coor(1:len - 1).^2 - x_coor(2:len).*[x_coor(len) ; x_coor(1 : len-2)]);
+TKE1_y = sum(y_coor(1:len - 1).^2 - y_coor(2:len).*[y_coor(len) ; y_coor(1 : len-2)]);
+TKE2_x = sum(x_coor(1:len - 2).^2 - x_coor(3:len).*[x_coor(len - 1) ; x_coor(len) ; x_coor(1 : len - 4)]);
+TKE2_y = sum(y_coor(1:len - 2).^2 - y_coor(3:len).*[y_coor(len - 1) ; y_coor(len) ; y_coor(1 : len - 4)]);
+%Noise variance
+N_x = estimatenoise(x_coor);
+N_y = estimatenoise(y_coor);
+%SNR_CE and SNR_TKE1 and SNR_TKE2
+SNR_CE_x = CE_x/(len * N_x);
+SNR_CE_y = CE_y/(len * N_y);
+SNR_TKE1_x = TKE1_x/(len * N_x);
+SNR_TKE1_y = TKE1_y/(len * N_y);
+SNR_TKE2_x = TKE2_x/(len * N_x);
+SNR_TKE2_y = TKE2_y/(len * N_y);
+
+save snr_ce_x.txt SNR_CE_x;
+save snr_ce_y.txt SNR_CE_y;
+save snr_tke1_x.txt SNR_TKE1_x;
+save snr_tke1_y.txt SNR_TKE1_y;
+save snr_tke2_x.txt SNR_TKE2_x;
+save snr_tke2_y.txt SNR_TKE2_y;
+
+%IMFs
+IMF_x = rParabEmd__L(x_coor,40,40,1);
+IMF_y = rParabEmd__L(y_coor,40,40,1);
+%Intrinsic entropies of first and second IMFs
+[i1_shannon_x, i1_renyi2_x, i1_renyi3_x] = entropy(IMF_x(:,1));
+
+save x_shannon_i1.txt i1_shannon_x;
+save y_shannon_i1.txt i1_shannon_y;
+save x_renyi2_i1.txt i1_renyi2_x;
+save y_renyi2_i1.txt i1_renyi2_y;
+save x_renyi3_i1.txt i1_renyi3_x;
+save y_renyi3_i1.txt i1_renyi3_y;
+
+[i1_shannon_y, i1_renyi2_y, i1_renyi3_y] = entropy(IMF_y(:,1));
+[i2_shannon_x, i2_renyi2_x, i2_renyi3_x] = entropy(IMF_x(:,2));
+[i2_shannon_y, i2_renyi2_y, i2_renyi3_y] = entropy(IMF_y(:,2));
+
+save x_shannon_i2.txt i2_shannon_x;
+save y_shannon_i2.txt i2_shannon_y;
+save x_renyi2_i2.txt i2_renyi2_x;
+save y_renyi2_i2.txt i2_renyi2_y;
+save x_renyi3_i2.txt i2_renyi3_x;
+save y_renyi3_i2.txt i2_renyi3_y;
+
+%Intrinsic Coventional Energies of first and second IMFs
+i1_CE_x = sum(IMF_x(:,1).^2);
+i1_CE_y = sum(IMF_y(:,1).^2);
+i2_CE_x = sum(IMF_x(:,2).^2);
+i2_CE_y = sum(IMF_y(:,2).^2);
+%Intrinsic Teager-Kaiser energies of first and second IMFs
+i1_TKE1_x = sum(IMF_x(1:len - 1,1).^2 - IMF_x(2:len,1).*[IMF_x(len,1) ; IMF_x(1 : len-2,1)]);
+i1_TKE2_x = sum(IMF_x(1:len - 2,1).^2 - IMF_x(3:len,1).*[IMF_x(len - 1,1) ; IMF_x(len,1) ; IMF_x(1 : len - 4,1)]);
+i1_TKE1_y = sum(IMF_y(1:len - 1,1).^2 - IMF_y(2:len,1).*[IMF_y(len,1) ; IMF_y(1 : len-2,1)]);
+i1_TKE2_y = sum(IMF_y(1:len - 2,1).^2 - IMF_y(3:len,1).*[IMF_y(len - 1,1) ; IMF_y(len,1) ; IMF_y(1 : len - 4,1)]);
+i2_TKE1_x = sum(IMF_x(1:len - 1,2).^2 - IMF_x(2:len,2).*[IMF_x(len,2) ; IMF_x(1 : len-2,2)]);
+i2_TKE2_x = sum(IMF_x(1:len - 2,2).^2 - IMF_x(3:len,2).*[IMF_x(len - 1,2) ; IMF_x(len,2) ; IMF_x(1 : len - 4,2)]);
+i2_TKE1_y = sum(IMF_y(1:len - 1,2).^2 - IMF_y(2:len,2).*[IMF_y(len,2) ; IMF_y(1 : len-2,2)]);
+i2_TKE2_y = sum(IMF_y(1:len - 2,2).^2 - IMF_y(3:len,2).*[IMF_y(len - 1,2) ; IMF_y(len,2) ; IMF_y(1 : len - 4,2)]);
+%Intrinsic SNR using conventional energies and later IMFs
+i_CE_x = [];
+i_CE_y = [];
+for i = 3:size(IMF_x,2)
+	i_CE_x = [i_CE_x ; sum(IMF_x(:,i).^2)];
+end;
+for i = 3:size(IMF_y,2)
+	i_CE_y = [i_CE_y ; sum(IMF_y(:,i).^2)];
+end;
+SNR_ICE_x = sum(i_CE_x)/(i1_CE_x + i2_CE_x);
+SNR_ICE_y = sum(i_CE_y)/(i1_CE_y + i2_CE_y);
+
+save snr_ice_x.txt SNR_ICE_x;
+save snr_ice_y.txt SNR_ICE_y;
+
+%Intrinsic SNR using Teager-Kaiser energies and later IMFs
+i_TKE1_x = [];
+i_TKE2_x = [];
+i_TKE1_y = [];
+i_TKE2_y = [];
+for i = 3:size(IMF_x,2)
+	i_TKE1_x = [i_TKE1_x ; sum(IMF_x(1:len - 1,i).^2 - IMF_x(2:len,i).*[IMF_x(len,i) ; IMF_x(1 : len-2,i)])];
+end;
+for i = 3:size(IMF_x,2)
+	i_TKE2_x = [i_TKE2_x ; sum(IMF_x(1:len - 2,i).^2 - IMF_x(3:len,i).*[IMF_x(len - 1,i) ; IMF_x(len,i) ; IMF_x(1 : len - 4,i)])];
+end;
+for i = 3:size(IMF_y,2)
+	i_TKE1_y = [i_TKE1_y ; sum(IMF_y(1:len - 1,i).^2 - IMF_y(2:len,i).*[IMF_y(len,i) ; IMF_y(1 : len-2,i)])];
+end;
+for i = 3:size(IMF_y,2)
+	i_TKE2_y = [i_TKE2_y ; sum(IMF_y(1:len - 2,i).^2 - IMF_y(3:len,i).*[IMF_y(len - 1,i) ; IMF_y(len,i) ; IMF_y(1 : len - 4,i)])];
+end;
+SNR_ITKE1_x = sum(i_TKE1_x)/(i1_TKE1_x + i2_TKE1_x);
+SNR_ITKE2_x = sum(i_TKE2_x)/(i1_TKE2_x + i2_TKE2_x);
+SNR_ITKE1_y = sum(i_TKE1_y)/(i1_TKE1_y + i2_TKE1_y);
+SNR_ITKE2_y = sum(i_TKE2_y)/(i1_TKE2_y + i2_TKE2_y);
+
+save snr_itke1_x.txt SNR_ITKE1_x;
+save snr_itke1_y.txt SNR_ITKE1_y;
+save snr_itke2_x.txt SNR_ITKE2_x;
+save snr_itke2_y.txt SNR_ITKE2_y;
+
+
+end;
+%-----------------------------------------------------------------%
+
+
+%------------------------------------------------------%

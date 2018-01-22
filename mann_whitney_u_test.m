@@ -1,4 +1,4 @@
-## Copyright (C) 2018 DELL
+ ## Copyright (C) 2018 DELL
 ## 
 ## This program is free software; you can redistribute it and/or modify it
 ## under the terms of the GNU General Public License as published by
@@ -606,7 +606,7 @@ for k=1:length(filename)
   %--------------------------------------PD------------------------------------------------------------%
   if(k<38)
   
-  disp(filename(k,:));
+  %disp(filename(k,:));
   
   [pressure_rate,x_vel_on,y_vel_on,time_interval_on,time_interval_off,speed,ncv_on,nca_on,rel_NCV_on,rel_NCA_on,norm_onTime,ncp,rel_NCP,ncv_off,nca_off,rel_NCV_off,rel_NCA_off,norm_offTime,off_onTime,arithMean,geoMean,trimMean,percentiles,moments,kurto,ranges,medians,modes,stdDevs,robustRange,interQuartiles,x_shannon,y_shannon,x_renyi2,y_renyi2,x_renyi3,y_renyi3,snr_ce_x,snr_ce_y,snr_tke1_x,snr_tke1_y,x_shannon_i1,y_shannon_i1,x_renyi2_i1,y_renyi2_i1,x_renyi3_i1,y_renyi3_i1,x_shannon_i2,y_shannon_i2,x_renyi2_i2,y_renyi2_i2,x_renyi3_i2,y_renyi3_i2,snr_ice_x,snr_ice_y,snr_itke1_x,snr_itke1_y,snr_itke2_x,snr_itke2_y]=kinematic_features(filename(k,:));
   
@@ -626,8 +626,8 @@ for k=1:length(filename)
   nca_off_pd=[nca_off_pd;nca_off];
   rel_NCV_off_pd=[rel_NCV_off_pd;rel_NCV_off];
   rel_NCA_off_pd=[rel_NCA_off_pd;rel_NCA_off];
-norm_offTime_pd=[norm_offTime_pd;norm_offTime];
-off_onTime_pd=[off_onTime_pd;off_onTime];
+  norm_offTime_pd=[norm_offTime_pd;norm_offTime];
+  off_onTime_pd=[off_onTime_pd;off_onTime];
 
 arithMean_strokespeed_pd=[arithMean_strokespeed_pd;arithMean(1)];
 geoMean_strokespeed_pd=[geoMean_strokespeed_pd;geoMean(1)];
