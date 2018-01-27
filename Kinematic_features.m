@@ -1,10 +1,3 @@
-<<<<<<< HEAD
-clear; close all; clc
-data = importdata('data_1_1.txt');
-=======
-
-#clear; close all; clc
-
 function [pressure_rate,x_vel_on,y_vel_on,time_interval_on,time_interval_off,speed,ncv_on,nca_on,rel_NCV_on,rel_NCA_on,norm_onTime,ncp,rel_NCP,ncv_off,nca_off,rel_NCV_off,rel_NCA_off,norm_offTime,off_onTime,arithMean,geoMean,trimMean,percentiles,moments,kurto,ranges,medians,modes,stdDevs,robustRange,interQuartiles,x_shannon,y_shannon,x_renyi2,y_renyi2,x_renyi3,y_renyi3,snr_ce_x,snr_ce_y,snr_tke1_x,snr_tke1_y,x_shannon_i1,y_shannon_i1,x_renyi2_i1,y_renyi2_i1,x_renyi3_i1,y_renyi3_i1,x_shannon_i2,y_shannon_i2,x_renyi2_i2,y_renyi2_i2,x_renyi3_i2,y_renyi3_i2,snr_ice_x,snr_ice_y,snr_itke1_x,snr_itke1_y,snr_itke2_x,snr_itke2_y]=kinematic_features(file)
  
 pkg load statistics;
@@ -15,7 +8,6 @@ pkg load statistics;
 fprintf('%s \n',file);
 
 data = importdata(file);
->>>>>>> 87b68632fa72ef0ca7289b28d99404c0d60f6afa
 %reading data into matrices
 len = data(1,1);
 %Removing first row
@@ -58,9 +50,9 @@ y_vel_on = abs(y_shift_up_on - y_shift_down_on)./time_interval_on;
 vel_on = sqrt(x_vel_on.^2 + y_vel_on.^2);
 pressure_rate = abs(pressure_on_shiftUp - pressure_on_shiftDown)./time_interval_on;
 
-
+ind_on = find((ind1(2:end) - ind1(1:end - 1)) > 2);
 %find all indices where time interval > 10 and modify velocity and time_interval vectors accordingly
-ind_on = find(time_interval_on > 10);
+%ind_on = find(time_interval_on > 30);
 x_vel_on(ind_on,:) = [];
 y_vel_on(ind_on,:) = [];
 vel_on(ind_on,:) = [];
@@ -142,18 +134,20 @@ save norm_onTime.txt norm_onTime;
 if(length(ind_on) == 0)
 	stroke_speed = speed;
 else
+	%----------------------debug this-----------------------------%
 	stroke_speed = [];
 	ind_on = [0 ; ind_on];
-	for i = 1 : length(ind_on) - 2
+	for i = 1 : length(ind_on) - 1
 		stroke_len = sum(displacement(ind_on(i) + 1 : ind_on(i + 1) - 1));
 		ind_on(1) = 1;
 		time_interval = sum(time_interval_on(ind_on(i) : ind_on(i + 1) - 1));
 		stroke_speed = [stroke_speed ; stroke_len/time_interval];
 	end;
 	stroke_len = sum(displacement(ind_on(length(ind_on)) + 1 : end));
-	time_interval = sum(time_interval_on(ind_on(i) : ind_on(i + 1) - 1));
+	time_interval = sum(time_interval_on(ind_on(length(ind_on)) : end));
     stroke_speed = [stroke_speed ; stroke_len/time_interval];
 end;
+disp(stroke_speed);
 
 %NCP and relative NCP
 %smooth_pressure = conv(pressure_on, ones(1,9)/1, 'same');
@@ -210,9 +204,9 @@ x_vel_off = abs(x_shift_up_off - x_shift_down_off)./time_interval_off;
 y_vel_off = abs(y_shift_up_off - y_shift_down_off)./time_interval_off;
 vel_off = sqrt(x_vel_off.^2 + y_vel_off.^2);
 
-
+ind_off = find((ind0(2:end) - ind0(1:end - 1)) > 2);
 %find all indices where time interval > 10 and modify velocity and time_interval vectors accordingly
-ind_off = find(time_interval_off > 10);
+%ind_off = find(time_interval_off > 10);
 x_vel_off(ind_off,:) = [];
 y_vel_off(ind_off,:) = [];
 vel_off(ind_off,:) = [];
@@ -303,6 +297,7 @@ interQuartiles = [];
 %--------stroke_speed---------------%
 arithMean = [arithMean ; mean(stroke_speed)];
 
+if(length(stroke_speed) > 1)
 geoMean = [geoMean ; geomean(stroke_speed)];
 
 trimMean = [trimMean ; [trimmean(stroke_speed, 5), trimmean(stroke_speed, 10), trimmean(stroke_speed, 20), trimmean(stroke_speed, 30), trimmean(stroke_speed, 40)]];
@@ -322,9 +317,14 @@ modes = [modes ; mode(stroke_speed)];
 stdDevs = [stdDevs ; std(stroke_speed)];
 
 robustRange = [robustRange ; prctile(stroke_speed,99) - prctile(stroke_speed,1)];
-disp(stroke_speed);
+
 
 interQuartiles = [interQuartiles ; iqr(stroke_speed)];
+
+else
+geoMean = [geoMean ; []];
+
+end;
 
 %-------------Velocity on Surface----------------%
 arithMean = [arithMean ; mean(vel_on)];
