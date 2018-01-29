@@ -322,7 +322,17 @@ robustRange = [robustRange ; prctile(stroke_speed,99) - prctile(stroke_speed,1)]
 interQuartiles = [interQuartiles ; iqr(stroke_speed)];
 
 else
-geoMean = [geoMean ; []];
+geoMean = [geoMean ; [-100]];     % garbage value= -100 being inserted at the end
+trimMean = [trimMean ; [-100 -100 -100 -100 -100]];
+percentiles = [percentiles ; [-100 -100 -100 -100 -100 -100 -100 -100 -100]];
+moments = [moments ; [-100 -100 -100 -100]];
+kurto = [kurto ; [-100]];
+ranges = [ranges ; [-100]];
+medians = [medians ; [-100]];
+modes = [modes ; [-100]];
+stdDevs = [stdDevs ; [-100]];
+robustRange = [robustRange ; [-100]];
+interQuartiles = [interQuartiles ; [-100]];
 
 end;
 
@@ -351,35 +361,6 @@ robustRange = [robustRange ; prctile(vel_on,99) - prctile(vel_on,1)];
 
 interQuartiles = [interQuartiles ; iqr(vel_on)];
 
-%----------------Velocity In Air-------------------%
-
-if(length(vel_off)!=0)
-
-arithMean = [arithMean ; mean(vel_off)];
-
-geoMean = [geoMean ; geomean(vel_off(find(vel_off ~= 0)))];
-
-trimMean = [trimMean ; [trimmean(vel_off, 5), trimmean(vel_off, 10), trimmean(vel_off, 20),trimmean(vel_off, 30), trimmean(vel_off, 40)]];
-
-percentiles = [percentiles ; [prctile(vel_off, 1), prctile(vel_off, 5), prctile(vel_off, 10),prctile(vel_off, 20), prctile(vel_off, 25), prctile(vel_off, 30),...
-			   prctile(vel_off, 90), prctile(vel_off, 95), prctile(vel_off, 99)]];
-
-moments = [moments ; [moment(vel_off, 3), moment(vel_off, 4), moment(vel_off, 5), moment(vel_off, 6)]];
-
-kurto = [kurto; kurtosis(vel_off)];
-
-ranges = [ranges ; range(vel_off)];
-
-medians = [medians ; median(vel_off)];
-
-modes = [modes ; mode(vel_off(find(vel_off ~= 0)))];
-
-stdDevs = [stdDevs ; std(vel_off)];
-
-robustRange = [robustRange ; prctile(vel_off,99) - prctile(vel_off,1)];
-
-interQuartiles = [interQuartiles ; iqr(vel_off)];
-end;
 
 %-----------------Accelaration On Surface---------------%
 arithMean = [arithMean ; mean(acc_on)];
@@ -405,36 +386,6 @@ stdDevs = [stdDevs ; std(acc_on)];
 robustRange = [robustRange ; prctile(acc_on,99) - prctile(acc_on,1)];
 
 interQuartiles = [interQuartiles ; iqr(acc_on)];
-
-%----------------Accelaration In Air--------------------%
-
-if(length(acc_off)!=0)
-
-arithMean = [arithMean ; mean(acc_off)];
-
-geoMean = [geoMean ; geomean(acc_off(find(acc_off ~= 0)))];
-
-trimMean = [trimMean ; [trimmean(acc_off, 5), trimmean(acc_off, 10), trimmean(acc_off, 20),trimmean(acc_off, 30), trimmean(acc_off, 40)]];
-
-percentiles = [percentiles ; [prctile(acc_off, 1), prctile(acc_off, 5), prctile(acc_off, 10),prctile(acc_off, 20), prctile(acc_off, 25), prctile(acc_off, 30),prctile(acc_off, 90), prctile(acc_off, 95), prctile(acc_off, 99)]];
-
-moments = [moments ; [moment(acc_off, 3), moment(acc_off, 4), moment(acc_off, 5), moment(acc_off, 6)]];
-
-kurto = [kurto; kurtosis(acc_off)];
-
-ranges = [ranges ; range(acc_off)];
-
-medians = [medians ; median(acc_off)];
-
-modes = [modes ; mode(acc_off(find(acc_off ~= 0)))];
-
-stdDevs = [stdDevs ; std(acc_off)];
-
-robustRange = [robustRange ; prctile(acc_off,99) - prctile(acc_off,1)];
-
-interQuartiles = [interQuartiles ; iqr(acc_off)];
-
-end;
 %--------------------Jerk on Surface------------------------%
 arithMean = [arithMean ; mean(jerk_on)];
 
@@ -460,34 +411,6 @@ robustRange = [robustRange ; prctile(jerk_on,99) - prctile(jerk_on,1)];
 
 interQuartiles = [interQuartiles ; iqr(jerk_on)];
 
-%------------Jerk In Air----------------------------%
-if(length(jerk_off)!=0)
-
-arithMean = [arithMean ; mean(jerk_off)];
-
-geoMean = [geoMean ; geomean(jerk_off(find(jerk_off ~= 0)))];
-
-trimMean = [trimMean ; [trimmean(jerk_off, 5), trimmean(jerk_off, 10), trimmean(jerk_off, 20),trimmean(jerk_off, 30), trimmean(jerk_off, 40)]];
-
-percentiles = [percentiles ; [prctile(jerk_off, 1), prctile(jerk_off, 5), prctile(jerk_off, 10),prctile(jerk_off, 20), prctile(jerk_off, 25), prctile(jerk_off, 30),prctile(jerk_off, 90), prctile(jerk_off, 95), prctile(jerk_off, 99)]];
-
-moments = [moments ; [moment(jerk_off, 3), moment(jerk_off, 4), moment(jerk_off, 5), moment(jerk_off, 6)]];
-
-kurto = [kurto; kurtosis(jerk_off)];
-
-ranges = [ranges ; range(jerk_off)];
-
-medians = [medians ; median(jerk_off)];
-
-modes = [modes ; mode(jerk_off(find(jerk_off ~= 0)))];
-
-stdDevs = [stdDevs ; std(jerk_off)];
-
-robustRange = [robustRange ; prctile(jerk_off,99) - prctile(jerk_off,1)];
-
-interQuartiles = [interQuartiles ; iqr(jerk_off)];
-
-end;
 %---------------Horizontal Velocity on Surface---------------------%
 arithMean = [arithMean ; mean(x_vel_on)];
 
@@ -614,6 +537,7 @@ robustRange = [robustRange ; prctile(y_acc_on,99) - prctile(y_acc_on,1)];
 interQuartiles = [interQuartiles ; iqr(y_acc_on)];
 
 %-------------------------Vertical Jerk on Surface----------------------%
+
 arithMean = [arithMean ; mean(y_jerk_on)];
 
 geoMean = [geoMean ; geomean(y_jerk_on(find(y_jerk_on ~= 0)))];
@@ -637,6 +561,97 @@ stdDevs = [stdDevs ; std(y_jerk_on)];
 robustRange = [robustRange ; prctile(y_jerk_on,99) - prctile(y_jerk_on,1)];
 
 interQuartiles = [interQuartiles ; iqr(y_jerk_on)];
+
+%----------------Velocity In Air-------------------%
+
+if(length(vel_off)!=0)
+
+arithMean = [arithMean ; mean(vel_off)];
+
+geoMean = [geoMean ; geomean(vel_off(find(vel_off ~= 0)))];
+
+trimMean = [trimMean ; [trimmean(vel_off, 5), trimmean(vel_off, 10), trimmean(vel_off, 20),trimmean(vel_off, 30), trimmean(vel_off, 40)]];
+
+percentiles = [percentiles ; [prctile(vel_off, 1), prctile(vel_off, 5), prctile(vel_off, 10),prctile(vel_off, 20), prctile(vel_off, 25), prctile(vel_off, 30),...
+			   prctile(vel_off, 90), prctile(vel_off, 95), prctile(vel_off, 99)]];
+
+moments = [moments ; [moment(vel_off, 3), moment(vel_off, 4), moment(vel_off, 5), moment(vel_off, 6)]];
+
+kurto = [kurto; kurtosis(vel_off)];
+
+ranges = [ranges ; range(vel_off)];
+
+medians = [medians ; median(vel_off)];
+
+modes = [modes ; mode(vel_off(find(vel_off ~= 0)))];
+
+stdDevs = [stdDevs ; std(vel_off)];
+
+robustRange = [robustRange ; prctile(vel_off,99) - prctile(vel_off,1)];
+
+interQuartiles = [interQuartiles ; iqr(vel_off)];
+end;
+
+
+%----------------Accelaration In Air--------------------%
+
+if(length(acc_off)!=0)
+
+arithMean = [arithMean ; mean(acc_off)];
+
+geoMean = [geoMean ; geomean(acc_off(find(acc_off ~= 0)))];
+
+trimMean = [trimMean ; [trimmean(acc_off, 5), trimmean(acc_off, 10), trimmean(acc_off, 20),trimmean(acc_off, 30), trimmean(acc_off, 40)]];
+
+percentiles = [percentiles ; [prctile(acc_off, 1), prctile(acc_off, 5), prctile(acc_off, 10),prctile(acc_off, 20), prctile(acc_off, 25), prctile(acc_off, 30),prctile(acc_off, 90), prctile(acc_off, 95), prctile(acc_off, 99)]];
+
+moments = [moments ; [moment(acc_off, 3), moment(acc_off, 4), moment(acc_off, 5), moment(acc_off, 6)]];
+
+kurto = [kurto; kurtosis(acc_off)];
+
+ranges = [ranges ; range(acc_off)];
+
+medians = [medians ; median(acc_off)];
+
+modes = [modes ; mode(acc_off(find(acc_off ~= 0)))];
+
+stdDevs = [stdDevs ; std(acc_off)];
+
+robustRange = [robustRange ; prctile(acc_off,99) - prctile(acc_off,1)];
+
+interQuartiles = [interQuartiles ; iqr(acc_off)];
+
+end;
+
+%-------------------Jerk In Air-------------------------%
+
+if(length(jerk_off)!=0)
+
+arithMean = [arithMean ; mean(jerk_off)];
+
+geoMean = [geoMean ; geomean(jerk_off(find(jerk_off ~= 0)))];
+
+trimMean = [trimMean ; [trimmean(jerk_off, 5), trimmean(jerk_off, 10), trimmean(jerk_off, 20),trimmean(jerk_off, 30), trimmean(jerk_off, 40)]];
+
+percentiles = [percentiles ; [prctile(jerk_off, 1), prctile(jerk_off, 5), prctile(jerk_off, 10),prctile(jerk_off, 20), prctile(jerk_off, 25), prctile(jerk_off, 30),prctile(jerk_off, 90), prctile(jerk_off, 95), prctile(jerk_off, 99)]];
+
+moments = [moments ; [moment(jerk_off, 3), moment(jerk_off, 4), moment(jerk_off, 5), moment(jerk_off, 6)]];
+
+kurto = [kurto; kurtosis(jerk_off)];
+
+ranges = [ranges ; range(jerk_off)];
+
+medians = [medians ; median(jerk_off)];
+
+modes = [modes ; mode(jerk_off(find(jerk_off ~= 0)))];
+
+stdDevs = [stdDevs ; std(jerk_off)];
+
+robustRange = [robustRange ; prctile(jerk_off,99) - prctile(jerk_off,1)];
+
+interQuartiles = [interQuartiles ; iqr(jerk_off)];
+
+end;
 
 %------------------------------Horizontal Velocity in Air-------------%
 if(length(x_vel_off)!=0)
@@ -940,10 +955,3 @@ save snr_itke1_x.txt SNR_ITKE1_x;
 save snr_itke1_y.txt SNR_ITKE1_y;
 save snr_itke2_x.txt SNR_ITKE2_x;
 save snr_itke2_y.txt SNR_ITKE2_y;
-
-
-end;
-%-----------------------------------------------------------------%
-
-
-%------------------------------------------------------%
