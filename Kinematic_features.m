@@ -59,12 +59,12 @@ vel_on(ind_on,:) = [];
 time_interval_on(ind_on,:) = [];
 pressure_rate(ind_on,:) = [];
 
-save pressure_rate.txt pressure_rate;
+%save pressure_rate.txt pressure_rate;
 
-save x_vel_on.txt x_vel_on;
-save y_vel_on.txt y_vel_on;
-save time_interval_on.txt time_interval_on;
-save time_interval_off.txt time_interval_off;
+%save x_vel_on.txt x_vel_on;
+%save y_vel_on.txt y_vel_on;
+%save time_interval_on.txt time_interval_on;
+%save time_interval_off.txt time_interval_off;
 
 %shifted x_vel and y_vel
 x_vel_on_shiftUp = x_vel_on(2 : end, :);
@@ -97,7 +97,7 @@ stroke_length -= sum(displacement(ind_on,:));
 on_surface_time = sum(time_interval_on);
 speed = stroke_length/on_surface_time;
 
-save speed.txt speed;
+%save speed.txt speed;
 
 %NCV and NCA on surface
 NCV_on = 0;
@@ -114,21 +114,21 @@ for i = 2 : length(acc_on) - 1
 	end;
 end;
 
-save ncv_on.txt NCV_on;
-save nca_on.txt NCA_on;
+%save ncv_on.txt NCV_on;
+%save nca_on.txt NCA_on;
 
 %Relative NCV and NCA on time
 
 rel_NCV_on = NCV_on/on_surface_time;
 rel_NCA_on = NCA_on/on_surface_time;
 
-save rel_NCV_on.txt rel_NCV_on;
-save rel_NCA_on.txt rel_NCA_on;
+%save rel_NCV_on.txt rel_NCV_on;
+%save rel_NCA_on.txt rel_NCA_on;
 
 %normalised on surface time
 norm_onTime = on_surface_time/total_time;
 
-save norm_onTime.txt norm_onTime;
+%save norm_onTime.txt norm_onTime;
 
 %stroke_speed
 if(length(ind_on) == 0)
@@ -160,8 +160,8 @@ end;
 
 rel_NCP = NCP/on_surface_time;
 
-save ncp.txt NCP;
-save rel_NCP.txt rel_NCP;
+%save ncp.txt NCP;
+%save rel_NCP.txt rel_NCP;
 
 %----------------------------------------In - Air------------------------------------%
 
@@ -258,22 +258,22 @@ for i = 2 : length(acc_off) - 1
 	end;
 end;
 
-save ncv_off.txt NCV_off;
-save nca_off.txt NCA_off;
+%save ncv_off.txt NCV_off;
+%save nca_off.txt NCA_off;
 
 %Relative NCV and NCA in air
 rel_NCV_off = NCV_off/off_surface_time;
 rel_NCA_off = NCA_off/off_surface_time;
 
-save rel_NCV_off.txt rel_NCV_off;
-save rel_NCA_off.txt rel_NCA_off;
+%save rel_NCV_off.txt rel_NCV_off;
+%save rel_NCA_off.txt rel_NCA_off;
 
 %normalised off surface time
 norm_offTime = off_surface_time/total_time;
 off_onTime = off_surface_time/on_surface_time;
 
-save norm_offTime.txt norm_offTime;
-save off_onTime.txt off_onTime;
+%save norm_offTime.txt norm_offTime;
+%save off_onTime.txt off_onTime;
 
 end;
 
@@ -807,18 +807,47 @@ interQuartiles = [interQuartiles ; iqr(y_jerk_off)];
 
 end;
 
-save arithmean.txt arithMean;
-save geomean.txt geoMean;
-save trimmean.txt trimMean;
-save percentiles.txt percentiles;
-save moments.txt moments;
-save kurto.txt kurto;
-save ranges.txt ranges;
-save medians.txt medians;
-save modes.txt modes;
-save stdDevs.txt stdDevs;
-save robustrange.txt robustRange;
-save interquartiles.txt interQuartiles;
+%--------------------------Pressure rate on surface------------------------%
+if(length(pressure_rate)!=0)
+
+arithMean = [arithMean ; mean(pressure_rate)];
+
+geoMean = [geoMean ; geomean(pressure_rate(find(pressure_rate ~= 0)))];
+
+trimMean = [trimMean ; [trimmean(pressure_rate, 5), trimmean(pressure_rate, 10), trimmean(pressure_rate, 20),trimmean(pressure_rate, 30), trimmean(pressure_rate, 40)]];
+
+percentiles = [percentiles ; [prctile(pressure_rate, 1), prctile(pressure_rate, 5), prctile(pressure_rate, 10),prctile(pressure_rate, 20), prctile(pressure_rate, 25), prctile(pressure_rate, 30),prctile(pressure_rate, 90), prctile(pressure_rate, 95), prctile(pressure_rate, 99)]];
+
+moments = [moments ; [moment(pressure_rate, 3), moment(pressure_rate, 4), moment(pressure_rate, 5), moment(pressure_rate, 6)]];
+
+kurto = [kurto; kurtosis(pressure_rate)];
+
+ranges = [ranges ; range(pressure_rate)];
+
+medians = [medians ; median(pressure_rate)];
+modes = [modes ; mode(pressure_rate(find(pressure_rate ~= 0)))];
+
+stdDevs = [stdDevs ; std(pressure_rate)];
+
+robustRange = [robustRange ; prctile(pressure_rate,99) - prctile(pressure_rate,1)];
+
+interQuartiles = [interQuartiles ; iqr(pressure_rate)];
+
+end;
+
+
+%save arithmean.txt arithMean;
+%save geomean.txt geoMean;
+%save trimmean.txt trimMean;
+%save percentiles.txt percentiles;
+%save moments.txt moments;
+%save kurto.txt kurto;
+%save ranges.txt ranges;
+%save medians.txt medians;
+%save modes.txt modes;
+%save stdDevs.txt stdDevs;
+%save robustrange.txt robustRange;
+%save interquartiles.txt interQuartiles;
 
 
 %------------------------------Entropy_SNR-----------------------%
@@ -828,12 +857,12 @@ x_coor = data(:,2);
 [shannon_x, renyi2_x, renyi3_x] = entropy(x_coor);
 [shannon_y, renyi2_y, renyi3_y] = entropy(y_coor);
 
-save x_shannon.txt shannon_x;
-save y_shannon.txt shannon_y;
-save x_renyi2.txt renyi2_x;
-save y_renyi2.txt renyi2_y;
-save x_renyi3.txt renyi3_x;
-save y_renyi3.txt renyi3_y;
+%save x_shannon.txt shannon_x;
+%save y_shannon.txt shannon_y;
+%save x_renyi2.txt renyi2_x;
+%save y_renyi2.txt renyi2_y;
+%save x_renyi3.txt renyi3_x;
+%save y_renyi3.txt renyi3_y;
 
 %conventional energies of x and y coordinates
 CE_x = sum(x_coor.^2);
@@ -854,12 +883,12 @@ SNR_TKE1_y = TKE1_y/(len * N_y);
 SNR_TKE2_x = TKE2_x/(len * N_x);
 SNR_TKE2_y = TKE2_y/(len * N_y);
 
-save snr_ce_x.txt SNR_CE_x;
-save snr_ce_y.txt SNR_CE_y;
-save snr_tke1_x.txt SNR_TKE1_x;
-save snr_tke1_y.txt SNR_TKE1_y;
-save snr_tke2_x.txt SNR_TKE2_x;
-save snr_tke2_y.txt SNR_TKE2_y;
+%save snr_ce_x.txt SNR_CE_x;
+%save snr_ce_y.txt SNR_CE_y;
+%save snr_tke1_x.txt SNR_TKE1_x;
+%save snr_tke1_y.txt SNR_TKE1_y;
+%save snr_tke2_x.txt SNR_TKE2_x;
+%save snr_tke2_y.txt SNR_TKE2_y;
 
 %IMFs
 IMF_x = rParabEmd__L(x_coor,40,40,1);
@@ -867,23 +896,23 @@ IMF_y = rParabEmd__L(y_coor,40,40,1);
 %Intrinsic entropies of first and second IMFs
 [i1_shannon_x, i1_renyi2_x, i1_renyi3_x] = entropy(IMF_x(:,1));
 
-save x_shannon_i1.txt i1_shannon_x;
-save y_shannon_i1.txt i1_shannon_y;
-save x_renyi2_i1.txt i1_renyi2_x;
-save y_renyi2_i1.txt i1_renyi2_y;
-save x_renyi3_i1.txt i1_renyi3_x;
-save y_renyi3_i1.txt i1_renyi3_y;
+%save x_shannon_i1.txt i1_shannon_x;
+%save y_shannon_i1.txt i1_shannon_y;
+%save x_renyi2_i1.txt i1_renyi2_x;
+%save y_renyi2_i1.txt i1_renyi2_y;
+%save x_renyi3_i1.txt i1_renyi3_x;
+%save y_renyi3_i1.txt i1_renyi3_y;
 
 [i1_shannon_y, i1_renyi2_y, i1_renyi3_y] = entropy(IMF_y(:,1));
 [i2_shannon_x, i2_renyi2_x, i2_renyi3_x] = entropy(IMF_x(:,2));
 [i2_shannon_y, i2_renyi2_y, i2_renyi3_y] = entropy(IMF_y(:,2));
 
-save x_shannon_i2.txt i2_shannon_x;
-save y_shannon_i2.txt i2_shannon_y;
-save x_renyi2_i2.txt i2_renyi2_x;
-save y_renyi2_i2.txt i2_renyi2_y;
-save x_renyi3_i2.txt i2_renyi3_x;
-save y_renyi3_i2.txt i2_renyi3_y;
+%save x_shannon_i2.txt i2_shannon_x;
+%save y_shannon_i2.txt i2_shannon_y;
+%save x_renyi2_i2.txt i2_renyi2_x;
+%save y_renyi2_i2.txt i2_renyi2_y;
+%save x_renyi3_i2.txt i2_renyi3_x;
+%save y_renyi3_i2.txt i2_renyi3_y;
 
 %Intrinsic Coventional Energies of first and second IMFs
 i1_CE_x = sum(IMF_x(:,1).^2);
@@ -911,8 +940,8 @@ end;
 SNR_ICE_x = sum(i_CE_x)/(i1_CE_x + i2_CE_x);
 SNR_ICE_y = sum(i_CE_y)/(i1_CE_y + i2_CE_y);
 
-save snr_ice_x.txt SNR_ICE_x;
-save snr_ice_y.txt SNR_ICE_y;
+%save snr_ice_x.txt SNR_ICE_x;
+%save snr_ice_y.txt SNR_ICE_y;
 
 %Intrinsic SNR using Teager-Kaiser energies and later IMFs
 i_TKE1_x = [];
@@ -936,10 +965,10 @@ SNR_ITKE2_x = sum(i_TKE2_x)/(i1_TKE2_x + i2_TKE2_x);
 SNR_ITKE1_y = sum(i_TKE1_y)/(i1_TKE1_y + i2_TKE1_y);
 SNR_ITKE2_y = sum(i_TKE2_y)/(i1_TKE2_y + i2_TKE2_y);
 
-save snr_itke1_x.txt SNR_ITKE1_x;
-save snr_itke1_y.txt SNR_ITKE1_y;
-save snr_itke2_x.txt SNR_ITKE2_x;
-save snr_itke2_y.txt SNR_ITKE2_y;
+%save snr_itke1_x.txt SNR_ITKE1_x;
+%save snr_itke1_y.txt SNR_ITKE1_y;
+%save snr_itke2_x.txt SNR_ITKE2_x;
+%save snr_itke2_y.txt SNR_ITKE2_y;
 
 
 end;
