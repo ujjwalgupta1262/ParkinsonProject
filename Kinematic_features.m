@@ -842,7 +842,7 @@ interQuartiles = [interQuartiles ; iqr(pressure_rate)];
 
 
 %------------------------------Entropy_SNR-----------------------%
-%{
+
 y_coor = data(:,1);
 x_coor = data(:,2);
 %Shannon and Renyi entropy for x and y coordinates
@@ -929,7 +929,6 @@ SNR_ITKE2_x = sum(i_TKE2_x)/(i1_TKE2_x + i2_TKE2_x);
 SNR_ITKE1_y = sum(i_TKE1_y)/(i1_TKE1_y + i2_TKE1_y);
 SNR_ITKE2_y = sum(i_TKE2_y)/(i1_TKE2_y + i2_TKE2_y);
 
-%}
 
 disp("return");
 
