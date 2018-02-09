@@ -234,8 +234,8 @@ jerk_off = sqrt(x_jerk_off.^2 + y_jerk_off.^2);
 
 %total stroke length and total off-surface time and stroke speed 
 displacement_off =  (x_shift_up_off - x_shift_down_off).^2 + (y_shift_up_off - y_shift_down_off).^2;
-stroke_length_off = sum(displacement);
-stroke_length_off -= sum(displacement(ind_off,:));
+stroke_length_off = sum(displacement_off);
+stroke_length_off -= sum(displacement_off(ind_off,:));
 %off_surface_time = sum(time_interval_off);
 speed_off = stroke_length/off_surface_time;
 
