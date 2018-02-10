@@ -55,7 +55,7 @@ ind_on = find((ind1(2:end) - ind1(1:end - 1)) > 2);
 x_vel_on(ind_on,:) = [];
 y_vel_on(ind_on,:) = [];
 vel_on(ind_on,:) = [];
-time_interval_on(ind_on,:) = [];
+%time_interval_on(ind_on,:) = [];
 pressure_rate(ind_on,:) = [];
 
 %save pressure_rate.txt pressure_rate;
@@ -94,6 +94,7 @@ displacement =  (x_shift_up_on - x_shift_down_on).^2 + (y_shift_up_on - y_shift_
 stroke_length = sum(displacement);
 stroke_length -= sum(displacement(ind_on,:));
 on_surface_time = sum(time_interval_on);
+on_surface_time -= sum(time_interval_on(ind_on,:));
 speed = stroke_length/on_surface_time;
 
 %save speed.txt speed;
