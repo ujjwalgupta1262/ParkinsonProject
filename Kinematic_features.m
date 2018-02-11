@@ -44,8 +44,8 @@ pressure_on_shiftUp = pressure_on(2:end, :);
 pressure_on_shiftDown = pressure_on(1 : end - 1, :);
 
 %horizontal and vertical velocity and total velocity and pressure
-x_vel_on = abs(x_shift_up_on - x_shift_down_on)./time_interval_on;
-y_vel_on = abs(y_shift_up_on - y_shift_down_on)./time_interval_on;
+x_vel_on = abs(x_shift_up_on - x_shift_down_on)/7.5;
+y_vel_on = abs(y_shift_up_on - y_shift_down_on)/7.5;
 vel_on = sqrt(x_vel_on.^2 + y_vel_on.^2);
 pressure_rate = abs(pressure_on_shiftUp - pressure_on_shiftDown)./time_interval_on;
 
@@ -197,8 +197,8 @@ y_shift_up_off = y_coors_off(2:end,:);
 y_shift_down_off = y_coors_off(1:end - 1,:);
 
 %horizontal and vertical velocity and total velocity
-x_vel_off = abs(x_shift_up_off - x_shift_down_off)./time_interval_off;
-y_vel_off = abs(y_shift_up_off - y_shift_down_off)./time_interval_off;
+x_vel_off = abs(x_shift_up_off - x_shift_down_off)/7.5;
+y_vel_off = abs(y_shift_up_off - y_shift_down_off)/7.5;
 vel_off = sqrt(x_vel_off.^2 + y_vel_off.^2);
 
 ind_off = find((ind0(2:end) - ind0(1:end - 1)) > 2);
