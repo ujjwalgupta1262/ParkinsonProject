@@ -288,7 +288,7 @@ interQuartiles = [];
 %--------stroke_speed---------------%
 arithMean = [arithMean ; mean(stroke_speed)];
 
-if(length(stroke_speed) > 1)
+if(length(stroke_speed) > 2)
 geoMean = [geoMean ; geomean(stroke_speed)];
 
 trimMean = [trimMean ; [trimmean(stroke_speed, 5), trimmean(stroke_speed, 10), trimmean(stroke_speed, 20), trimmean(stroke_speed, 30), trimmean(stroke_speed, 40)]];
@@ -557,7 +557,7 @@ interQuartiles = [interQuartiles ; iqr(y_jerk_on)];
 disp("in air");
 %----------------Velocity In Air-------------------%
 
-if(length(vel_off)!=0)
+if(length(vel_off) > 2)
 
 arithMean = [arithMean ; mean(vel_off)];
 
@@ -588,7 +588,7 @@ end;
 
 %----------------Accelaration In Air--------------------%
 
-if(length(acc_off)!=0)
+if(length(acc_off) > 2)
 
 arithMean = [arithMean ; mean(acc_off)];
 
@@ -618,7 +618,7 @@ end;
 
 %-------------------Jerk In Air-------------------------%
 
-if(length(jerk_off)!=0)
+if(length(jerk_off) > 2)
 
 arithMean = [arithMean ; mean(jerk_off)];
 
@@ -647,7 +647,7 @@ interQuartiles = [interQuartiles ; iqr(jerk_off)];
 end;
 
 %------------------------------Horizontal Velocity in Air-------------%
-if(length(x_vel_off)!=0)
+if(length(x_vel_off) > 2)
 
 arithMean = [arithMean ; mean(x_vel_off)];
 
@@ -675,7 +675,7 @@ interQuartiles = [interQuartiles ; iqr(x_vel_off)];
 end;
 %-------------------------Horizontal Accelaration in Air-------------%
 
-if(length(x_acc_off)!=0)
+if(length(x_acc_off) > 2)
 
 arithMean = [arithMean ; mean(x_acc_off)];
 
@@ -703,7 +703,7 @@ interQuartiles = [interQuartiles ; iqr(x_acc_off)];
 end;
 %----------------------------Horizontal Jerk in Air-------------------%
 
-if(length(x_jerk_off)!=0)
+if(length(x_jerk_off) > 2)
 
 arithMean = [arithMean ; mean(x_jerk_off)];
 
@@ -731,7 +731,7 @@ interQuartiles = [interQuartiles ; iqr(x_jerk_off)];
 end;
 %-------------------------Vertical Velocity in Air-----------------------%
 
-if(length(y_vel_off)!=0)
+if(length(y_vel_off) > 2)
 
 arithMean = [arithMean ; mean(y_vel_off)];
 
@@ -760,7 +760,7 @@ end;
 
 %---------------------------Vertical Accelaration in Air-------------------%
 
-if(length(y_acc_off)!=0)
+if(length(y_acc_off) > 2)
 
 arithMean = [arithMean ; mean(y_acc_off)];
 
@@ -788,7 +788,7 @@ interQuartiles = [interQuartiles ; iqr(y_acc_off)];
 
 end;
 %--------------------------Vertical Jerk in Air------------------------%
-if(length(y_jerk_off)!=0)
+if(length(y_jerk_off) > 2)
 
 arithMean = [arithMean ; mean(y_jerk_off)];
 
