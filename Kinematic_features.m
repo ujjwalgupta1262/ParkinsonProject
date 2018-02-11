@@ -47,7 +47,7 @@ pressure_on_shiftDown = pressure_on(1 : end - 1, :);
 x_vel_on = abs(x_shift_up_on - x_shift_down_on)/7.5;
 y_vel_on = abs(y_shift_up_on - y_shift_down_on)/7.5;
 vel_on = sqrt(x_vel_on.^2 + y_vel_on.^2);
-pressure_rate = abs(pressure_on_shiftUp - pressure_on_shiftDown)./time_interval_on;
+pressure_rate = abs(pressure_on_shiftUp - pressure_on_shiftDown)/7.5;
 
 ind_on = find((ind1(2:end) - ind1(1:end - 1)) > 2);
 %find all indices where time interval > 10 and modify velocity and time_interval vectors accordingly
