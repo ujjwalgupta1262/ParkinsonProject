@@ -8,7 +8,7 @@ fprintf('%s \n',file);
 
 data = importdata(file);
 %reading data into matrices
-len = data(1,1);
+len = length(data) - 1;
 %Removing first row
 data = data(2 :end,:);
 total_time = data(len,3) - data(1,3);
