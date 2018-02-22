@@ -3296,7 +3296,7 @@ feature_name="snr_itke2_y_t1";
  endif;
  
  feature_name="percentiles1_strokespeed_t1";
- if(u_test(percentiles_strokespeed_pd(:,1),trimMean_strokespeed_hc(:,1))<0.05)   %---condition for passing the test---%
+ if(u_test(percentiles_strokespeed_pd(:,1),percentiles_strokespeed_hc(:,1))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -3307,7 +3307,7 @@ feature_name="snr_itke2_y_t1";
  endif;
  
  feature_name="percentiles5_strokespeed_t1";
- if(u_test(percentiles_strokespeed_pd(:,2),trimMean_strokespeed_hc(:,2))<0.05)   %---condition for passing the test---%
+ if(u_test(percentiles_strokespeed_pd(:,2),percentiles_strokespeed_hc(:,2))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -3319,7 +3319,7 @@ feature_name="snr_itke2_y_t1";
  
  
  feature_name="percentiles10_strokespeed_t1";
- if(u_test(percentiles_strokespeed_pd(:,3),trimMean_strokespeed_hc(:,3))<0.05)   %---condition for passing the test---%
+ if(u_test(percentiles_strokespeed_pd(:,3),percentiles_strokespeed_hc(:,3))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -3331,7 +3331,7 @@ feature_name="snr_itke2_y_t1";
  
  
  feature_name="percentiles20_strokespeed_t1";
- if(u_test(percentiles_strokespeed_pd(:,4),trimMean_strokespeed_hc(:,4))<0.05)   %---condition for passing the test---%
+ if(u_test(percentiles_strokespeed_pd(:,4),percentiles_strokespeed_hc(:,4))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -3343,7 +3343,7 @@ feature_name="snr_itke2_y_t1";
  
  
  feature_name="percentiles25_strokespeed_t1";
- if(u_test(percentiles_strokespeed_pd(:,5),trimMean_strokespeed_hc(:,5))<0.05)   %---condition for passing the test---%
+ if(u_test(percentiles_strokespeed_pd(:,5),percentiles_strokespeed_hc(:,5))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -3355,7 +3355,7 @@ feature_name="snr_itke2_y_t1";
  
  
  feature_name="percentiles30_strokespeed_t1";
- if(u_test(percentiles_strokespeed_pd(:,6),trimMean_strokespeed_hc(:,6))<0.05)   %---condition for passing the test---%
+ if(u_test(percentiles_strokespeed_pd(:,6),percentiles_strokespeed_hc(:,6))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -3367,7 +3367,7 @@ feature_name="snr_itke2_y_t1";
  
  
  feature_name="percentiles90_strokespeed_t1";
- if(u_test(percentiles_strokespeed_pd(:,7),trimMean_strokespeed_hc(:,7))<0.05)   %---condition for passing the test---%
+ if(u_test(percentiles_strokespeed_pd(:,7),percentiles_strokespeed_hc(:,7))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -3379,7 +3379,7 @@ feature_name="snr_itke2_y_t1";
  
  
  feature_name="percentiles95_strokespeed_t1";
- if(u_test(percentiles_strokespeed_pd(:,8),trimMean_strokespeed_hc(:,8))<0.05)   %---condition for passing the test---%
+ if(u_test(percentiles_strokespeed_pd(:,8),percentiles_strokespeed_hc(:,8))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -3391,7 +3391,7 @@ feature_name="snr_itke2_y_t1";
  
  
  feature_name="percentiles99_strokespeed_t1";
- if(u_test(percentiles_strokespeed_pd(:,9),trimMean_strokespeed_hc(:,9))<0.05)   %---condition for passing the test---%
+ if(u_test(percentiles_strokespeed_pd(:,9),percentiles_strokespeed_hc(:,9))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -3402,7 +3402,7 @@ feature_name="snr_itke2_y_t1";
  endif;
  
  feature_name="moments3_strokespeed_t1";
- if(u_test(percentiles_strokespeed_pd(:,1),trimMean_strokespeed_hc(:,1))<0.05)   %---condition for passing the test---%
+ if(u_test(moments_strokespeed_pd(:,1),moments_strokespeed_hc(:,1))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -3414,7 +3414,7 @@ feature_name="snr_itke2_y_t1";
  
  
  feature_name="moments4_strokespeed_t1";
- if(u_test(percentiles_strokespeed_pd(:,2),trimMean_strokespeed_hc(:,2))<0.05)   %---condition for passing the test---%
+ if(u_test(moments_strokespeed_pd(:,2),moments_strokespeed_hc(:,2))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -3426,7 +3426,7 @@ feature_name="snr_itke2_y_t1";
  
  
  feature_name="moments5_strokespeed_t1";
- if(u_test(percentiles_strokespeed_pd(:,3),trimMean_strokespeed_hc(:,3))<0.05)   %---condition for passing the test---%
+ if(u_test(moments_strokespeed_pd(:,3),moments_strokespeed_hc(:,3))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -3438,7 +3438,7 @@ feature_name="snr_itke2_y_t1";
  
  
  feature_name="moments6_strokespeed_t1";
- if(u_test(percentiles_strokespeed_pd(:,4),trimMean_strokespeed_hc(:,4))<0.05)   %---condition for passing the test---%
+ if(u_test(moments_strokespeed_pd(:,4),moments_strokespeed_hc(:,4))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -3505,19 +3505,9 @@ feature_name="snr_itke2_y_t1";
   
  endif;
  
- feature_name="percentiles1_vel_on_t1";
- if(u_test(percentiles_vel_on_pd(:,1),trimMean_vel_on_hc(:,1))<0.05)   %---condition for passing the test---%
- 
-  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
-  
- else
-  
-  failed=[failed;feature_name];
-  
- endif;
  
  feature_name="percentiles5_vel_on_t1";
- if(u_test(percentiles_vel_on_pd(:,2),trimMean_vel_on_hc(:,2))<0.05)   %---condition for passing the test---%
+ if(u_test(percentiles_vel_on_pd(:,2),percentiles_vel_on_hc(:,2))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -3529,7 +3519,7 @@ feature_name="snr_itke2_y_t1";
  
  
  feature_name="percentiles10_vel_on_t1";
- if(u_test(percentiles_vel_on_pd(:,3),trimMean_vel_on_hc(:,3))<0.05)   %---condition for passing the test---%
+ if(u_test(percentiles_vel_on_pd(:,3),percentiles_vel_on_hc(:,3))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -3541,7 +3531,7 @@ feature_name="snr_itke2_y_t1";
  
  
  feature_name="percentiles20_vel_on_t1";
- if(u_test(percentiles_vel_on_pd(:,4),trimMean_vel_on_hc(:,4))<0.05)   %---condition for passing the test---%
+ if(u_test(percentiles_vel_on_pd(:,4),percentiles_vel_on_hc(:,4))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -3553,7 +3543,7 @@ feature_name="snr_itke2_y_t1";
  
  
  feature_name="percentiles25_vel_on_t1";
- if(u_test(percentiles_vel_on_pd(:,5),trimMean_vel_on_hc(:,5))<0.05)   %---condition for passing the test---%
+ if(u_test(percentiles_vel_on_pd(:,5),percentiles_vel_on_hc(:,5))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -3565,7 +3555,7 @@ feature_name="snr_itke2_y_t1";
  
  
  feature_name="percentiles30_vel_on_t1";
- if(u_test(percentiles_vel_on_pd(:,6),trimMean_vel_on_hc(:,6))<0.05)   %---condition for passing the test---%
+ if(u_test(percentiles_vel_on_pd(:,6),percentiles_vel_on_hc(:,6))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -3577,7 +3567,7 @@ feature_name="snr_itke2_y_t1";
  
  
  feature_name="percentiles90_vel_on_t1";
- if(u_test(percentiles_vel_on_pd(:,7),trimMean_vel_on_hc(:,7))<0.05)   %---condition for passing the test---%
+ if(u_test(percentiles_vel_on_pd(:,7),percentiles_vel_on_hc(:,7))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -3589,7 +3579,7 @@ feature_name="snr_itke2_y_t1";
  
  
  feature_name="percentiles95_vel_on_t1";
- if(u_test(percentiles_vel_on_pd(:,8),trimMean_vel_on_hc(:,8))<0.05)   %---condition for passing the test---%
+ if(u_test(percentiles_vel_on_pd(:,8),percentiles_vel_on_hc(:,8))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -3601,7 +3591,7 @@ feature_name="snr_itke2_y_t1";
  
  
  feature_name="percentiles99_vel_on_t1";
- if(u_test(percentiles_vel_on_pd(:,9),trimMean_vel_on_hc(:,9))<0.05)   %---condition for passing the test---%
+ if(u_test(percentiles_vel_on_pd(:,9),percentiles_vel_on_hc(:,9))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -3612,7 +3602,7 @@ feature_name="snr_itke2_y_t1";
  endif;
  
  feature_name="moments3_vel_on_t1";
- if(u_test(percentiles_vel_on_pd(:,1),trimMean_vel_on_hc(:,1))<0.05)   %---condition for passing the test---%
+ if(u_test(moments_vel_on_pd(:,1),moments_vel_on_hc(:,1))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -3624,7 +3614,7 @@ feature_name="snr_itke2_y_t1";
  
  
  feature_name="moments4_vel_on_t1";
- if(u_test(percentiles_vel_on_pd(:,2),trimMean_vel_on_hc(:,2))<0.05)   %---condition for passing the test---%
+ if(u_test(moments_vel_on_pd(:,2),moments_vel_on_hc(:,2))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -3636,7 +3626,7 @@ feature_name="snr_itke2_y_t1";
  
  
  feature_name="moments5_vel_on_t1";
- if(u_test(percentiles_vel_on_pd(:,3),trimMean_vel_on_hc(:,3))<0.05)   %---condition for passing the test---%
+ if(u_test(moments_vel_on_pd(:,3),moments_vel_on_hc(:,3))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -3648,7 +3638,7 @@ feature_name="snr_itke2_y_t1";
  
  
  feature_name="moments6_vel_on_t1";
- if(u_test(percentiles_vel_on_pd(:,4),trimMean_vel_on_hc(:,4))<0.05)   %---condition for passing the test---%
+ if(u_test(moments_vel_on_pd(:,4),moments_vel_on_hc(:,4))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -3657,7 +3647,6 @@ feature_name="snr_itke2_y_t1";
   failed=[failed;feature_name];
   
  endif;
- 
  
  feature_name="trimMean5_vel_off_t1";
  if(u_test(trimMean_vel_off_pd(:,1),trimMean_vel_off_hc(:,1))<0.05)   %---condition for passing the test---%
@@ -3714,19 +3703,8 @@ feature_name="snr_itke2_y_t1";
   
  endif;
  
- feature_name="percentiles1_vel_off_t1";
- if(u_test(percentiles_vel_off_pd(:,1),trimMean_vel_off_hc(:,1))<0.05)   %---condition for passing the test---%
- 
-  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
-  
- else
-  
-  failed=[failed;feature_name];
-  
- endif;
- 
  feature_name="percentiles5_vel_off_t1";
- if(u_test(percentiles_vel_off_pd(:,2),trimMean_vel_off_hc(:,2))<0.05)   %---condition for passing the test---%
+ if(u_test(percentiles_vel_off_pd(:,2),percentiles_vel_off_hc(:,2))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -3738,7 +3716,7 @@ feature_name="snr_itke2_y_t1";
  
  
  feature_name="percentiles10_vel_off_t1";
- if(u_test(percentiles_vel_off_pd(:,3),trimMean_vel_off_hc(:,3))<0.05)   %---condition for passing the test---%
+ if(u_test(percentiles_vel_off_pd(:,3),percentiles_vel_off_hc(:,3))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -3750,7 +3728,7 @@ feature_name="snr_itke2_y_t1";
  
  
  feature_name="percentiles20_vel_off_t1";
- if(u_test(percentiles_vel_off_pd(:,4),trimMean_vel_off_hc(:,4))<0.05)   %---condition for passing the test---%
+ if(u_test(percentiles_vel_off_pd(:,4),percentiles_vel_off_hc(:,4))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -3762,7 +3740,7 @@ feature_name="snr_itke2_y_t1";
  
  
  feature_name="percentiles25_vel_off_t1";
- if(u_test(percentiles_vel_off_pd(:,5),trimMean_vel_off_hc(:,5))<0.05)   %---condition for passing the test---%
+ if(u_test(percentiles_vel_off_pd(:,5),percentiles_vel_off_hc(:,5))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -3774,7 +3752,7 @@ feature_name="snr_itke2_y_t1";
  
  
  feature_name="percentiles30_vel_off_t1";
- if(u_test(percentiles_vel_off_pd(:,6),trimMean_vel_off_hc(:,6))<0.05)   %---condition for passing the test---%
+ if(u_test(percentiles_vel_off_pd(:,6),percentiles_vel_off_hc(:,6))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -3786,7 +3764,7 @@ feature_name="snr_itke2_y_t1";
  
  
  feature_name="percentiles90_vel_off_t1";
- if(u_test(percentiles_vel_off_pd(:,7),trimMean_vel_off_hc(:,7))<0.05)   %---condition for passing the test---%
+ if(u_test(percentiles_vel_off_pd(:,7),percentiles_vel_off_hc(:,7))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -3798,7 +3776,7 @@ feature_name="snr_itke2_y_t1";
  
  
  feature_name="percentiles95_vel_off_t1";
- if(u_test(percentiles_vel_off_pd(:,8),trimMean_vel_off_hc(:,8))<0.05)   %---condition for passing the test---%
+ if(u_test(percentiles_vel_off_pd(:,8),percentiles_vel_off_hc(:,8))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -3810,7 +3788,7 @@ feature_name="snr_itke2_y_t1";
  
  
  feature_name="percentiles99_vel_off_t1";
- if(u_test(percentiles_vel_off_pd(:,9),trimMean_vel_off_hc(:,9))<0.05)   %---condition for passing the test---%
+ if(u_test(percentiles_vel_off_pd(:,9),percentiles_vel_off_hc(:,9))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -3821,7 +3799,7 @@ feature_name="snr_itke2_y_t1";
  endif;
  
  feature_name="moments3_vel_off_t1";
- if(u_test(percentiles_vel_off_pd(:,1),trimMean_vel_off_hc(:,1))<0.05)   %---condition for passing the test---%
+ if(u_test(moments_vel_off_pd(:,1),moments_vel_off_hc(:,1))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -3833,7 +3811,7 @@ feature_name="snr_itke2_y_t1";
  
  
  feature_name="moments4_vel_off_t1";
- if(u_test(percentiles_vel_off_pd(:,2),trimMean_vel_off_hc(:,2))<0.05)   %---condition for passing the test---%
+ if(u_test(moments_vel_off_pd(:,2),moments_vel_off_hc(:,2))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -3845,7 +3823,7 @@ feature_name="snr_itke2_y_t1";
  
  
  feature_name="moments5_vel_off_t1";
- if(u_test(percentiles_vel_off_pd(:,3),trimMean_vel_off_hc(:,3))<0.05)   %---condition for passing the test---%
+ if(u_test(moments_vel_off_pd(:,3),moments_vel_off_hc(:,3))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -3857,7 +3835,7 @@ feature_name="snr_itke2_y_t1";
  
  
  feature_name="moments6_vel_off_t1";
- if(u_test(percentiles_vel_off_pd(:,4),trimMean_vel_off_hc(:,4))<0.05)   %---condition for passing the test---%
+ if(u_test(moments_vel_off_pd(:,4),moments_vel_off_hc(:,4))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -3866,7 +3844,6 @@ feature_name="snr_itke2_y_t1";
   failed=[failed;feature_name];
   
  endif;
- 
  
  feature_name="trimMean5_acc_on_t1";
  if(u_test(trimMean_acc_on_pd(:,1),trimMean_acc_on_hc(:,1))<0.05)   %---condition for passing the test---%
@@ -3923,19 +3900,8 @@ feature_name="snr_itke2_y_t1";
   
  endif;
  
- feature_name="percentiles1_acc_on_t1";
- if(u_test(percentiles_acc_on_pd(:,1),trimMean_acc_on_hc(:,1))<0.05)   %---condition for passing the test---%
- 
-  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
-  
- else
-  
-  failed=[failed;feature_name];
-  
- endif;
- 
  feature_name="percentiles5_acc_on_t1";
- if(u_test(percentiles_acc_on_pd(:,2),trimMean_acc_on_hc(:,2))<0.05)   %---condition for passing the test---%
+ if(u_test(percentiles_acc_on_pd(:,2),percentiles_acc_on_hc(:,2))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -3947,7 +3913,7 @@ feature_name="snr_itke2_y_t1";
  
  
  feature_name="percentiles10_acc_on_t1";
- if(u_test(percentiles_acc_on_pd(:,3),trimMean_acc_on_hc(:,3))<0.05)   %---condition for passing the test---%
+ if(u_test(percentiles_acc_on_pd(:,3),percentiles_acc_on_hc(:,3))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -3959,7 +3925,7 @@ feature_name="snr_itke2_y_t1";
  
  
  feature_name="percentiles20_acc_on_t1";
- if(u_test(percentiles_acc_on_pd(:,4),trimMean_acc_on_hc(:,4))<0.05)   %---condition for passing the test---%
+ if(u_test(percentiles_acc_on_pd(:,4),percentiles_acc_on_hc(:,4))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -3971,7 +3937,7 @@ feature_name="snr_itke2_y_t1";
  
  
  feature_name="percentiles25_acc_on_t1";
- if(u_test(percentiles_acc_on_pd(:,5),trimMean_acc_on_hc(:,5))<0.05)   %---condition for passing the test---%
+ if(u_test(percentiles_acc_on_pd(:,5),percentiles_acc_on_hc(:,5))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -3983,7 +3949,7 @@ feature_name="snr_itke2_y_t1";
  
  
  feature_name="percentiles30_acc_on_t1";
- if(u_test(percentiles_acc_on_pd(:,6),trimMean_acc_on_hc(:,6))<0.05)   %---condition for passing the test---%
+ if(u_test(percentiles_acc_on_pd(:,6),percentiles_acc_on_hc(:,6))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -3995,7 +3961,7 @@ feature_name="snr_itke2_y_t1";
  
  
  feature_name="percentiles90_acc_on_t1";
- if(u_test(percentiles_acc_on_pd(:,7),trimMean_acc_on_hc(:,7))<0.05)   %---condition for passing the test---%
+ if(u_test(percentiles_acc_on_pd(:,7),percentiles_acc_on_hc(:,7))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -4007,7 +3973,7 @@ feature_name="snr_itke2_y_t1";
  
  
  feature_name="percentiles95_acc_on_t1";
- if(u_test(percentiles_acc_on_pd(:,8),trimMean_acc_on_hc(:,8))<0.05)   %---condition for passing the test---%
+ if(u_test(percentiles_acc_on_pd(:,8),percentiles_acc_on_hc(:,8))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -4019,7 +3985,7 @@ feature_name="snr_itke2_y_t1";
  
  
  feature_name="percentiles99_acc_on_t1";
- if(u_test(percentiles_acc_on_pd(:,9),trimMean_acc_on_hc(:,9))<0.05)   %---condition for passing the test---%
+ if(u_test(percentiles_acc_on_pd(:,9),percentiles_acc_on_hc(:,9))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -4030,7 +3996,7 @@ feature_name="snr_itke2_y_t1";
  endif;
  
  feature_name="moments3_acc_on_t1";
- if(u_test(percentiles_acc_on_pd(:,1),trimMean_acc_on_hc(:,1))<0.05)   %---condition for passing the test---%
+ if(u_test(moments_acc_on_pd(:,1),moments_acc_on_hc(:,1))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -4042,7 +4008,7 @@ feature_name="snr_itke2_y_t1";
  
  
  feature_name="moments4_acc_on_t1";
- if(u_test(percentiles_acc_on_pd(:,2),trimMean_acc_on_hc(:,2))<0.05)   %---condition for passing the test---%
+ if(u_test(moments_acc_on_pd(:,2),moments_acc_on_hc(:,2))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -4054,7 +4020,7 @@ feature_name="snr_itke2_y_t1";
  
  
  feature_name="moments5_acc_on_t1";
- if(u_test(percentiles_acc_on_pd(:,3),trimMean_acc_on_hc(:,3))<0.05)   %---condition for passing the test---%
+ if(u_test(moments_acc_on_pd(:,3),moments_acc_on_hc(:,3))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -4066,7 +4032,7 @@ feature_name="snr_itke2_y_t1";
  
  
  feature_name="moments6_acc_on_t1";
- if(u_test(percentiles_acc_on_pd(:,4),trimMean_acc_on_hc(:,4))<0.05)   %---condition for passing the test---%
+ if(u_test(moments_acc_on_pd(:,4),moments_acc_on_hc(:,4))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -4075,7 +4041,6 @@ feature_name="snr_itke2_y_t1";
   failed=[failed;feature_name];
   
  endif;
- 
  
  feature_name="trimMean5_acc_off_t1";
  if(u_test(trimMean_acc_off_pd(:,1),trimMean_acc_off_hc(:,1))<0.05)   %---condition for passing the test---%
@@ -4132,19 +4097,8 @@ feature_name="snr_itke2_y_t1";
   
  endif;
  
- feature_name="percentiles1_acc_off_t1";
- if(u_test(percentiles_acc_off_pd(:,1),trimMean_acc_off_hc(:,1))<0.05)   %---condition for passing the test---%
- 
-  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
-  
- else
-  
-  failed=[failed;feature_name];
-  
- endif;
- 
  feature_name="percentiles5_acc_off_t1";
- if(u_test(percentiles_acc_off_pd(:,2),trimMean_acc_off_hc(:,2))<0.05)   %---condition for passing the test---%
+ if(u_test(percentiles_acc_off_pd(:,2),percentiles_acc_off_hc(:,2))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -4156,7 +4110,7 @@ feature_name="snr_itke2_y_t1";
  
  
  feature_name="percentiles10_acc_off_t1";
- if(u_test(percentiles_acc_off_pd(:,3),trimMean_acc_off_hc(:,3))<0.05)   %---condition for passing the test---%
+ if(u_test(percentiles_acc_off_pd(:,3),percentiles_acc_off_hc(:,3))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -4168,7 +4122,7 @@ feature_name="snr_itke2_y_t1";
  
  
  feature_name="percentiles20_acc_off_t1";
- if(u_test(percentiles_acc_off_pd(:,4),trimMean_acc_off_hc(:,4))<0.05)   %---condition for passing the test---%
+ if(u_test(percentiles_acc_off_pd(:,4),percentiles_acc_off_hc(:,4))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -4180,7 +4134,7 @@ feature_name="snr_itke2_y_t1";
  
  
  feature_name="percentiles25_acc_off_t1";
- if(u_test(percentiles_acc_off_pd(:,5),trimMean_acc_off_hc(:,5))<0.05)   %---condition for passing the test---%
+ if(u_test(percentiles_acc_off_pd(:,5),percentiles_acc_off_hc(:,5))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -4192,7 +4146,7 @@ feature_name="snr_itke2_y_t1";
  
  
  feature_name="percentiles30_acc_off_t1";
- if(u_test(percentiles_acc_off_pd(:,6),trimMean_acc_off_hc(:,6))<0.05)   %---condition for passing the test---%
+ if(u_test(percentiles_acc_off_pd(:,6),percentiles_acc_off_hc(:,6))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -4204,7 +4158,7 @@ feature_name="snr_itke2_y_t1";
  
  
  feature_name="percentiles90_acc_off_t1";
- if(u_test(percentiles_acc_off_pd(:,7),trimMean_acc_off_hc(:,7))<0.05)   %---condition for passing the test---%
+ if(u_test(percentiles_acc_off_pd(:,7),percentiles_acc_off_hc(:,7))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -4216,7 +4170,7 @@ feature_name="snr_itke2_y_t1";
  
  
  feature_name="percentiles95_acc_off_t1";
- if(u_test(percentiles_acc_off_pd(:,8),trimMean_acc_off_hc(:,8))<0.05)   %---condition for passing the test---%
+ if(u_test(percentiles_acc_off_pd(:,8),percentiles_acc_off_hc(:,8))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -4228,7 +4182,7 @@ feature_name="snr_itke2_y_t1";
  
  
  feature_name="percentiles99_acc_off_t1";
- if(u_test(percentiles_acc_off_pd(:,9),trimMean_acc_off_hc(:,9))<0.05)   %---condition for passing the test---%
+ if(u_test(percentiles_acc_off_pd(:,9),percentiles_acc_off_hc(:,9))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -4239,7 +4193,7 @@ feature_name="snr_itke2_y_t1";
  endif;
  
  feature_name="moments3_acc_off_t1";
- if(u_test(percentiles_acc_off_pd(:,1),trimMean_acc_off_hc(:,1))<0.05)   %---condition for passing the test---%
+ if(u_test(moments_acc_off_pd(:,1),moments_acc_off_hc(:,1))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -4251,7 +4205,7 @@ feature_name="snr_itke2_y_t1";
  
  
  feature_name="moments4_acc_off_t1";
- if(u_test(percentiles_acc_off_pd(:,2),trimMean_acc_off_hc(:,2))<0.05)   %---condition for passing the test---%
+ if(u_test(moments_acc_off_pd(:,2),moments_acc_off_hc(:,2))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -4263,7 +4217,7 @@ feature_name="snr_itke2_y_t1";
  
  
  feature_name="moments5_acc_off_t1";
- if(u_test(percentiles_acc_off_pd(:,3),trimMean_acc_off_hc(:,3))<0.05)   %---condition for passing the test---%
+ if(u_test(moments_acc_off_pd(:,3),moments_acc_off_hc(:,3))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -4275,7 +4229,7 @@ feature_name="snr_itke2_y_t1";
  
  
  feature_name="moments6_acc_off_t1";
- if(u_test(percentiles_acc_off_pd(:,4),trimMean_acc_off_hc(:,4))<0.05)   %---condition for passing the test---%
+ if(u_test(moments_acc_off_pd(:,4),moments_acc_off_hc(:,4))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -4284,7 +4238,6 @@ feature_name="snr_itke2_y_t1";
   failed=[failed;feature_name];
   
  endif;
- 
  
  feature_name="trimMean5_jerk_on_t1";
  if(u_test(trimMean_jerk_on_pd(:,1),trimMean_jerk_on_hc(:,1))<0.05)   %---condition for passing the test---%
@@ -4341,160 +4294,6 @@ feature_name="snr_itke2_y_t1";
   
  endif;
  
- feature_name="percentiles1_jerk_on_t1";
- if(u_test(percentiles_jerk_on_pd(:,1),trimMean_jerk_on_hc(:,1))<0.05)   %---condition for passing the test---%
- 
-  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
-  
- else
-  
-  failed=[failed;feature_name];
-  
- endif;
- 
- feature_name="percentiles5_jerk_on_t1";
- if(u_test(percentiles_jerk_on_pd(:,2),trimMean_jerk_on_hc(:,2))<0.05)   %---condition for passing the test---%
- 
-  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
-  
- else
-  
-  failed=[failed;feature_name];
-  
- endif;
- 
- 
- feature_name="percentiles10_jerk_on_t1";
- if(u_test(percentiles_jerk_on_pd(:,3),trimMean_jerk_on_hc(:,3))<0.05)   %---condition for passing the test---%
- 
-  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
-  
- else
-  
-  failed=[failed;feature_name];
-  
- endif;
- 
- 
- feature_name="percentiles20_jerk_on_t1";
- if(u_test(percentiles_jerk_on_pd(:,4),trimMean_jerk_on_hc(:,4))<0.05)   %---condition for passing the test---%
- 
-  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
-  
- else
-  
-  failed=[failed;feature_name];
-  
- endif;
- 
- 
- feature_name="percentiles25_jerk_on_t1";
- if(u_test(percentiles_jerk_on_pd(:,5),trimMean_jerk_on_hc(:,5))<0.05)   %---condition for passing the test---%
- 
-  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
-  
- else
-  
-  failed=[failed;feature_name];
-  
- endif;
- 
- 
- feature_name="percentiles30_jerk_on_t1";
- if(u_test(percentiles_jerk_on_pd(:,6),trimMean_jerk_on_hc(:,6))<0.05)   %---condition for passing the test---%
- 
-  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
-  
- else
-  
-  failed=[failed;feature_name];
-  
- endif;
- 
- 
- feature_name="percentiles90_jerk_on_t1";
- if(u_test(percentiles_jerk_on_pd(:,7),trimMean_jerk_on_hc(:,7))<0.05)   %---condition for passing the test---%
- 
-  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
-  
- else
-  
-  failed=[failed;feature_name];
-  
- endif;
- 
- 
- feature_name="percentiles95_jerk_on_t1";
- if(u_test(percentiles_jerk_on_pd(:,8),trimMean_jerk_on_hc(:,8))<0.05)   %---condition for passing the test---%
- 
-  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
-  
- else
-  
-  failed=[failed;feature_name];
-  
- endif;
- 
- 
- feature_name="percentiles99_jerk_on_t1";
- if(u_test(percentiles_jerk_on_pd(:,9),trimMean_jerk_on_hc(:,9))<0.05)   %---condition for passing the test---%
- 
-  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
-  
- else
-  
-  failed=[failed;feature_name];
-  
- endif;
- 
- feature_name="moments3_jerk_on_t1";
- if(u_test(percentiles_jerk_on_pd(:,1),trimMean_jerk_on_hc(:,1))<0.05)   %---condition for passing the test---%
- 
-  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
-  
- else
-  
-  failed=[failed;feature_name];
-  
- endif;
- 
- 
- feature_name="moments4_jerk_on_t1";
- if(u_test(percentiles_jerk_on_pd(:,2),trimMean_jerk_on_hc(:,2))<0.05)   %---condition for passing the test---%
- 
-  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
-  
- else
-  
-  failed=[failed;feature_name];
-  
- endif;
- 
- 
- feature_name="moments5_jerk_on_t1";
- if(u_test(percentiles_jerk_on_pd(:,3),trimMean_jerk_on_hc(:,3))<0.05)   %---condition for passing the test---%
- 
-  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
-  
- else
-  
-  failed=[failed;feature_name];
-  
- endif;
- 
- 
- feature_name="moments6_jerk_on_t1";
- if(u_test(percentiles_jerk_on_pd(:,4),trimMean_jerk_on_hc(:,4))<0.05)   %---condition for passing the test---%
- 
-  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
-  
- else
-  
-  failed=[failed;feature_name];
-  
- endif;
- 
- 
  feature_name="trimMean5_jerk_off_t1";
  if(u_test(trimMean_jerk_off_pd(:,1),trimMean_jerk_off_hc(:,1))<0.05)   %---condition for passing the test---%
  
@@ -4506,6 +4305,149 @@ feature_name="snr_itke2_y_t1";
   
  endif;
  
+ 
+ feature_name="percentiles5_jerk_on_t1";
+ if(u_test(percentiles_jerk_on_pd(:,2),percentiles_jerk_on_hc(:,2))<0.05)   %---condition for passing the test---%
+ 
+  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
+  
+ else
+  
+  failed=[failed;feature_name];
+  
+ endif;
+ 
+ 
+ feature_name="percentiles10_jerk_on_t1";
+ if(u_test(percentiles_jerk_on_pd(:,3),percentiles_jerk_on_hc(:,3))<0.05)   %---condition for passing the test---%
+ 
+  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
+  
+ else
+  
+  failed=[failed;feature_name];
+  
+ endif;
+ 
+ 
+ feature_name="percentiles20_jerk_on_t1";
+ if(u_test(percentiles_jerk_on_pd(:,4),percentiles_jerk_on_hc(:,4))<0.05)   %---condition for passing the test---%
+ 
+  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
+  
+ else
+  
+  failed=[failed;feature_name];
+  
+ endif;
+ 
+ 
+ feature_name="percentiles25_jerk_on_t1";
+ if(u_test(percentiles_jerk_on_pd(:,5),percentiles_jerk_on_hc(:,5))<0.05)   %---condition for passing the test---%
+ 
+  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
+  
+ else
+  
+  failed=[failed;feature_name];
+  
+ endif;
+ 
+ 
+ feature_name="percentiles30_jerk_on_t1";
+ if(u_test(percentiles_jerk_on_pd(:,6),percentiles_jerk_on_hc(:,6))<0.05)   %---condition for passing the test---%
+ 
+  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
+  
+ else
+  
+  failed=[failed;feature_name];
+  
+ endif;
+ 
+ 
+ feature_name="percentiles90_jerk_on_t1";
+ if(u_test(percentiles_jerk_on_pd(:,7),percentiles_jerk_on_hc(:,7))<0.05)   %---condition for passing the test---%
+ 
+  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
+  
+ else
+  
+  failed=[failed;feature_name];
+  
+ endif;
+ 
+ 
+ feature_name="percentiles95_jerk_on_t1";
+ if(u_test(percentiles_jerk_on_pd(:,8),percentiles_jerk_on_hc(:,8))<0.05)   %---condition for passing the test---%
+ 
+  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
+  
+ else
+  
+  failed=[failed;feature_name];
+  
+ endif;
+ 
+ 
+ feature_name="percentiles99_jerk_on_t1";
+ if(u_test(percentiles_jerk_on_pd(:,9),percentiles_jerk_on_hc(:,9))<0.05)   %---condition for passing the test---%
+ 
+  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
+  
+ else
+  
+  failed=[failed;feature_name];
+  
+ endif;
+ 
+ feature_name="moments3_jerk_on_t1";
+ if(u_test(moments_jerk_on_pd(:,1),moments_jerk_on_hc(:,1))<0.05)   %---condition for passing the test---%
+ 
+  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
+  
+ else
+  
+  failed=[failed;feature_name];
+  
+ endif;
+ 
+ 
+ feature_name="moments4_jerk_on_t1";
+ if(u_test(moments_jerk_on_pd(:,2),moments_jerk_on_hc(:,2))<0.05)   %---condition for passing the test---%
+ 
+  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
+  
+ else
+  
+  failed=[failed;feature_name];
+  
+ endif;
+ 
+ 
+ feature_name="moments5_jerk_on_t1";
+ if(u_test(moments_jerk_on_pd(:,3),moments_jerk_on_hc(:,3))<0.05)   %---condition for passing the test---%
+ 
+  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
+  
+ else
+  
+  failed=[failed;feature_name];
+  
+ endif;
+ 
+ 
+ feature_name="moments6_jerk_on_t1";
+ if(u_test(moments_jerk_on_pd(:,4),moments_jerk_on_hc(:,4))<0.05)   %---condition for passing the test---%
+ 
+  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
+  
+ else
+  
+  failed=[failed;feature_name];
+  
+ endif;
+
  feature_name="trimMean10_jerk_off_t1";
  if(u_test(trimMean_jerk_off_pd(:,2),trimMean_jerk_off_hc(:,2))<0.05)   %---condition for passing the test---%
  
@@ -4550,19 +4492,8 @@ feature_name="snr_itke2_y_t1";
   
  endif;
  
- feature_name="percentiles1_jerk_off_t1";
- if(u_test(percentiles_jerk_off_pd(:,1),trimMean_jerk_off_hc(:,1))<0.05)   %---condition for passing the test---%
- 
-  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
-  
- else
-  
-  failed=[failed;feature_name];
-  
- endif;
- 
  feature_name="percentiles5_jerk_off_t1";
- if(u_test(percentiles_jerk_off_pd(:,2),trimMean_jerk_off_hc(:,2))<0.05)   %---condition for passing the test---%
+ if(u_test(percentiles_jerk_off_pd(:,2),percentiles_jerk_off_hc(:,2))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -4574,7 +4505,7 @@ feature_name="snr_itke2_y_t1";
  
  
  feature_name="percentiles10_jerk_off_t1";
- if(u_test(percentiles_jerk_off_pd(:,3),trimMean_jerk_off_hc(:,3))<0.05)   %---condition for passing the test---%
+ if(u_test(percentiles_jerk_off_pd(:,3),percentiles_jerk_off_hc(:,3))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -4586,7 +4517,7 @@ feature_name="snr_itke2_y_t1";
  
  
  feature_name="percentiles20_jerk_off_t1";
- if(u_test(percentiles_jerk_off_pd(:,4),trimMean_jerk_off_hc(:,4))<0.05)   %---condition for passing the test---%
+ if(u_test(percentiles_jerk_off_pd(:,4),percentiles_jerk_off_hc(:,4))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -4598,7 +4529,7 @@ feature_name="snr_itke2_y_t1";
  
  
  feature_name="percentiles25_jerk_off_t1";
- if(u_test(percentiles_jerk_off_pd(:,5),trimMean_jerk_off_hc(:,5))<0.05)   %---condition for passing the test---%
+ if(u_test(percentiles_jerk_off_pd(:,5),percentiles_jerk_off_hc(:,5))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -4610,7 +4541,7 @@ feature_name="snr_itke2_y_t1";
  
  
  feature_name="percentiles30_jerk_off_t1";
- if(u_test(percentiles_jerk_off_pd(:,6),trimMean_jerk_off_hc(:,6))<0.05)   %---condition for passing the test---%
+ if(u_test(percentiles_jerk_off_pd(:,6),percentiles_jerk_off_hc(:,6))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -4622,7 +4553,7 @@ feature_name="snr_itke2_y_t1";
  
  
  feature_name="percentiles90_jerk_off_t1";
- if(u_test(percentiles_jerk_off_pd(:,7),trimMean_jerk_off_hc(:,7))<0.05)   %---condition for passing the test---%
+ if(u_test(percentiles_jerk_off_pd(:,7),percentiles_jerk_off_hc(:,7))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -4634,7 +4565,7 @@ feature_name="snr_itke2_y_t1";
  
  
  feature_name="percentiles95_jerk_off_t1";
- if(u_test(percentiles_jerk_off_pd(:,8),trimMean_jerk_off_hc(:,8))<0.05)   %---condition for passing the test---%
+ if(u_test(percentiles_jerk_off_pd(:,8),percentiles_jerk_off_hc(:,8))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -4646,7 +4577,7 @@ feature_name="snr_itke2_y_t1";
  
  
  feature_name="percentiles99_jerk_off_t1";
- if(u_test(percentiles_jerk_off_pd(:,9),trimMean_jerk_off_hc(:,9))<0.05)   %---condition for passing the test---%
+ if(u_test(percentiles_jerk_off_pd(:,9),percentiles_jerk_off_hc(:,9))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -4657,7 +4588,7 @@ feature_name="snr_itke2_y_t1";
  endif;
  
  feature_name="moments3_jerk_off_t1";
- if(u_test(percentiles_jerk_off_pd(:,1),trimMean_jerk_off_hc(:,1))<0.05)   %---condition for passing the test---%
+ if(u_test(moments_jerk_off_pd(:,1),moments_jerk_off_hc(:,1))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -4669,7 +4600,7 @@ feature_name="snr_itke2_y_t1";
  
  
  feature_name="moments4_jerk_off_t1";
- if(u_test(percentiles_jerk_off_pd(:,2),trimMean_jerk_off_hc(:,2))<0.05)   %---condition for passing the test---%
+ if(u_test(moments_jerk_off_pd(:,2),moments_jerk_off_hc(:,2))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -4681,7 +4612,7 @@ feature_name="snr_itke2_y_t1";
  
  
  feature_name="moments5_jerk_off_t1";
- if(u_test(percentiles_jerk_off_pd(:,3),trimMean_jerk_off_hc(:,3))<0.05)   %---condition for passing the test---%
+ if(u_test(moments_jerk_off_pd(:,3),moments_jerk_off_hc(:,3))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -4693,7 +4624,7 @@ feature_name="snr_itke2_y_t1";
  
  
  feature_name="moments6_jerk_off_t1";
- if(u_test(percentiles_jerk_off_pd(:,4),trimMean_jerk_off_hc(:,4))<0.05)   %---condition for passing the test---%
+ if(u_test(moments_jerk_off_pd(:,4),moments_jerk_off_hc(:,4))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -4759,19 +4690,9 @@ feature_name="snr_itke2_y_t1";
   
  endif;
  
- feature_name="percentiles1_x_vel_on_t1";
- if(u_test(percentiles_x_vel_on_pd(:,1),trimMean_x_vel_on_hc(:,1))<0.05)   %---condition for passing the test---%
- 
-  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
-  
- else
-  
-  failed=[failed;feature_name];
-  
- endif;
  
  feature_name="percentiles5_x_vel_on_t1";
- if(u_test(percentiles_x_vel_on_pd(:,2),trimMean_x_vel_on_hc(:,2))<0.05)   %---condition for passing the test---%
+ if(u_test(percentiles_x_vel_on_pd(:,2),percentiles_x_vel_on_hc(:,2))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -4783,7 +4704,7 @@ feature_name="snr_itke2_y_t1";
  
  
  feature_name="percentiles10_x_vel_on_t1";
- if(u_test(percentiles_x_vel_on_pd(:,3),trimMean_x_vel_on_hc(:,3))<0.05)   %---condition for passing the test---%
+ if(u_test(percentiles_x_vel_on_pd(:,3),percentiles_x_vel_on_hc(:,3))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -4795,7 +4716,7 @@ feature_name="snr_itke2_y_t1";
  
  
  feature_name="percentiles20_x_vel_on_t1";
- if(u_test(percentiles_x_vel_on_pd(:,4),trimMean_x_vel_on_hc(:,4))<0.05)   %---condition for passing the test---%
+ if(u_test(percentiles_x_vel_on_pd(:,4),percentiles_x_vel_on_hc(:,4))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -4807,7 +4728,7 @@ feature_name="snr_itke2_y_t1";
  
  
  feature_name="percentiles25_x_vel_on_t1";
- if(u_test(percentiles_x_vel_on_pd(:,5),trimMean_x_vel_on_hc(:,5))<0.05)   %---condition for passing the test---%
+ if(u_test(percentiles_x_vel_on_pd(:,5),percentiles_x_vel_on_hc(:,5))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -4819,7 +4740,7 @@ feature_name="snr_itke2_y_t1";
  
  
  feature_name="percentiles30_x_vel_on_t1";
- if(u_test(percentiles_x_vel_on_pd(:,6),trimMean_x_vel_on_hc(:,6))<0.05)   %---condition for passing the test---%
+ if(u_test(percentiles_x_vel_on_pd(:,6),percentiles_x_vel_on_hc(:,6))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -4831,7 +4752,7 @@ feature_name="snr_itke2_y_t1";
  
  
  feature_name="percentiles90_x_vel_on_t1";
- if(u_test(percentiles_x_vel_on_pd(:,7),trimMean_x_vel_on_hc(:,7))<0.05)   %---condition for passing the test---%
+ if(u_test(percentiles_x_vel_on_pd(:,7),percentiles_x_vel_on_hc(:,7))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -4843,7 +4764,7 @@ feature_name="snr_itke2_y_t1";
  
  
  feature_name="percentiles95_x_vel_on_t1";
- if(u_test(percentiles_x_vel_on_pd(:,8),trimMean_x_vel_on_hc(:,8))<0.05)   %---condition for passing the test---%
+ if(u_test(percentiles_x_vel_on_pd(:,8),percentiles_x_vel_on_hc(:,8))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -4855,7 +4776,7 @@ feature_name="snr_itke2_y_t1";
  
  
  feature_name="percentiles99_x_vel_on_t1";
- if(u_test(percentiles_x_vel_on_pd(:,9),trimMean_x_vel_on_hc(:,9))<0.05)   %---condition for passing the test---%
+ if(u_test(percentiles_x_vel_on_pd(:,9),percentiles_x_vel_on_hc(:,9))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -4866,7 +4787,7 @@ feature_name="snr_itke2_y_t1";
  endif;
  
  feature_name="moments3_x_vel_on_t1";
- if(u_test(percentiles_x_vel_on_pd(:,1),trimMean_x_vel_on_hc(:,1))<0.05)   %---condition for passing the test---%
+ if(u_test(moments_x_vel_on_pd(:,1),moments_x_vel_on_hc(:,1))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -4878,7 +4799,7 @@ feature_name="snr_itke2_y_t1";
  
  
  feature_name="moments4_x_vel_on_t1";
- if(u_test(percentiles_x_vel_on_pd(:,2),trimMean_x_vel_on_hc(:,2))<0.05)   %---condition for passing the test---%
+ if(u_test(moments_x_vel_on_pd(:,2),moments_x_vel_on_hc(:,2))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -4890,7 +4811,7 @@ feature_name="snr_itke2_y_t1";
  
  
  feature_name="moments5_x_vel_on_t1";
- if(u_test(percentiles_x_vel_on_pd(:,3),trimMean_x_vel_on_hc(:,3))<0.05)   %---condition for passing the test---%
+ if(u_test(moments_x_vel_on_pd(:,3),moments_x_vel_on_hc(:,3))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -4902,7 +4823,7 @@ feature_name="snr_itke2_y_t1";
  
  
  feature_name="moments6_x_vel_on_t1";
- if(u_test(percentiles_x_vel_on_pd(:,4),trimMean_x_vel_on_hc(:,4))<0.05)   %---condition for passing the test---%
+ if(u_test(moments_x_vel_on_pd(:,4),moments_x_vel_on_hc(:,4))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -4912,6 +4833,202 @@ feature_name="snr_itke2_y_t1";
   
  endif;
  
+ feature_name="trimMean5_x_vel_off_t1";
+ if(u_test(trimMean_x_vel_off_pd(:,1),trimMean_x_vel_off_hc(:,1))<0.05)   %---condition for passing the test---%
+ 
+  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
+  
+ else
+  
+  failed=[failed;feature_name];
+  
+ endif;
+ 
+ feature_name="trimMean10_x_vel_off_t1";
+ if(u_test(trimMean_x_vel_off_pd(:,2),trimMean_x_vel_off_hc(:,2))<0.05)   %---condition for passing the test---%
+ 
+  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
+  
+ else
+  
+  failed=[failed;feature_name];
+  
+ endif;
+ 
+ feature_name="trimMean20_x_vel_off_t1";
+ if(u_test(trimMean_x_vel_off_pd(:,3),trimMean_x_vel_off_hc(:,3))<0.05)   %---condition for passing the test---%
+ 
+  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
+  
+ else
+  
+  failed=[failed;feature_name];
+  
+ endif;
+ 
+ feature_name="trimMean30_x_vel_off_t1";
+ if(u_test(trimMean_x_vel_off_pd(:,4),trimMean_x_vel_off_hc(:,4))<0.05)   %---condition for passing the test---%
+ 
+  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
+  
+ else
+  
+  failed=[failed;feature_name];
+  
+ endif;
+ 
+ feature_name="trimMean40_x_vel_off_t1";
+ if(u_test(trimMean_x_vel_off_pd(:,5),trimMean_x_vel_off_hc(:,5))<0.05)   %---condition for passing the test---%
+ 
+  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
+  
+ else
+  
+  failed=[failed;feature_name];
+  
+ endif;
+ 
+ feature_name="percentiles5_x_vel_off_t1";
+ if(u_test(percentiles_x_vel_off_pd(:,2),percentiles_x_vel_off_hc(:,2))<0.05)   %---condition for passing the test---%
+ 
+  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
+  
+ else
+  
+  failed=[failed;feature_name];
+  
+ endif;
+ 
+ 
+ feature_name="percentiles10_x_vel_off_t1";
+ if(u_test(percentiles_x_vel_off_pd(:,3),percentiles_x_vel_off_hc(:,3))<0.05)   %---condition for passing the test---%
+ 
+  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
+  
+ else
+  
+  failed=[failed;feature_name];
+  
+ endif;
+ 
+ 
+ feature_name="percentiles20_x_vel_off_t1";
+ if(u_test(percentiles_x_vel_off_pd(:,4),percentiles_x_vel_off_hc(:,4))<0.05)   %---condition for passing the test---%
+ 
+  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
+  
+ else
+  
+  failed=[failed;feature_name];
+  
+ endif;
+ 
+ 
+ feature_name="percentiles25_x_vel_off_t1";
+ if(u_test(percentiles_x_vel_off_pd(:,5),percentiles_x_vel_off_hc(:,5))<0.05)   %---condition for passing the test---%
+ 
+  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
+  
+ else
+  
+  failed=[failed;feature_name];
+  
+ endif;
+ 
+ 
+ feature_name="percentiles30_x_vel_off_t1";
+ if(u_test(percentiles_x_vel_off_pd(:,6),percentiles_x_vel_off_hc(:,6))<0.05)   %---condition for passing the test---%
+ 
+  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
+  
+ else
+  
+  failed=[failed;feature_name];
+  
+ endif;
+ 
+ 
+ feature_name="percentiles90_x_vel_off_t1";
+ if(u_test(percentiles_x_vel_off_pd(:,7),percentiles_x_vel_off_hc(:,7))<0.05)   %---condition for passing the test---%
+ 
+  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
+  
+ else
+  
+  failed=[failed;feature_name];
+  
+ endif;
+ 
+ 
+ feature_name="percentiles95_x_vel_off_t1";
+ if(u_test(percentiles_x_vel_off_pd(:,8),percentiles_x_vel_off_hc(:,8))<0.05)   %---condition for passing the test---%
+ 
+  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
+  
+ else
+  
+  failed=[failed;feature_name];
+  
+ endif;
+ 
+ 
+ feature_name="percentiles99_x_vel_off_t1";
+ if(u_test(percentiles_x_vel_off_pd(:,9),percentiles_x_vel_off_hc(:,9))<0.05)   %---condition for passing the test---%
+ 
+  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
+  
+ else
+  
+  failed=[failed;feature_name];
+  
+ endif;
+ 
+ feature_name="moments3_x_vel_off_t1";
+ if(u_test(moments_x_vel_off_pd(:,1),moments_x_vel_off_hc(:,1))<0.05)   %---condition for passing the test---%
+ 
+  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
+  
+ else
+  
+  failed=[failed;feature_name];
+  
+ endif;
+ 
+ 
+ feature_name="moments4_x_vel_off_t1";
+ if(u_test(moments_x_vel_off_pd(:,2),moments_x_vel_off_hc(:,2))<0.05)   %---condition for passing the test---%
+ 
+  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
+  
+ else
+  
+  failed=[failed;feature_name];
+  
+ endif;
+ 
+ 
+ feature_name="moments5_x_vel_off_t1";
+ if(u_test(moments_x_vel_off_pd(:,3),moments_x_vel_off_hc(:,3))<0.05)   %---condition for passing the test---%
+ 
+  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
+  
+ else
+  
+  failed=[failed;feature_name];
+  
+ endif;
+ 
+ 
+ feature_name="moments6_x_vel_off_t1";
+ if(u_test(moments_x_vel_off_pd(:,4),moments_x_vel_off_hc(:,4))<0.05)   %---condition for passing the test---%
+ 
+  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
+  
+ else
+  
+  failed=[failed;feature_name];
+  
+ endif;
  
  feature_name="trimMean5_x_acc_on_t1";
  if(u_test(trimMean_x_acc_on_pd(:,1),trimMean_x_acc_on_hc(:,1))<0.05)   %---condition for passing the test---%
@@ -4968,19 +5085,8 @@ feature_name="snr_itke2_y_t1";
   
  endif;
  
- feature_name="percentiles1_x_acc_on_t1";
- if(u_test(percentiles_x_acc_on_pd(:,1),trimMean_x_acc_on_hc(:,1))<0.05)   %---condition for passing the test---%
- 
-  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
-  
- else
-  
-  failed=[failed;feature_name];
-  
- endif;
- 
  feature_name="percentiles5_x_acc_on_t1";
- if(u_test(percentiles_x_acc_on_pd(:,2),trimMean_x_acc_on_hc(:,2))<0.05)   %---condition for passing the test---%
+ if(u_test(percentiles_x_acc_on_pd(:,2),percentiles_x_acc_on_hc(:,2))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -4992,7 +5098,7 @@ feature_name="snr_itke2_y_t1";
  
  
  feature_name="percentiles10_x_acc_on_t1";
- if(u_test(percentiles_x_acc_on_pd(:,3),trimMean_x_acc_on_hc(:,3))<0.05)   %---condition for passing the test---%
+ if(u_test(percentiles_x_acc_on_pd(:,3),percentiles_x_acc_on_hc(:,3))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -5004,7 +5110,7 @@ feature_name="snr_itke2_y_t1";
  
  
  feature_name="percentiles20_x_acc_on_t1";
- if(u_test(percentiles_x_acc_on_pd(:,4),trimMean_x_acc_on_hc(:,4))<0.05)   %---condition for passing the test---%
+ if(u_test(percentiles_x_acc_on_pd(:,4),percentiles_x_acc_on_hc(:,4))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -5016,7 +5122,7 @@ feature_name="snr_itke2_y_t1";
  
  
  feature_name="percentiles25_x_acc_on_t1";
- if(u_test(percentiles_x_acc_on_pd(:,5),trimMean_x_acc_on_hc(:,5))<0.05)   %---condition for passing the test---%
+ if(u_test(percentiles_x_acc_on_pd(:,5),percentiles_x_acc_on_hc(:,5))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -5028,7 +5134,7 @@ feature_name="snr_itke2_y_t1";
  
  
  feature_name="percentiles30_x_acc_on_t1";
- if(u_test(percentiles_x_acc_on_pd(:,6),trimMean_x_acc_on_hc(:,6))<0.05)   %---condition for passing the test---%
+ if(u_test(percentiles_x_acc_on_pd(:,6),percentiles_x_acc_on_hc(:,6))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -5040,7 +5146,7 @@ feature_name="snr_itke2_y_t1";
  
  
  feature_name="percentiles90_x_acc_on_t1";
- if(u_test(percentiles_x_acc_on_pd(:,7),trimMean_x_acc_on_hc(:,7))<0.05)   %---condition for passing the test---%
+ if(u_test(percentiles_x_acc_on_pd(:,7),percentiles_x_acc_on_hc(:,7))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -5052,7 +5158,7 @@ feature_name="snr_itke2_y_t1";
  
  
  feature_name="percentiles95_x_acc_on_t1";
- if(u_test(percentiles_x_acc_on_pd(:,8),trimMean_x_acc_on_hc(:,8))<0.05)   %---condition for passing the test---%
+ if(u_test(percentiles_x_acc_on_pd(:,8),percentiles_x_acc_on_hc(:,8))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -5064,7 +5170,7 @@ feature_name="snr_itke2_y_t1";
  
  
  feature_name="percentiles99_x_acc_on_t1";
- if(u_test(percentiles_x_acc_on_pd(:,9),trimMean_x_acc_on_hc(:,9))<0.05)   %---condition for passing the test---%
+ if(u_test(percentiles_x_acc_on_pd(:,9),percentiles_x_acc_on_hc(:,9))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -5075,7 +5181,7 @@ feature_name="snr_itke2_y_t1";
  endif;
  
  feature_name="moments3_x_acc_on_t1";
- if(u_test(percentiles_x_acc_on_pd(:,1),trimMean_x_acc_on_hc(:,1))<0.05)   %---condition for passing the test---%
+ if(u_test(moments_x_acc_on_pd(:,1),moments_x_acc_on_hc(:,1))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -5087,7 +5193,7 @@ feature_name="snr_itke2_y_t1";
  
  
  feature_name="moments4_x_acc_on_t1";
- if(u_test(percentiles_x_acc_on_pd(:,2),trimMean_x_acc_on_hc(:,2))<0.05)   %---condition for passing the test---%
+ if(u_test(moments_x_acc_on_pd(:,2),moments_x_acc_on_hc(:,2))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -5099,7 +5205,7 @@ feature_name="snr_itke2_y_t1";
  
  
  feature_name="moments5_x_acc_on_t1";
- if(u_test(percentiles_x_acc_on_pd(:,3),trimMean_x_acc_on_hc(:,3))<0.05)   %---condition for passing the test---%
+ if(u_test(moments_x_acc_on_pd(:,3),moments_x_acc_on_hc(:,3))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -5111,7 +5217,7 @@ feature_name="snr_itke2_y_t1";
  
  
  feature_name="moments6_x_acc_on_t1";
- if(u_test(percentiles_x_acc_on_pd(:,4),trimMean_x_acc_on_hc(:,4))<0.05)   %---condition for passing the test---%
+ if(u_test(moments_x_acc_on_pd(:,4),moments_x_acc_on_hc(:,4))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -5121,6 +5227,202 @@ feature_name="snr_itke2_y_t1";
   
  endif;
  
+ feature_name="trimMean5_x_acc_off_t1";
+ if(u_test(trimMean_x_acc_off_pd(:,1),trimMean_x_acc_off_hc(:,1))<0.05)   %---condition for passing the test---%
+ 
+  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
+  
+ else
+  
+  failed=[failed;feature_name];
+  
+ endif;
+ 
+ feature_name="trimMean10_x_acc_off_t1";
+ if(u_test(trimMean_x_acc_off_pd(:,2),trimMean_x_acc_off_hc(:,2))<0.05)   %---condition for passing the test---%
+ 
+  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
+  
+ else
+  
+  failed=[failed;feature_name];
+  
+ endif;
+ 
+ feature_name="trimMean20_x_acc_off_t1";
+ if(u_test(trimMean_x_acc_off_pd(:,3),trimMean_x_acc_off_hc(:,3))<0.05)   %---condition for passing the test---%
+ 
+  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
+  
+ else
+  
+  failed=[failed;feature_name];
+  
+ endif;
+ 
+ feature_name="trimMean30_x_acc_off_t1";
+ if(u_test(trimMean_x_acc_off_pd(:,4),trimMean_x_acc_off_hc(:,4))<0.05)   %---condition for passing the test---%
+ 
+  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
+  
+ else
+  
+  failed=[failed;feature_name];
+  
+ endif;
+ 
+ feature_name="trimMean40_x_acc_off_t1";
+ if(u_test(trimMean_x_acc_off_pd(:,5),trimMean_x_acc_off_hc(:,5))<0.05)   %---condition for passing the test---%
+ 
+  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
+  
+ else
+  
+  failed=[failed;feature_name];
+  
+ endif;
+ 
+ feature_name="percentiles5_x_acc_off_t1";
+ if(u_test(percentiles_x_acc_off_pd(:,2),percentiles_x_acc_off_hc(:,2))<0.05)   %---condition for passing the test---%
+ 
+  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
+  
+ else
+  
+  failed=[failed;feature_name];
+  
+ endif;
+ 
+ 
+ feature_name="percentiles10_x_acc_off_t1";
+ if(u_test(percentiles_x_acc_off_pd(:,3),percentiles_x_acc_off_hc(:,3))<0.05)   %---condition for passing the test---%
+ 
+  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
+  
+ else
+  
+  failed=[failed;feature_name];
+  
+ endif;
+ 
+ 
+ feature_name="percentiles20_x_acc_off_t1";
+ if(u_test(percentiles_x_acc_off_pd(:,4),percentiles_x_acc_off_hc(:,4))<0.05)   %---condition for passing the test---%
+ 
+  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
+  
+ else
+  
+  failed=[failed;feature_name];
+  
+ endif;
+ 
+ 
+ feature_name="percentiles25_x_acc_off_t1";
+ if(u_test(percentiles_x_acc_off_pd(:,5),percentiles_x_acc_off_hc(:,5))<0.05)   %---condition for passing the test---%
+ 
+  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
+  
+ else
+  
+  failed=[failed;feature_name];
+  
+ endif;
+ 
+ 
+ feature_name="percentiles30_x_acc_off_t1";
+ if(u_test(percentiles_x_acc_off_pd(:,6),percentiles_x_acc_off_hc(:,6))<0.05)   %---condition for passing the test---%
+ 
+  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
+  
+ else
+  
+  failed=[failed;feature_name];
+  
+ endif;
+ 
+ 
+ feature_name="percentiles90_x_acc_off_t1";
+ if(u_test(percentiles_x_acc_off_pd(:,7),percentiles_x_acc_off_hc(:,7))<0.05)   %---condition for passing the test---%
+ 
+  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
+  
+ else
+  
+  failed=[failed;feature_name];
+  
+ endif;
+ 
+ 
+ feature_name="percentiles95_x_acc_off_t1";
+ if(u_test(percentiles_x_acc_off_pd(:,8),percentiles_x_acc_off_hc(:,8))<0.05)   %---condition for passing the test---%
+ 
+  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
+  
+ else
+  
+  failed=[failed;feature_name];
+  
+ endif;
+ 
+ 
+ feature_name="percentiles99_x_acc_off_t1";
+ if(u_test(percentiles_x_acc_off_pd(:,9),percentiles_x_acc_off_hc(:,9))<0.05)   %---condition for passing the test---%
+ 
+  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
+  
+ else
+  
+  failed=[failed;feature_name];
+  
+ endif;
+ 
+ feature_name="moments3_x_acc_off_t1";
+ if(u_test(moments_x_acc_off_pd(:,1),moments_x_acc_off_hc(:,1))<0.05)   %---condition for passing the test---%
+ 
+  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
+  
+ else
+  
+  failed=[failed;feature_name];
+  
+ endif;
+ 
+ 
+ feature_name="moments4_x_acc_off_t1";
+ if(u_test(moments_x_acc_off_pd(:,2),moments_x_acc_off_hc(:,2))<0.05)   %---condition for passing the test---%
+ 
+  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
+  
+ else
+  
+  failed=[failed;feature_name];
+  
+ endif;
+ 
+ 
+ feature_name="moments5_x_acc_off_t1";
+ if(u_test(moments_x_acc_off_pd(:,3),moments_x_acc_off_hc(:,3))<0.05)   %---condition for passing the test---%
+ 
+  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
+  
+ else
+  
+  failed=[failed;feature_name];
+  
+ endif;
+ 
+ 
+ feature_name="moments6_x_acc_off_t1";
+ if(u_test(moments_x_acc_off_pd(:,4),moments_x_acc_off_hc(:,4))<0.05)   %---condition for passing the test---%
+ 
+  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
+  
+ else
+  
+  failed=[failed;feature_name];
+  
+ endif;
  
  feature_name="trimMean5_x_jerk_on_t1";
  if(u_test(trimMean_x_jerk_on_pd(:,1),trimMean_x_jerk_on_hc(:,1))<0.05)   %---condition for passing the test---%
@@ -5177,8 +5479,8 @@ feature_name="snr_itke2_y_t1";
   
  endif;
  
- feature_name="percentiles1_x_jerk_on_t1";
- if(u_test(percentiles_x_jerk_on_pd(:,1),trimMean_x_jerk_on_hc(:,1))<0.05)   %---condition for passing the test---%
+ feature_name="trimMean5_x_jerk_off_t1";
+ if(u_test(trimMean_x_jerk_off_pd(:,1),trimMean_x_jerk_off_hc(:,1))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -5188,8 +5490,9 @@ feature_name="snr_itke2_y_t1";
   
  endif;
  
+ 
  feature_name="percentiles5_x_jerk_on_t1";
- if(u_test(percentiles_x_jerk_on_pd(:,2),trimMean_x_jerk_on_hc(:,2))<0.05)   %---condition for passing the test---%
+ if(u_test(percentiles_x_jerk_on_pd(:,2),percentiles_x_jerk_on_hc(:,2))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -5201,7 +5504,7 @@ feature_name="snr_itke2_y_t1";
  
  
  feature_name="percentiles10_x_jerk_on_t1";
- if(u_test(percentiles_x_jerk_on_pd(:,3),trimMean_x_jerk_on_hc(:,3))<0.05)   %---condition for passing the test---%
+ if(u_test(percentiles_x_jerk_on_pd(:,3),percentiles_x_jerk_on_hc(:,3))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -5213,7 +5516,7 @@ feature_name="snr_itke2_y_t1";
  
  
  feature_name="percentiles20_x_jerk_on_t1";
- if(u_test(percentiles_x_jerk_on_pd(:,4),trimMean_x_jerk_on_hc(:,4))<0.05)   %---condition for passing the test---%
+ if(u_test(percentiles_x_jerk_on_pd(:,4),percentiles_x_jerk_on_hc(:,4))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -5225,7 +5528,7 @@ feature_name="snr_itke2_y_t1";
  
  
  feature_name="percentiles25_x_jerk_on_t1";
- if(u_test(percentiles_x_jerk_on_pd(:,5),trimMean_x_jerk_on_hc(:,5))<0.05)   %---condition for passing the test---%
+ if(u_test(percentiles_x_jerk_on_pd(:,5),percentiles_x_jerk_on_hc(:,5))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -5237,7 +5540,7 @@ feature_name="snr_itke2_y_t1";
  
  
  feature_name="percentiles30_x_jerk_on_t1";
- if(u_test(percentiles_x_jerk_on_pd(:,6),trimMean_x_jerk_on_hc(:,6))<0.05)   %---condition for passing the test---%
+ if(u_test(percentiles_x_jerk_on_pd(:,6),percentiles_x_jerk_on_hc(:,6))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -5249,7 +5552,7 @@ feature_name="snr_itke2_y_t1";
  
  
  feature_name="percentiles90_x_jerk_on_t1";
- if(u_test(percentiles_x_jerk_on_pd(:,7),trimMean_x_jerk_on_hc(:,7))<0.05)   %---condition for passing the test---%
+ if(u_test(percentiles_x_jerk_on_pd(:,7),percentiles_x_jerk_on_hc(:,7))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -5261,7 +5564,7 @@ feature_name="snr_itke2_y_t1";
  
  
  feature_name="percentiles95_x_jerk_on_t1";
- if(u_test(percentiles_x_jerk_on_pd(:,8),trimMean_x_jerk_on_hc(:,8))<0.05)   %---condition for passing the test---%
+ if(u_test(percentiles_x_jerk_on_pd(:,8),percentiles_x_jerk_on_hc(:,8))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -5273,7 +5576,7 @@ feature_name="snr_itke2_y_t1";
  
  
  feature_name="percentiles99_x_jerk_on_t1";
- if(u_test(percentiles_x_jerk_on_pd(:,9),trimMean_x_jerk_on_hc(:,9))<0.05)   %---condition for passing the test---%
+ if(u_test(percentiles_x_jerk_on_pd(:,9),percentiles_x_jerk_on_hc(:,9))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -5284,7 +5587,7 @@ feature_name="snr_itke2_y_t1";
  endif;
  
  feature_name="moments3_x_jerk_on_t1";
- if(u_test(percentiles_x_jerk_on_pd(:,1),trimMean_x_jerk_on_hc(:,1))<0.05)   %---condition for passing the test---%
+ if(u_test(moments_x_jerk_on_pd(:,1),moments_x_jerk_on_hc(:,1))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -5296,7 +5599,7 @@ feature_name="snr_itke2_y_t1";
  
  
  feature_name="moments4_x_jerk_on_t1";
- if(u_test(percentiles_x_jerk_on_pd(:,2),trimMean_x_jerk_on_hc(:,2))<0.05)   %---condition for passing the test---%
+ if(u_test(moments_x_jerk_on_pd(:,2),moments_x_jerk_on_hc(:,2))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -5308,7 +5611,7 @@ feature_name="snr_itke2_y_t1";
  
  
  feature_name="moments5_x_jerk_on_t1";
- if(u_test(percentiles_x_jerk_on_pd(:,3),trimMean_x_jerk_on_hc(:,3))<0.05)   %---condition for passing the test---%
+ if(u_test(moments_x_jerk_on_pd(:,3),moments_x_jerk_on_hc(:,3))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -5320,7 +5623,193 @@ feature_name="snr_itke2_y_t1";
  
  
  feature_name="moments6_x_jerk_on_t1";
- if(u_test(percentiles_x_jerk_on_pd(:,4),trimMean_x_jerk_on_hc(:,4))<0.05)   %---condition for passing the test---%
+ if(u_test(moments_x_jerk_on_pd(:,4),moments_x_jerk_on_hc(:,4))<0.05)   %---condition for passing the test---%
+ 
+  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
+  
+ else
+  
+  failed=[failed;feature_name];
+  
+ endif;
+
+ feature_name="trimMean10_x_jerk_off_t1";
+ if(u_test(trimMean_x_jerk_off_pd(:,2),trimMean_x_jerk_off_hc(:,2))<0.05)   %---condition for passing the test---%
+ 
+  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
+  
+ else
+  
+  failed=[failed;feature_name];
+  
+ endif;
+ 
+ feature_name="trimMean20_x_jerk_off_t1";
+ if(u_test(trimMean_x_jerk_off_pd(:,3),trimMean_x_jerk_off_hc(:,3))<0.05)   %---condition for passing the test---%
+ 
+  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
+  
+ else
+  
+  failed=[failed;feature_name];
+  
+ endif;
+ 
+ feature_name="trimMean30_x_jerk_off_t1";
+ if(u_test(trimMean_x_jerk_off_pd(:,4),trimMean_x_jerk_off_hc(:,4))<0.05)   %---condition for passing the test---%
+ 
+  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
+  
+ else
+  
+  failed=[failed;feature_name];
+  
+ endif;
+ 
+ feature_name="trimMean40_x_jerk_off_t1";
+ if(u_test(trimMean_x_jerk_off_pd(:,5),trimMean_x_jerk_off_hc(:,5))<0.05)   %---condition for passing the test---%
+ 
+  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
+  
+ else
+  
+  failed=[failed;feature_name];
+  
+ endif;
+ 
+ feature_name="percentiles5_x_jerk_off_t1";
+ if(u_test(percentiles_x_jerk_off_pd(:,2),percentiles_x_jerk_off_hc(:,2))<0.05)   %---condition for passing the test---%
+ 
+  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
+  
+ else
+  
+  failed=[failed;feature_name];
+  
+ endif;
+ 
+ 
+ feature_name="percentiles10_x_jerk_off_t1";
+ if(u_test(percentiles_x_jerk_off_pd(:,3),percentiles_x_jerk_off_hc(:,3))<0.05)   %---condition for passing the test---%
+ 
+  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
+  
+ else
+  
+  failed=[failed;feature_name];
+  
+ endif;
+ 
+ 
+ feature_name="percentiles20_x_jerk_off_t1";
+ if(u_test(percentiles_x_jerk_off_pd(:,4),percentiles_x_jerk_off_hc(:,4))<0.05)   %---condition for passing the test---%
+ 
+  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
+  
+ else
+  
+  failed=[failed;feature_name];
+  
+ endif;
+ 
+ 
+ feature_name="percentiles25_x_jerk_off_t1";
+ if(u_test(percentiles_x_jerk_off_pd(:,5),percentiles_x_jerk_off_hc(:,5))<0.05)   %---condition for passing the test---%
+ 
+  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
+  
+ else
+  
+  failed=[failed;feature_name];
+  
+ endif;
+ 
+ 
+ feature_name="percentiles30_x_jerk_off_t1";
+ if(u_test(percentiles_x_jerk_off_pd(:,6),percentiles_x_jerk_off_hc(:,6))<0.05)   %---condition for passing the test---%
+ 
+  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
+  
+ else
+  
+  failed=[failed;feature_name];
+  
+ endif;
+ 
+ 
+ feature_name="percentiles90_x_jerk_off_t1";
+ if(u_test(percentiles_x_jerk_off_pd(:,7),percentiles_x_jerk_off_hc(:,7))<0.05)   %---condition for passing the test---%
+ 
+  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
+  
+ else
+  
+  failed=[failed;feature_name];
+  
+ endif;
+ 
+ 
+ feature_name="percentiles95_x_jerk_off_t1";
+ if(u_test(percentiles_x_jerk_off_pd(:,8),percentiles_x_jerk_off_hc(:,8))<0.05)   %---condition for passing the test---%
+ 
+  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
+  
+ else
+  
+  failed=[failed;feature_name];
+  
+ endif;
+ 
+ 
+ feature_name="percentiles99_x_jerk_off_t1";
+ if(u_test(percentiles_x_jerk_off_pd(:,9),percentiles_x_jerk_off_hc(:,9))<0.05)   %---condition for passing the test---%
+ 
+  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
+  
+ else
+  
+  failed=[failed;feature_name];
+  
+ endif;
+ 
+ feature_name="moments3_x_jerk_off_t1";
+ if(u_test(moments_x_jerk_off_pd(:,1),moments_x_jerk_off_hc(:,1))<0.05)   %---condition for passing the test---%
+ 
+  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
+  
+ else
+  
+  failed=[failed;feature_name];
+  
+ endif;
+ 
+ 
+ feature_name="moments4_x_jerk_off_t1";
+ if(u_test(moments_x_jerk_off_pd(:,2),moments_x_jerk_off_hc(:,2))<0.05)   %---condition for passing the test---%
+ 
+  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
+  
+ else
+  
+  failed=[failed;feature_name];
+  
+ endif;
+ 
+ 
+ feature_name="moments5_x_jerk_off_t1";
+ if(u_test(moments_x_jerk_off_pd(:,3),moments_x_jerk_off_hc(:,3))<0.05)   %---condition for passing the test---%
+ 
+  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
+  
+ else
+  
+  failed=[failed;feature_name];
+  
+ endif;
+ 
+ 
+ feature_name="moments6_x_jerk_off_t1";
+ if(u_test(moments_x_jerk_off_pd(:,4),moments_x_jerk_off_hc(:,4))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -5386,19 +5875,9 @@ feature_name="snr_itke2_y_t1";
   
  endif;
  
- feature_name="percentiles1_y_vel_on_t1";
- if(u_test(percentiles_y_vel_on_pd(:,1),trimMean_y_vel_on_hc(:,1))<0.05)   %---condition for passing the test---%
- 
-  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
-  
- else
-  
-  failed=[failed;feature_name];
-  
- endif;
  
  feature_name="percentiles5_y_vel_on_t1";
- if(u_test(percentiles_y_vel_on_pd(:,2),trimMean_y_vel_on_hc(:,2))<0.05)   %---condition for passing the test---%
+ if(u_test(percentiles_y_vel_on_pd(:,2),percentiles_y_vel_on_hc(:,2))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -5410,7 +5889,7 @@ feature_name="snr_itke2_y_t1";
  
  
  feature_name="percentiles10_y_vel_on_t1";
- if(u_test(percentiles_y_vel_on_pd(:,3),trimMean_y_vel_on_hc(:,3))<0.05)   %---condition for passing the test---%
+ if(u_test(percentiles_y_vel_on_pd(:,3),percentiles_y_vel_on_hc(:,3))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -5422,7 +5901,7 @@ feature_name="snr_itke2_y_t1";
  
  
  feature_name="percentiles20_y_vel_on_t1";
- if(u_test(percentiles_y_vel_on_pd(:,4),trimMean_y_vel_on_hc(:,4))<0.05)   %---condition for passing the test---%
+ if(u_test(percentiles_y_vel_on_pd(:,4),percentiles_y_vel_on_hc(:,4))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -5434,7 +5913,7 @@ feature_name="snr_itke2_y_t1";
  
  
  feature_name="percentiles25_y_vel_on_t1";
- if(u_test(percentiles_y_vel_on_pd(:,5),trimMean_y_vel_on_hc(:,5))<0.05)   %---condition for passing the test---%
+ if(u_test(percentiles_y_vel_on_pd(:,5),percentiles_y_vel_on_hc(:,5))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -5446,7 +5925,7 @@ feature_name="snr_itke2_y_t1";
  
  
  feature_name="percentiles30_y_vel_on_t1";
- if(u_test(percentiles_y_vel_on_pd(:,6),trimMean_y_vel_on_hc(:,6))<0.05)   %---condition for passing the test---%
+ if(u_test(percentiles_y_vel_on_pd(:,6),percentiles_y_vel_on_hc(:,6))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -5458,7 +5937,7 @@ feature_name="snr_itke2_y_t1";
  
  
  feature_name="percentiles90_y_vel_on_t1";
- if(u_test(percentiles_y_vel_on_pd(:,7),trimMean_y_vel_on_hc(:,7))<0.05)   %---condition for passing the test---%
+ if(u_test(percentiles_y_vel_on_pd(:,7),percentiles_y_vel_on_hc(:,7))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -5470,7 +5949,7 @@ feature_name="snr_itke2_y_t1";
  
  
  feature_name="percentiles95_y_vel_on_t1";
- if(u_test(percentiles_y_vel_on_pd(:,8),trimMean_y_vel_on_hc(:,8))<0.05)   %---condition for passing the test---%
+ if(u_test(percentiles_y_vel_on_pd(:,8),percentiles_y_vel_on_hc(:,8))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -5482,7 +5961,7 @@ feature_name="snr_itke2_y_t1";
  
  
  feature_name="percentiles99_y_vel_on_t1";
- if(u_test(percentiles_y_vel_on_pd(:,9),trimMean_y_vel_on_hc(:,9))<0.05)   %---condition for passing the test---%
+ if(u_test(percentiles_y_vel_on_pd(:,9),percentiles_y_vel_on_hc(:,9))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -5493,7 +5972,7 @@ feature_name="snr_itke2_y_t1";
  endif;
  
  feature_name="moments3_y_vel_on_t1";
- if(u_test(percentiles_y_vel_on_pd(:,1),trimMean_y_vel_on_hc(:,1))<0.05)   %---condition for passing the test---%
+ if(u_test(moments_y_vel_on_pd(:,1),moments_y_vel_on_hc(:,1))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -5505,7 +5984,7 @@ feature_name="snr_itke2_y_t1";
  
  
  feature_name="moments4_y_vel_on_t1";
- if(u_test(percentiles_y_vel_on_pd(:,2),trimMean_y_vel_on_hc(:,2))<0.05)   %---condition for passing the test---%
+ if(u_test(moments_y_vel_on_pd(:,2),moments_y_vel_on_hc(:,2))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -5517,7 +5996,7 @@ feature_name="snr_itke2_y_t1";
  
  
  feature_name="moments5_y_vel_on_t1";
- if(u_test(percentiles_y_vel_on_pd(:,3),trimMean_y_vel_on_hc(:,3))<0.05)   %---condition for passing the test---%
+ if(u_test(moments_y_vel_on_pd(:,3),moments_y_vel_on_hc(:,3))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -5529,1014 +6008,7 @@ feature_name="snr_itke2_y_t1";
  
  
  feature_name="moments6_y_vel_on_t1";
- if(u_test(percentiles_y_vel_on_pd(:,4),trimMean_y_vel_on_hc(:,4))<0.05)   %---condition for passing the test---%
- 
-  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
-  
- else
-  
-  failed=[failed;feature_name];
-  
- endif;
- 
- 
- feature_name="trimMean5_y_acc_on_t1";
- if(u_test(trimMean_y_acc_on_pd(:,1),trimMean_y_acc_on_hc(:,1))<0.05)   %---condition for passing the test---%
- 
-  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
-  
- else
-  
-  failed=[failed;feature_name];
-  
- endif;
- 
- feature_name="trimMean10_y_acc_on_t1";
- if(u_test(trimMean_y_acc_on_pd(:,2),trimMean_y_acc_on_hc(:,2))<0.05)   %---condition for passing the test---%
- 
-  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
-  
- else
-  
-  failed=[failed;feature_name];
-  
- endif;
- 
- feature_name="trimMean20_y_acc_on_t1";
- if(u_test(trimMean_y_acc_on_pd(:,3),trimMean_y_acc_on_hc(:,3))<0.05)   %---condition for passing the test---%
- 
-  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
-  
- else
-  
-  failed=[failed;feature_name];
-  
- endif;
- 
- feature_name="trimMean30_y_acc_on_t1";
- if(u_test(trimMean_y_acc_on_pd(:,4),trimMean_y_acc_on_hc(:,4))<0.05)   %---condition for passing the test---%
- 
-  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
-  
- else
-  
-  failed=[failed;feature_name];
-  
- endif;
- 
- feature_name="trimMean40_y_acc_on_t1";
- if(u_test(trimMean_y_acc_on_pd(:,5),trimMean_y_acc_on_hc(:,5))<0.05)   %---condition for passing the test---%
- 
-  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
-  
- else
-  
-  failed=[failed;feature_name];
-  
- endif;
- 
- feature_name="percentiles1_y_acc_on_t1";
- if(u_test(percentiles_y_acc_on_pd(:,1),trimMean_y_acc_on_hc(:,1))<0.05)   %---condition for passing the test---%
- 
-  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
-  
- else
-  
-  failed=[failed;feature_name];
-  
- endif;
- 
- feature_name="percentiles5_y_acc_on_t1";
- if(u_test(percentiles_y_acc_on_pd(:,2),trimMean_y_acc_on_hc(:,2))<0.05)   %---condition for passing the test---%
- 
-  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
-  
- else
-  
-  failed=[failed;feature_name];
-  
- endif;
- 
- 
- feature_name="percentiles10_y_acc_on_t1";
- if(u_test(percentiles_y_acc_on_pd(:,3),trimMean_y_acc_on_hc(:,3))<0.05)   %---condition for passing the test---%
- 
-  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
-  
- else
-  
-  failed=[failed;feature_name];
-  
- endif;
- 
- 
- feature_name="percentiles20_y_acc_on_t1";
- if(u_test(percentiles_y_acc_on_pd(:,4),trimMean_y_acc_on_hc(:,4))<0.05)   %---condition for passing the test---%
- 
-  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
-  
- else
-  
-  failed=[failed;feature_name];
-  
- endif;
- 
- 
- feature_name="percentiles25_y_acc_on_t1";
- if(u_test(percentiles_y_acc_on_pd(:,5),trimMean_y_acc_on_hc(:,5))<0.05)   %---condition for passing the test---%
- 
-  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
-  
- else
-  
-  failed=[failed;feature_name];
-  
- endif;
- 
- 
- feature_name="percentiles30_y_acc_on_t1";
- if(u_test(percentiles_y_acc_on_pd(:,6),trimMean_y_acc_on_hc(:,6))<0.05)   %---condition for passing the test---%
- 
-  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
-  
- else
-  
-  failed=[failed;feature_name];
-  
- endif;
- 
- 
- feature_name="percentiles90_y_acc_on_t1";
- if(u_test(percentiles_y_acc_on_pd(:,7),trimMean_y_acc_on_hc(:,7))<0.05)   %---condition for passing the test---%
- 
-  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
-  
- else
-  
-  failed=[failed;feature_name];
-  
- endif;
- 
- 
- feature_name="percentiles95_y_acc_on_t1";
- if(u_test(percentiles_y_acc_on_pd(:,8),trimMean_y_acc_on_hc(:,8))<0.05)   %---condition for passing the test---%
- 
-  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
-  
- else
-  
-  failed=[failed;feature_name];
-  
- endif;
- 
- 
- feature_name="percentiles99_y_acc_on_t1";
- if(u_test(percentiles_y_acc_on_pd(:,9),trimMean_y_acc_on_hc(:,9))<0.05)   %---condition for passing the test---%
- 
-  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
-  
- else
-  
-  failed=[failed;feature_name];
-  
- endif;
- 
- feature_name="moments3_y_acc_on_t1";
- if(u_test(percentiles_y_acc_on_pd(:,1),trimMean_y_acc_on_hc(:,1))<0.05)   %---condition for passing the test---%
- 
-  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
-  
- else
-  
-  failed=[failed;feature_name];
-  
- endif;
- 
- 
- feature_name="moments4_y_acc_on_t1";
- if(u_test(percentiles_y_acc_on_pd(:,2),trimMean_y_acc_on_hc(:,2))<0.05)   %---condition for passing the test---%
- 
-  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
-  
- else
-  
-  failed=[failed;feature_name];
-  
- endif;
- 
- 
- feature_name="moments5_y_acc_on_t1";
- if(u_test(percentiles_y_acc_on_pd(:,3),trimMean_y_acc_on_hc(:,3))<0.05)   %---condition for passing the test---%
- 
-  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
-  
- else
-  
-  failed=[failed;feature_name];
-  
- endif;
- 
- 
- feature_name="moments6_y_acc_on_t1";
- if(u_test(percentiles_y_acc_on_pd(:,4),trimMean_y_acc_on_hc(:,4))<0.05)   %---condition for passing the test---%
- 
-  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
-  
- else
-  
-  failed=[failed;feature_name];
-  
- endif;
- 
- 
- feature_name="trimMean5_y_jerk_on_t1";
- if(u_test(trimMean_y_jerk_on_pd(:,1),trimMean_y_jerk_on_hc(:,1))<0.05)   %---condition for passing the test---%
- 
-  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
-  
- else
-  
-  failed=[failed;feature_name];
-  
- endif;
- 
- feature_name="trimMean10_y_jerk_on_t1";
- if(u_test(trimMean_y_jerk_on_pd(:,2),trimMean_y_jerk_on_hc(:,2))<0.05)   %---condition for passing the test---%
- 
-  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
-  
- else
-  
-  failed=[failed;feature_name];
-  
- endif;
- 
- feature_name="trimMean20_y_jerk_on_t1";
- if(u_test(trimMean_y_jerk_on_pd(:,3),trimMean_y_jerk_on_hc(:,3))<0.05)   %---condition for passing the test---%
- 
-  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
-  
- else
-  
-  failed=[failed;feature_name];
-  
- endif;
- 
- feature_name="trimMean30_y_jerk_on_t1";
- if(u_test(trimMean_y_jerk_on_pd(:,4),trimMean_y_jerk_on_hc(:,4))<0.05)   %---condition for passing the test---%
- 
-  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
-  
- else
-  
-  failed=[failed;feature_name];
-  
- endif;
- 
- feature_name="trimMean40_y_jerk_on_t1";
- if(u_test(trimMean_y_jerk_on_pd(:,5),trimMean_y_jerk_on_hc(:,5))<0.05)   %---condition for passing the test---%
- 
-  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
-  
- else
-  
-  failed=[failed;feature_name];
-  
- endif;
- 
- feature_name="percentiles1_y_jerk_on_t1";
- if(u_test(percentiles_y_jerk_on_pd(:,1),trimMean_y_jerk_on_hc(:,1))<0.05)   %---condition for passing the test---%
- 
-  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
-  
- else
-  
-  failed=[failed;feature_name];
-  
- endif;
- 
- feature_name="percentiles5_y_jerk_on_t1";
- if(u_test(percentiles_y_jerk_on_pd(:,2),trimMean_y_jerk_on_hc(:,2))<0.05)   %---condition for passing the test---%
- 
-  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
-  
- else
-  
-  failed=[failed;feature_name];
-  
- endif;
- 
- 
- feature_name="percentiles10_y_jerk_on_t1";
- if(u_test(percentiles_y_jerk_on_pd(:,3),trimMean_y_jerk_on_hc(:,3))<0.05)   %---condition for passing the test---%
- 
-  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
-  
- else
-  
-  failed=[failed;feature_name];
-  
- endif;
- 
- 
- feature_name="percentiles20_y_jerk_on_t1";
- if(u_test(percentiles_y_jerk_on_pd(:,4),trimMean_y_jerk_on_hc(:,4))<0.05)   %---condition for passing the test---%
- 
-  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
-  
- else
-  
-  failed=[failed;feature_name];
-  
- endif;
- 
- 
- feature_name="percentiles25_y_jerk_on_t1";
- if(u_test(percentiles_y_jerk_on_pd(:,5),trimMean_y_jerk_on_hc(:,5))<0.05)   %---condition for passing the test---%
- 
-  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
-  
- else
-  
-  failed=[failed;feature_name];
-  
- endif;
- 
- 
- feature_name="percentiles30_y_jerk_on_t1";
- if(u_test(percentiles_y_jerk_on_pd(:,6),trimMean_y_jerk_on_hc(:,6))<0.05)   %---condition for passing the test---%
- 
-  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
-  
- else
-  
-  failed=[failed;feature_name];
-  
- endif;
- 
- 
- feature_name="percentiles90_y_jerk_on_t1";
- if(u_test(percentiles_y_jerk_on_pd(:,7),trimMean_y_jerk_on_hc(:,7))<0.05)   %---condition for passing the test---%
- 
-  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
-  
- else
-  
-  failed=[failed;feature_name];
-  
- endif;
- 
- 
- feature_name="percentiles95_y_jerk_on_t1";
- if(u_test(percentiles_y_jerk_on_pd(:,8),trimMean_y_jerk_on_hc(:,8))<0.05)   %---condition for passing the test---%
- 
-  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
-  
- else
-  
-  failed=[failed;feature_name];
-  
- endif;
- 
- 
- feature_name="percentiles99_y_jerk_on_t1";
- if(u_test(percentiles_y_jerk_on_pd(:,9),trimMean_y_jerk_on_hc(:,9))<0.05)   %---condition for passing the test---%
- 
-  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
-  
- else
-  
-  failed=[failed;feature_name];
-  
- endif;
- 
- feature_name="moments3_y_jerk_on_t1";
- if(u_test(percentiles_y_jerk_on_pd(:,1),trimMean_y_jerk_on_hc(:,1))<0.05)   %---condition for passing the test---%
- 
-  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
-  
- else
-  
-  failed=[failed;feature_name];
-  
- endif;
- 
- 
- feature_name="moments4_y_jerk_on_t1";
- if(u_test(percentiles_y_jerk_on_pd(:,2),trimMean_y_jerk_on_hc(:,2))<0.05)   %---condition for passing the test---%
- 
-  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
-  
- else
-  
-  failed=[failed;feature_name];
-  
- endif;
- 
- 
- feature_name="moments5_y_jerk_on_t1";
- if(u_test(percentiles_y_jerk_on_pd(:,3),trimMean_y_jerk_on_hc(:,3))<0.05)   %---condition for passing the test---%
- 
-  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
-  
- else
-  
-  failed=[failed;feature_name];
-  
- endif;
- 
- 
- feature_name="moments6_y_jerk_on_t1";
- if(u_test(percentiles_y_jerk_on_pd(:,4),trimMean_y_jerk_on_hc(:,4))<0.05)   %---condition for passing the test---%
- 
-  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
-  
- else
-  
-  failed=[failed;feature_name];
-  
- endif;
- 
- 
- feature_name="trimMean5_x_vel_off_t1";
- if(u_test(trimMean_x_vel_off_pd(:,1),trimMean_x_vel_off_hc(:,1))<0.05)   %---condition for passing the test---%
- 
-  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
-  
- else
-  
-  failed=[failed;feature_name];
-  
- endif;
- 
- feature_name="trimMean10_x_vel_off_t1";
- if(u_test(trimMean_x_vel_off_pd(:,2),trimMean_x_vel_off_hc(:,2))<0.05)   %---condition for passing the test---%
- 
-  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
-  
- else
-  
-  failed=[failed;feature_name];
-  
- endif;
- 
- feature_name="trimMean20_x_vel_off_t1";
- if(u_test(trimMean_x_vel_off_pd(:,3),trimMean_x_vel_off_hc(:,3))<0.05)   %---condition for passing the test---%
- 
-  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
-  
- else
-  
-  failed=[failed;feature_name];
-  
- endif;
- 
- feature_name="trimMean30_x_vel_off_t1";
- if(u_test(trimMean_x_vel_off_pd(:,4),trimMean_x_vel_off_hc(:,4))<0.05)   %---condition for passing the test---%
- 
-  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
-  
- else
-  
-  failed=[failed;feature_name];
-  
- endif;
- 
- feature_name="trimMean40_x_vel_off_t1";
- if(u_test(trimMean_x_vel_off_pd(:,5),trimMean_x_vel_off_hc(:,5))<0.05)   %---condition for passing the test---%
- 
-  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
-  
- else
-  
-  failed=[failed;feature_name];
-  
- endif;
- 
- feature_name="percentiles1_x_vel_off_t1";
- if(u_test(percentiles_x_vel_off_pd(:,1),trimMean_x_vel_off_hc(:,1))<0.05)   %---condition for passing the test---%
- 
-  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
-  
- else
-  
-  failed=[failed;feature_name];
-  
- endif;
- 
- feature_name="percentiles5_x_vel_off_t1";
- if(u_test(percentiles_x_vel_off_pd(:,2),trimMean_x_vel_off_hc(:,2))<0.05)   %---condition for passing the test---%
- 
-  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
-  
- else
-  
-  failed=[failed;feature_name];
-  
- endif;
- 
- 
- feature_name="percentiles10_x_vel_off_t1";
- if(u_test(percentiles_x_vel_off_pd(:,3),trimMean_x_vel_off_hc(:,3))<0.05)   %---condition for passing the test---%
- 
-  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
-  
- else
-  
-  failed=[failed;feature_name];
-  
- endif;
- 
- 
- feature_name="percentiles20_x_vel_off_t1";
- if(u_test(percentiles_x_vel_off_pd(:,4),trimMean_x_vel_off_hc(:,4))<0.05)   %---condition for passing the test---%
- 
-  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
-  
- else
-  
-  failed=[failed;feature_name];
-  
- endif;
- 
- 
- feature_name="percentiles25_x_vel_off_t1";
- if(u_test(percentiles_x_vel_off_pd(:,5),trimMean_x_vel_off_hc(:,5))<0.05)   %---condition for passing the test---%
- 
-  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
-  
- else
-  
-  failed=[failed;feature_name];
-  
- endif;
- 
- 
- feature_name="percentiles30_x_vel_off_t1";
- if(u_test(percentiles_x_vel_off_pd(:,6),trimMean_x_vel_off_hc(:,6))<0.05)   %---condition for passing the test---%
- 
-  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
-  
- else
-  
-  failed=[failed;feature_name];
-  
- endif;
- 
- 
- feature_name="percentiles90_x_vel_off_t1";
- if(u_test(percentiles_x_vel_off_pd(:,7),trimMean_x_vel_off_hc(:,7))<0.05)   %---condition for passing the test---%
- 
-  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
-  
- else
-  
-  failed=[failed;feature_name];
-  
- endif;
- 
- 
- feature_name="percentiles95_x_vel_off_t1";
- if(u_test(percentiles_x_vel_off_pd(:,8),trimMean_x_vel_off_hc(:,8))<0.05)   %---condition for passing the test---%
- 
-  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
-  
- else
-  
-  failed=[failed;feature_name];
-  
- endif;
- 
- 
- feature_name="percentiles99_x_vel_off_t1";
- if(u_test(percentiles_x_vel_off_pd(:,9),trimMean_x_vel_off_hc(:,9))<0.05)   %---condition for passing the test---%
- 
-  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
-  
- else
-  
-  failed=[failed;feature_name];
-  
- endif;
- 
- feature_name="moments3_x_vel_off_t1";
- if(u_test(percentiles_x_vel_off_pd(:,1),trimMean_x_vel_off_hc(:,1))<0.05)   %---condition for passing the test---%
- 
-  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
-  
- else
-  
-  failed=[failed;feature_name];
-  
- endif;
- 
- 
- feature_name="moments4_x_vel_off_t1";
- if(u_test(percentiles_x_vel_off_pd(:,2),trimMean_x_vel_off_hc(:,2))<0.05)   %---condition for passing the test---%
- 
-  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
-  
- else
-  
-  failed=[failed;feature_name];
-  
- endif;
- 
- 
- feature_name="moments5_x_vel_off_t1";
- if(u_test(percentiles_x_vel_off_pd(:,3),trimMean_x_vel_off_hc(:,3))<0.05)   %---condition for passing the test---%
- 
-  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
-  
- else
-  
-  failed=[failed;feature_name];
-  
- endif;
- 
- feature_name="trimMean5_x_acc_off_t1";
- if(u_test(trimMean_x_acc_off_pd(:,1),trimMean_x_acc_off_hc(:,1))<0.05)   %---condition for passing the test---%
- 
-  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
-  
- else
-  
-  failed=[failed;feature_name];
-  
- endif;
- 
- feature_name="trimMean10_x_acc_off_t1";
- if(u_test(trimMean_x_acc_off_pd(:,2),trimMean_x_acc_off_hc(:,2))<0.05)   %---condition for passing the test---%
- 
-  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
-  
- else
-  
-  failed=[failed;feature_name];
-  
- endif;
- 
- feature_name="trimMean20_x_acc_off_t1";
- if(u_test(trimMean_x_acc_off_pd(:,3),trimMean_x_acc_off_hc(:,3))<0.05)   %---condition for passing the test---%
- 
-  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
-  
- else
-  
-  failed=[failed;feature_name];
-  
- endif;
- 
- feature_name="trimMean30_x_acc_off_t1";
- if(u_test(trimMean_x_acc_off_pd(:,4),trimMean_x_acc_off_hc(:,4))<0.05)   %---condition for passing the test---%
- 
-  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
-  
- else
-  
-  failed=[failed;feature_name];
-  
- endif;
- 
- feature_name="trimMean40_x_acc_off_t1";
- if(u_test(trimMean_x_acc_off_pd(:,5),trimMean_x_acc_off_hc(:,5))<0.05)   %---condition for passing the test---%
- 
-  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
-  
- else
-  
-  failed=[failed;feature_name];
-  
- endif;
- 
- feature_name="percentiles1_x_acc_off_t1";
- if(u_test(percentiles_x_acc_off_pd(:,1),trimMean_x_acc_off_hc(:,1))<0.05)   %---condition for passing the test---%
- 
-  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
-  
- else
-  
-  failed=[failed;feature_name];
-  
- endif;
- 
- feature_name="percentiles5_x_acc_off_t1";
- if(u_test(percentiles_x_acc_off_pd(:,2),trimMean_x_acc_off_hc(:,2))<0.05)   %---condition for passing the test---%
- 
-  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
-  
- else
-  
-  failed=[failed;feature_name];
-  
- endif;
- 
- 
- feature_name="percentiles10_x_acc_off_t1";
- if(u_test(percentiles_x_acc_off_pd(:,3),trimMean_x_acc_off_hc(:,3))<0.05)   %---condition for passing the test---%
- 
-  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
-  
- else
-  
-  failed=[failed;feature_name];
-  
- endif;
- 
- 
- feature_name="percentiles20_x_acc_off_t1";
- if(u_test(percentiles_x_acc_off_pd(:,4),trimMean_x_acc_off_hc(:,4))<0.05)   %---condition for passing the test---%
- 
-  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
-  
- else
-  
-  failed=[failed;feature_name];
-  
- endif;
- 
- 
- feature_name="percentiles25_x_acc_off_t1";
- if(u_test(percentiles_x_acc_off_pd(:,5),trimMean_x_acc_off_hc(:,5))<0.05)   %---condition for passing the test---%
- 
-  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
-  
- else
-  
-  failed=[failed;feature_name];
-  
- endif;
- 
- 
- feature_name="percentiles30_x_acc_off_t1";
- if(u_test(percentiles_x_acc_off_pd(:,6),trimMean_x_acc_off_hc(:,6))<0.05)   %---condition for passing the test---%
- 
-  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
-  
- else
-  
-  failed=[failed;feature_name];
-  
- endif;
- 
- 
- feature_name="percentiles90_x_acc_off_t1";
- if(u_test(percentiles_x_acc_off_pd(:,7),trimMean_x_acc_off_hc(:,7))<0.05)   %---condition for passing the test---%
- 
-  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
-  
- else
-  
-  failed=[failed;feature_name];
-  
- endif;
- 
- 
- feature_name="percentiles95_x_acc_off_t1";
- if(u_test(percentiles_x_acc_off_pd(:,8),trimMean_x_acc_off_hc(:,8))<0.05)   %---condition for passing the test---%
- 
-  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
-  
- else
-  
-  failed=[failed;feature_name];
-  
- endif;
- 
- 
- feature_name="percentiles99_x_acc_off_t1";
- if(u_test(percentiles_x_acc_off_pd(:,9),trimMean_x_acc_off_hc(:,9))<0.05)   %---condition for passing the test---%
- 
-  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
-  
- else
-  
-  failed=[failed;feature_name];
-  
- endif;
- 
- feature_name="moments3_x_acc_off_t1";
- if(u_test(percentiles_x_acc_off_pd(:,1),trimMean_x_acc_off_hc(:,1))<0.05)   %---condition for passing the test---%
- 
-  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
-  
- else
-  
-  failed=[failed;feature_name];
-  
- endif;
- 
- 
- feature_name="moments4_x_acc_off_t1";
- if(u_test(percentiles_x_acc_off_pd(:,2),trimMean_x_acc_off_hc(:,2))<0.05)   %---condition for passing the test---%
- 
-  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
-  
- else
-  
-  failed=[failed;feature_name];
-  
- endif;
- 
- 
- feature_name="moments5_x_acc_off_t1";
- if(u_test(percentiles_x_acc_off_pd(:,3),trimMean_x_acc_off_hc(:,3))<0.05)   %---condition for passing the test---%
- 
-  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
-  
- else
-  
-  failed=[failed;feature_name];
-  
- endif;
- 
- feature_name="trimMean5_x_jerk_off_t1";
- if(u_test(trimMean_x_jerk_off_pd(:,1),trimMean_x_jerk_off_hc(:,1))<0.05)   %---condition for passing the test---%
- 
-  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
-  
- else
-  
-  failed=[failed;feature_name];
-  
- endif;
- 
- feature_name="trimMean10_x_jerk_off_t1";
- if(u_test(trimMean_x_jerk_off_pd(:,2),trimMean_x_jerk_off_hc(:,2))<0.05)   %---condition for passing the test---%
- 
-  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
-  
- else
-  
-  failed=[failed;feature_name];
-  
- endif;
- 
- feature_name="trimMean20_x_jerk_off_t1";
- if(u_test(trimMean_x_jerk_off_pd(:,3),trimMean_x_jerk_off_hc(:,3))<0.05)   %---condition for passing the test---%
- 
-  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
-  
- else
-  
-  failed=[failed;feature_name];
-  
- endif;
- 
- feature_name="trimMean30_x_jerk_off_t1";
- if(u_test(trimMean_x_jerk_off_pd(:,4),trimMean_x_jerk_off_hc(:,4))<0.05)   %---condition for passing the test---%
- 
-  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
-  
- else
-  
-  failed=[failed;feature_name];
-  
- endif;
- 
- feature_name="trimMean40_x_jerk_off_t1";
- if(u_test(trimMean_x_jerk_off_pd(:,5),trimMean_x_jerk_off_hc(:,5))<0.05)   %---condition for passing the test---%
- 
-  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
-  
- else
-  
-  failed=[failed;feature_name];
-  
- endif;
- 
- feature_name="percentiles1_x_jerk_off_t1";
- if(u_test(percentiles_x_jerk_off_pd(:,1),trimMean_x_jerk_off_hc(:,1))<0.05)   %---condition for passing the test---%
- 
-  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
-  
- else
-  
-  failed=[failed;feature_name];
-  
- endif;
- 
- feature_name="percentiles5_x_jerk_off_t1";
- if(u_test(percentiles_x_jerk_off_pd(:,2),trimMean_x_jerk_off_hc(:,2))<0.05)   %---condition for passing the test---%
- 
-  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
-  
- else
-  
-  failed=[failed;feature_name];
-  
- endif;
- 
- 
- feature_name="percentiles10_x_jerk_off_t1";
- if(u_test(percentiles_x_jerk_off_pd(:,3),trimMean_x_jerk_off_hc(:,3))<0.05)   %---condition for passing the test---%
- 
-  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
-  
- else
-  
-  failed=[failed;feature_name];
-  
- endif;
- 
- 
- feature_name="percentiles20_x_jerk_off_t1";
- if(u_test(percentiles_x_jerk_off_pd(:,4),trimMean_x_jerk_off_hc(:,4))<0.05)   %---condition for passing the test---%
- 
-  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
-  
- else
-  
-  failed=[failed;feature_name];
-  
- endif;
- 
- 
- feature_name="percentiles25_x_jerk_off_t1";
- if(u_test(percentiles_x_jerk_off_pd(:,5),trimMean_x_jerk_off_hc(:,5))<0.05)   %---condition for passing the test---%
- 
-  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
-  
- else
-  
-  failed=[failed;feature_name];
-  
- endif;
- 
- 
- feature_name="percentiles30_x_jerk_off_t1";
- if(u_test(percentiles_x_jerk_off_pd(:,6),trimMean_x_jerk_off_hc(:,6))<0.05)   %---condition for passing the test---%
- 
-  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
-  
- else
-  
-  failed=[failed;feature_name];
-  
- endif;
- 
- 
- feature_name="percentiles90_x_jerk_off_t1";
- if(u_test(percentiles_x_jerk_off_pd(:,7),trimMean_x_jerk_off_hc(:,7))<0.05)   %---condition for passing the test---%
- 
-  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
-  
- else
-  
-  failed=[failed;feature_name];
-  
- endif;
- 
- 
- feature_name="percentiles95_x_jerk_off_t1";
- if(u_test(percentiles_x_jerk_off_pd(:,8),trimMean_x_jerk_off_hc(:,8))<0.05)   %---condition for passing the test---%
- 
-  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
-  
- else
-  
-  failed=[failed;feature_name];
-  
- endif;
- 
- 
- feature_name="percentiles99_x_jerk_off_t1";
- if(u_test(percentiles_x_jerk_off_pd(:,9),trimMean_x_jerk_off_hc(:,9))<0.05)   %---condition for passing the test---%
- 
-  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
-  
- else
-  
-  failed=[failed;feature_name];
-  
- endif;
- 
- feature_name="moments3_x_jerk_off_t1";
- if(u_test(percentiles_x_jerk_off_pd(:,1),trimMean_x_jerk_off_hc(:,1))<0.05)   %---condition for passing the test---%
- 
-  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
-  
- else
-  
-  failed=[failed;feature_name];
-  
- endif;
- 
- 
- feature_name="moments4_x_jerk_off_t1";
- if(u_test(percentiles_x_jerk_off_pd(:,2),trimMean_x_jerk_off_hc(:,2))<0.05)   %---condition for passing the test---%
- 
-  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
-  
- else
-  
-  failed=[failed;feature_name];
-  
- endif;
- 
- 
- feature_name="moments5_x_jerk_off_t1";
- if(u_test(percentiles_x_jerk_off_pd(:,3),trimMean_x_jerk_off_hc(:,3))<0.05)   %---condition for passing the test---%
+ if(u_test(moments_y_vel_on_pd(:,4),moments_y_vel_on_hc(:,4))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -6601,19 +6073,8 @@ feature_name="snr_itke2_y_t1";
   
  endif;
  
- feature_name="percentiles1_y_vel_off_t1";
- if(u_test(percentiles_y_vel_off_pd(:,1),trimMean_y_vel_off_hc(:,1))<0.05)   %---condition for passing the test---%
- 
-  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
-  
- else
-  
-  failed=[failed;feature_name];
-  
- endif;
- 
  feature_name="percentiles5_y_vel_off_t1";
- if(u_test(percentiles_y_vel_off_pd(:,2),trimMean_y_vel_off_hc(:,2))<0.05)   %---condition for passing the test---%
+ if(u_test(percentiles_y_vel_off_pd(:,2),percentiles_y_vel_off_hc(:,2))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -6625,7 +6086,7 @@ feature_name="snr_itke2_y_t1";
  
  
  feature_name="percentiles10_y_vel_off_t1";
- if(u_test(percentiles_y_vel_off_pd(:,3),trimMean_y_vel_off_hc(:,3))<0.05)   %---condition for passing the test---%
+ if(u_test(percentiles_y_vel_off_pd(:,3),percentiles_y_vel_off_hc(:,3))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -6637,7 +6098,7 @@ feature_name="snr_itke2_y_t1";
  
  
  feature_name="percentiles20_y_vel_off_t1";
- if(u_test(percentiles_y_vel_off_pd(:,4),trimMean_y_vel_off_hc(:,4))<0.05)   %---condition for passing the test---%
+ if(u_test(percentiles_y_vel_off_pd(:,4),percentiles_y_vel_off_hc(:,4))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -6649,7 +6110,7 @@ feature_name="snr_itke2_y_t1";
  
  
  feature_name="percentiles25_y_vel_off_t1";
- if(u_test(percentiles_y_vel_off_pd(:,5),trimMean_y_vel_off_hc(:,5))<0.05)   %---condition for passing the test---%
+ if(u_test(percentiles_y_vel_off_pd(:,5),percentiles_y_vel_off_hc(:,5))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -6661,7 +6122,7 @@ feature_name="snr_itke2_y_t1";
  
  
  feature_name="percentiles30_y_vel_off_t1";
- if(u_test(percentiles_y_vel_off_pd(:,6),trimMean_y_vel_off_hc(:,6))<0.05)   %---condition for passing the test---%
+ if(u_test(percentiles_y_vel_off_pd(:,6),percentiles_y_vel_off_hc(:,6))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -6673,7 +6134,7 @@ feature_name="snr_itke2_y_t1";
  
  
  feature_name="percentiles90_y_vel_off_t1";
- if(u_test(percentiles_y_vel_off_pd(:,7),trimMean_y_vel_off_hc(:,7))<0.05)   %---condition for passing the test---%
+ if(u_test(percentiles_y_vel_off_pd(:,7),percentiles_y_vel_off_hc(:,7))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -6685,7 +6146,7 @@ feature_name="snr_itke2_y_t1";
  
  
  feature_name="percentiles95_y_vel_off_t1";
- if(u_test(percentiles_y_vel_off_pd(:,8),trimMean_y_vel_off_hc(:,8))<0.05)   %---condition for passing the test---%
+ if(u_test(percentiles_y_vel_off_pd(:,8),percentiles_y_vel_off_hc(:,8))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -6697,7 +6158,7 @@ feature_name="snr_itke2_y_t1";
  
  
  feature_name="percentiles99_y_vel_off_t1";
- if(u_test(percentiles_y_vel_off_pd(:,9),trimMean_y_vel_off_hc(:,9))<0.05)   %---condition for passing the test---%
+ if(u_test(percentiles_y_vel_off_pd(:,9),percentiles_y_vel_off_hc(:,9))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -6708,7 +6169,7 @@ feature_name="snr_itke2_y_t1";
  endif;
  
  feature_name="moments3_y_vel_off_t1";
- if(u_test(percentiles_y_vel_off_pd(:,1),trimMean_y_vel_off_hc(:,1))<0.05)   %---condition for passing the test---%
+ if(u_test(moments_y_vel_off_pd(:,1),moments_y_vel_off_hc(:,1))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -6720,7 +6181,7 @@ feature_name="snr_itke2_y_t1";
  
  
  feature_name="moments4_y_vel_off_t1";
- if(u_test(percentiles_y_vel_off_pd(:,2),trimMean_y_vel_off_hc(:,2))<0.05)   %---condition for passing the test---%
+ if(u_test(moments_y_vel_off_pd(:,2),moments_y_vel_off_hc(:,2))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -6732,7 +6193,216 @@ feature_name="snr_itke2_y_t1";
  
  
  feature_name="moments5_y_vel_off_t1";
- if(u_test(percentiles_y_vel_off_pd(:,3),trimMean_y_vel_off_hc(:,3))<0.05)   %---condition for passing the test---%
+ if(u_test(moments_y_vel_off_pd(:,3),moments_y_vel_off_hc(:,3))<0.05)   %---condition for passing the test---%
+ 
+  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
+  
+ else
+  
+  failed=[failed;feature_name];
+  
+ endif;
+ 
+ 
+ feature_name="moments6_y_vel_off_t1";
+ if(u_test(moments_y_vel_off_pd(:,4),moments_y_vel_off_hc(:,4))<0.05)   %---condition for passing the test---%
+ 
+  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
+  
+ else
+  
+  failed=[failed;feature_name];
+  
+ endif;
+ 
+ feature_name="trimMean5_y_acc_on_t1";
+ if(u_test(trimMean_y_acc_on_pd(:,1),trimMean_y_acc_on_hc(:,1))<0.05)   %---condition for passing the test---%
+ 
+  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
+  
+ else
+  
+  failed=[failed;feature_name];
+  
+ endif;
+ 
+ feature_name="trimMean10_y_acc_on_t1";
+ if(u_test(trimMean_y_acc_on_pd(:,2),trimMean_y_acc_on_hc(:,2))<0.05)   %---condition for passing the test---%
+ 
+  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
+  
+ else
+  
+  failed=[failed;feature_name];
+  
+ endif;
+ 
+ feature_name="trimMean20_y_acc_on_t1";
+ if(u_test(trimMean_y_acc_on_pd(:,3),trimMean_y_acc_on_hc(:,3))<0.05)   %---condition for passing the test---%
+ 
+  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
+  
+ else
+  
+  failed=[failed;feature_name];
+  
+ endif;
+ 
+ feature_name="trimMean30_y_acc_on_t1";
+ if(u_test(trimMean_y_acc_on_pd(:,4),trimMean_y_acc_on_hc(:,4))<0.05)   %---condition for passing the test---%
+ 
+  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
+  
+ else
+  
+  failed=[failed;feature_name];
+  
+ endif;
+ 
+ feature_name="trimMean40_y_acc_on_t1";
+ if(u_test(trimMean_y_acc_on_pd(:,5),trimMean_y_acc_on_hc(:,5))<0.05)   %---condition for passing the test---%
+ 
+  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
+  
+ else
+  
+  failed=[failed;feature_name];
+  
+ endif;
+ 
+ feature_name="percentiles5_y_acc_on_t1";
+ if(u_test(percentiles_y_acc_on_pd(:,2),percentiles_y_acc_on_hc(:,2))<0.05)   %---condition for passing the test---%
+ 
+  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
+  
+ else
+  
+  failed=[failed;feature_name];
+  
+ endif;
+ 
+ 
+ feature_name="percentiles10_y_acc_on_t1";
+ if(u_test(percentiles_y_acc_on_pd(:,3),percentiles_y_acc_on_hc(:,3))<0.05)   %---condition for passing the test---%
+ 
+  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
+  
+ else
+  
+  failed=[failed;feature_name];
+  
+ endif;
+ 
+ 
+ feature_name="percentiles20_y_acc_on_t1";
+ if(u_test(percentiles_y_acc_on_pd(:,4),percentiles_y_acc_on_hc(:,4))<0.05)   %---condition for passing the test---%
+ 
+  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
+  
+ else
+  
+  failed=[failed;feature_name];
+  
+ endif;
+ 
+ 
+ feature_name="percentiles25_y_acc_on_t1";
+ if(u_test(percentiles_y_acc_on_pd(:,5),percentiles_y_acc_on_hc(:,5))<0.05)   %---condition for passing the test---%
+ 
+  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
+  
+ else
+  
+  failed=[failed;feature_name];
+  
+ endif;
+ 
+ 
+ feature_name="percentiles30_y_acc_on_t1";
+ if(u_test(percentiles_y_acc_on_pd(:,6),percentiles_y_acc_on_hc(:,6))<0.05)   %---condition for passing the test---%
+ 
+  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
+  
+ else
+  
+  failed=[failed;feature_name];
+  
+ endif;
+ 
+ 
+ feature_name="percentiles90_y_acc_on_t1";
+ if(u_test(percentiles_y_acc_on_pd(:,7),percentiles_y_acc_on_hc(:,7))<0.05)   %---condition for passing the test---%
+ 
+  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
+  
+ else
+  
+  failed=[failed;feature_name];
+  
+ endif;
+ 
+ 
+ feature_name="percentiles95_y_acc_on_t1";
+ if(u_test(percentiles_y_acc_on_pd(:,8),percentiles_y_acc_on_hc(:,8))<0.05)   %---condition for passing the test---%
+ 
+  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
+  
+ else
+  
+  failed=[failed;feature_name];
+  
+ endif;
+ 
+ 
+ feature_name="percentiles99_y_acc_on_t1";
+ if(u_test(percentiles_y_acc_on_pd(:,9),percentiles_y_acc_on_hc(:,9))<0.05)   %---condition for passing the test---%
+ 
+  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
+  
+ else
+  
+  failed=[failed;feature_name];
+  
+ endif;
+ 
+ feature_name="moments3_y_acc_on_t1";
+ if(u_test(moments_y_acc_on_pd(:,1),moments_y_acc_on_hc(:,1))<0.05)   %---condition for passing the test---%
+ 
+  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
+  
+ else
+  
+  failed=[failed;feature_name];
+  
+ endif;
+ 
+ 
+ feature_name="moments4_y_acc_on_t1";
+ if(u_test(moments_y_acc_on_pd(:,2),moments_y_acc_on_hc(:,2))<0.05)   %---condition for passing the test---%
+ 
+  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
+  
+ else
+  
+  failed=[failed;feature_name];
+  
+ endif;
+ 
+ 
+ feature_name="moments5_y_acc_on_t1";
+ if(u_test(moments_y_acc_on_pd(:,3),moments_y_acc_on_hc(:,3))<0.05)   %---condition for passing the test---%
+ 
+  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
+  
+ else
+  
+  failed=[failed;feature_name];
+  
+ endif;
+ 
+ 
+ feature_name="moments6_y_acc_on_t1";
+ if(u_test(moments_y_acc_on_pd(:,4),moments_y_acc_on_hc(:,4))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -6797,19 +6467,8 @@ feature_name="snr_itke2_y_t1";
   
  endif;
  
- feature_name="percentiles1_y_acc_off_t1";
- if(u_test(percentiles_y_acc_off_pd(:,1),trimMean_y_acc_off_hc(:,1))<0.05)   %---condition for passing the test---%
- 
-  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
-  
- else
-  
-  failed=[failed;feature_name];
-  
- endif;
- 
  feature_name="percentiles5_y_acc_off_t1";
- if(u_test(percentiles_y_acc_off_pd(:,2),trimMean_y_acc_off_hc(:,2))<0.05)   %---condition for passing the test---%
+ if(u_test(percentiles_y_acc_off_pd(:,2),percentiles_y_acc_off_hc(:,2))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -6821,7 +6480,7 @@ feature_name="snr_itke2_y_t1";
  
  
  feature_name="percentiles10_y_acc_off_t1";
- if(u_test(percentiles_y_acc_off_pd(:,3),trimMean_y_acc_off_hc(:,3))<0.05)   %---condition for passing the test---%
+ if(u_test(percentiles_y_acc_off_pd(:,3),percentiles_y_acc_off_hc(:,3))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -6833,7 +6492,7 @@ feature_name="snr_itke2_y_t1";
  
  
  feature_name="percentiles20_y_acc_off_t1";
- if(u_test(percentiles_y_acc_off_pd(:,4),trimMean_y_acc_off_hc(:,4))<0.05)   %---condition for passing the test---%
+ if(u_test(percentiles_y_acc_off_pd(:,4),percentiles_y_acc_off_hc(:,4))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -6845,7 +6504,7 @@ feature_name="snr_itke2_y_t1";
  
  
  feature_name="percentiles25_y_acc_off_t1";
- if(u_test(percentiles_y_acc_off_pd(:,5),trimMean_y_acc_off_hc(:,5))<0.05)   %---condition for passing the test---%
+ if(u_test(percentiles_y_acc_off_pd(:,5),percentiles_y_acc_off_hc(:,5))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -6857,7 +6516,7 @@ feature_name="snr_itke2_y_t1";
  
  
  feature_name="percentiles30_y_acc_off_t1";
- if(u_test(percentiles_y_acc_off_pd(:,6),trimMean_y_acc_off_hc(:,6))<0.05)   %---condition for passing the test---%
+ if(u_test(percentiles_y_acc_off_pd(:,6),percentiles_y_acc_off_hc(:,6))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -6869,7 +6528,7 @@ feature_name="snr_itke2_y_t1";
  
  
  feature_name="percentiles90_y_acc_off_t1";
- if(u_test(percentiles_y_acc_off_pd(:,7),trimMean_y_acc_off_hc(:,7))<0.05)   %---condition for passing the test---%
+ if(u_test(percentiles_y_acc_off_pd(:,7),percentiles_y_acc_off_hc(:,7))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -6881,7 +6540,7 @@ feature_name="snr_itke2_y_t1";
  
  
  feature_name="percentiles95_y_acc_off_t1";
- if(u_test(percentiles_y_acc_off_pd(:,8),trimMean_y_acc_off_hc(:,8))<0.05)   %---condition for passing the test---%
+ if(u_test(percentiles_y_acc_off_pd(:,8),percentiles_y_acc_off_hc(:,8))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -6893,7 +6552,7 @@ feature_name="snr_itke2_y_t1";
  
  
  feature_name="percentiles99_y_acc_off_t1";
- if(u_test(percentiles_y_acc_off_pd(:,9),trimMean_y_acc_off_hc(:,9))<0.05)   %---condition for passing the test---%
+ if(u_test(percentiles_y_acc_off_pd(:,9),percentiles_y_acc_off_hc(:,9))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -6904,7 +6563,7 @@ feature_name="snr_itke2_y_t1";
  endif;
  
  feature_name="moments3_y_acc_off_t1";
- if(u_test(percentiles_y_acc_off_pd(:,1),trimMean_y_acc_off_hc(:,1))<0.05)   %---condition for passing the test---%
+ if(u_test(moments_y_acc_off_pd(:,1),moments_y_acc_off_hc(:,1))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -6916,7 +6575,7 @@ feature_name="snr_itke2_y_t1";
  
  
  feature_name="moments4_y_acc_off_t1";
- if(u_test(percentiles_y_acc_off_pd(:,2),trimMean_y_acc_off_hc(:,2))<0.05)   %---condition for passing the test---%
+ if(u_test(moments_y_acc_off_pd(:,2),moments_y_acc_off_hc(:,2))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -6928,7 +6587,74 @@ feature_name="snr_itke2_y_t1";
  
  
  feature_name="moments5_y_acc_off_t1";
- if(u_test(percentiles_y_acc_off_pd(:,3),trimMean_y_acc_off_hc(:,3))<0.05)   %---condition for passing the test---%
+ if(u_test(moments_y_acc_off_pd(:,3),moments_y_acc_off_hc(:,3))<0.05)   %---condition for passing the test---%
+ 
+  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
+  
+ else
+  
+  failed=[failed;feature_name];
+  
+ endif;
+ 
+ 
+ feature_name="moments6_y_acc_off_t1";
+ if(u_test(moments_y_acc_off_pd(:,4),moments_y_acc_off_hc(:,4))<0.05)   %---condition for passing the test---%
+ 
+  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
+  
+ else
+  
+  failed=[failed;feature_name];
+  
+ endif;
+ 
+ feature_name="trimMean5_y_jerk_on_t1";
+ if(u_test(trimMean_y_jerk_on_pd(:,1),trimMean_y_jerk_on_hc(:,1))<0.05)   %---condition for passing the test---%
+ 
+  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
+  
+ else
+  
+  failed=[failed;feature_name];
+  
+ endif;
+ 
+ feature_name="trimMean10_y_jerk_on_t1";
+ if(u_test(trimMean_y_jerk_on_pd(:,2),trimMean_y_jerk_on_hc(:,2))<0.05)   %---condition for passing the test---%
+ 
+  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
+  
+ else
+  
+  failed=[failed;feature_name];
+  
+ endif;
+ 
+ feature_name="trimMean20_y_jerk_on_t1";
+ if(u_test(trimMean_y_jerk_on_pd(:,3),trimMean_y_jerk_on_hc(:,3))<0.05)   %---condition for passing the test---%
+ 
+  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
+  
+ else
+  
+  failed=[failed;feature_name];
+  
+ endif;
+ 
+ feature_name="trimMean30_y_jerk_on_t1";
+ if(u_test(trimMean_y_jerk_on_pd(:,4),trimMean_y_jerk_on_hc(:,4))<0.05)   %---condition for passing the test---%
+ 
+  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
+  
+ else
+  
+  failed=[failed;feature_name];
+  
+ endif;
+ 
+ feature_name="trimMean40_y_jerk_on_t1";
+ if(u_test(trimMean_y_jerk_on_pd(:,5),trimMean_y_jerk_on_hc(:,5))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -6949,6 +6675,149 @@ feature_name="snr_itke2_y_t1";
   
  endif;
  
+ 
+ feature_name="percentiles5_y_jerk_on_t1";
+ if(u_test(percentiles_y_jerk_on_pd(:,2),percentiles_y_jerk_on_hc(:,2))<0.05)   %---condition for passing the test---%
+ 
+  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
+  
+ else
+  
+  failed=[failed;feature_name];
+  
+ endif;
+ 
+ 
+ feature_name="percentiles10_y_jerk_on_t1";
+ if(u_test(percentiles_y_jerk_on_pd(:,3),percentiles_y_jerk_on_hc(:,3))<0.05)   %---condition for passing the test---%
+ 
+  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
+  
+ else
+  
+  failed=[failed;feature_name];
+  
+ endif;
+ 
+ 
+ feature_name="percentiles20_y_jerk_on_t1";
+ if(u_test(percentiles_y_jerk_on_pd(:,4),percentiles_y_jerk_on_hc(:,4))<0.05)   %---condition for passing the test---%
+ 
+  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
+  
+ else
+  
+  failed=[failed;feature_name];
+  
+ endif;
+ 
+ 
+ feature_name="percentiles25_y_jerk_on_t1";
+ if(u_test(percentiles_y_jerk_on_pd(:,5),percentiles_y_jerk_on_hc(:,5))<0.05)   %---condition for passing the test---%
+ 
+  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
+  
+ else
+  
+  failed=[failed;feature_name];
+  
+ endif;
+ 
+ 
+ feature_name="percentiles30_y_jerk_on_t1";
+ if(u_test(percentiles_y_jerk_on_pd(:,6),percentiles_y_jerk_on_hc(:,6))<0.05)   %---condition for passing the test---%
+ 
+  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
+  
+ else
+  
+  failed=[failed;feature_name];
+  
+ endif;
+ 
+ 
+ feature_name="percentiles90_y_jerk_on_t1";
+ if(u_test(percentiles_y_jerk_on_pd(:,7),percentiles_y_jerk_on_hc(:,7))<0.05)   %---condition for passing the test---%
+ 
+  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
+  
+ else
+  
+  failed=[failed;feature_name];
+  
+ endif;
+ 
+ 
+ feature_name="percentiles95_y_jerk_on_t1";
+ if(u_test(percentiles_y_jerk_on_pd(:,8),percentiles_y_jerk_on_hc(:,8))<0.05)   %---condition for passing the test---%
+ 
+  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
+  
+ else
+  
+  failed=[failed;feature_name];
+  
+ endif;
+ 
+ 
+ feature_name="percentiles99_y_jerk_on_t1";
+ if(u_test(percentiles_y_jerk_on_pd(:,9),percentiles_y_jerk_on_hc(:,9))<0.05)   %---condition for passing the test---%
+ 
+  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
+  
+ else
+  
+  failed=[failed;feature_name];
+  
+ endif;
+ 
+ feature_name="moments3_y_jerk_on_t1";
+ if(u_test(moments_y_jerk_on_pd(:,1),moments_y_jerk_on_hc(:,1))<0.05)   %---condition for passing the test---%
+ 
+  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
+  
+ else
+  
+  failed=[failed;feature_name];
+  
+ endif;
+ 
+ 
+ feature_name="moments4_y_jerk_on_t1";
+ if(u_test(moments_y_jerk_on_pd(:,2),moments_y_jerk_on_hc(:,2))<0.05)   %---condition for passing the test---%
+ 
+  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
+  
+ else
+  
+  failed=[failed;feature_name];
+  
+ endif;
+ 
+ 
+ feature_name="moments5_y_jerk_on_t1";
+ if(u_test(moments_y_jerk_on_pd(:,3),moments_y_jerk_on_hc(:,3))<0.05)   %---condition for passing the test---%
+ 
+  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
+  
+ else
+  
+  failed=[failed;feature_name];
+  
+ endif;
+ 
+ 
+ feature_name="moments6_y_jerk_on_t1";
+ if(u_test(moments_y_jerk_on_pd(:,4),moments_y_jerk_on_hc(:,4))<0.05)   %---condition for passing the test---%
+ 
+  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
+  
+ else
+  
+  failed=[failed;feature_name];
+  
+ endif;
+
  feature_name="trimMean10_y_jerk_off_t1";
  if(u_test(trimMean_y_jerk_off_pd(:,2),trimMean_y_jerk_off_hc(:,2))<0.05)   %---condition for passing the test---%
  
@@ -6993,19 +6862,8 @@ feature_name="snr_itke2_y_t1";
   
  endif;
  
- feature_name="percentiles1_y_jerk_off_t1";
- if(u_test(percentiles_y_jerk_off_pd(:,1),trimMean_y_jerk_off_hc(:,1))<0.05)   %---condition for passing the test---%
- 
-  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
-  
- else
-  
-  failed=[failed;feature_name];
-  
- endif;
- 
  feature_name="percentiles5_y_jerk_off_t1";
- if(u_test(percentiles_y_jerk_off_pd(:,2),trimMean_y_jerk_off_hc(:,2))<0.05)   %---condition for passing the test---%
+ if(u_test(percentiles_y_jerk_off_pd(:,2),percentiles_y_jerk_off_hc(:,2))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -7017,7 +6875,7 @@ feature_name="snr_itke2_y_t1";
  
  
  feature_name="percentiles10_y_jerk_off_t1";
- if(u_test(percentiles_y_jerk_off_pd(:,3),trimMean_y_jerk_off_hc(:,3))<0.05)   %---condition for passing the test---%
+ if(u_test(percentiles_y_jerk_off_pd(:,3),percentiles_y_jerk_off_hc(:,3))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -7029,7 +6887,7 @@ feature_name="snr_itke2_y_t1";
  
  
  feature_name="percentiles20_y_jerk_off_t1";
- if(u_test(percentiles_y_jerk_off_pd(:,4),trimMean_y_jerk_off_hc(:,4))<0.05)   %---condition for passing the test---%
+ if(u_test(percentiles_y_jerk_off_pd(:,4),percentiles_y_jerk_off_hc(:,4))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -7041,7 +6899,7 @@ feature_name="snr_itke2_y_t1";
  
  
  feature_name="percentiles25_y_jerk_off_t1";
- if(u_test(percentiles_y_jerk_off_pd(:,5),trimMean_y_jerk_off_hc(:,5))<0.05)   %---condition for passing the test---%
+ if(u_test(percentiles_y_jerk_off_pd(:,5),percentiles_y_jerk_off_hc(:,5))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -7053,7 +6911,7 @@ feature_name="snr_itke2_y_t1";
  
  
  feature_name="percentiles30_y_jerk_off_t1";
- if(u_test(percentiles_y_jerk_off_pd(:,6),trimMean_y_jerk_off_hc(:,6))<0.05)   %---condition for passing the test---%
+ if(u_test(percentiles_y_jerk_off_pd(:,6),percentiles_y_jerk_off_hc(:,6))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -7065,7 +6923,7 @@ feature_name="snr_itke2_y_t1";
  
  
  feature_name="percentiles90_y_jerk_off_t1";
- if(u_test(percentiles_y_jerk_off_pd(:,7),trimMean_y_jerk_off_hc(:,7))<0.05)   %---condition for passing the test---%
+ if(u_test(percentiles_y_jerk_off_pd(:,7),percentiles_y_jerk_off_hc(:,7))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -7077,7 +6935,7 @@ feature_name="snr_itke2_y_t1";
  
  
  feature_name="percentiles95_y_jerk_off_t1";
- if(u_test(percentiles_y_jerk_off_pd(:,8),trimMean_y_jerk_off_hc(:,8))<0.05)   %---condition for passing the test---%
+ if(u_test(percentiles_y_jerk_off_pd(:,8),percentiles_y_jerk_off_hc(:,8))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -7089,7 +6947,7 @@ feature_name="snr_itke2_y_t1";
  
  
  feature_name="percentiles99_y_jerk_off_t1";
- if(u_test(percentiles_y_jerk_off_pd(:,9),trimMean_y_jerk_off_hc(:,9))<0.05)   %---condition for passing the test---%
+ if(u_test(percentiles_y_jerk_off_pd(:,9),percentiles_y_jerk_off_hc(:,9))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -7100,7 +6958,7 @@ feature_name="snr_itke2_y_t1";
  endif;
  
  feature_name="moments3_y_jerk_off_t1";
- if(u_test(percentiles_y_jerk_off_pd(:,1),trimMean_y_jerk_off_hc(:,1))<0.05)   %---condition for passing the test---%
+ if(u_test(moments_y_jerk_off_pd(:,1),moments_y_jerk_off_hc(:,1))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -7112,7 +6970,7 @@ feature_name="snr_itke2_y_t1";
  
  
  feature_name="moments4_y_jerk_off_t1";
- if(u_test(percentiles_y_jerk_off_pd(:,2),trimMean_y_jerk_off_hc(:,2))<0.05)   %---condition for passing the test---%
+ if(u_test(moments_y_jerk_off_pd(:,2),moments_y_jerk_off_hc(:,2))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -7124,7 +6982,7 @@ feature_name="snr_itke2_y_t1";
  
  
  feature_name="moments5_y_jerk_off_t1";
- if(u_test(percentiles_y_jerk_off_pd(:,3),trimMean_y_jerk_off_hc(:,3))<0.05)   %---condition for passing the test---%
+ if(u_test(moments_y_jerk_off_pd(:,3),moments_y_jerk_off_hc(:,3))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -7135,6 +6993,19 @@ feature_name="snr_itke2_y_t1";
  endif;
  
  
+ feature_name="moments6_y_jerk_off_t1";
+ if(u_test(moments_y_jerk_off_pd(:,4),moments_y_jerk_off_hc(:,4))<0.05)   %---condition for passing the test---%
+ 
+  passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
+  
+ else
+  
+  failed=[failed;feature_name];
+  
+ endif;
+  
+ 
+ %=--------------pressure rate-----%
  feature_name="trimMean5_pressure_rate_t1";
  if(u_test(trimMean_pressure_rate_pd(:,1),trimMean_pressure_rate_hc(:,1))<0.05)   %---condition for passing the test---%
  
@@ -7202,7 +7073,7 @@ feature_name="snr_itke2_y_t1";
  endif;
  
  feature_name="percentiles5_pressure_rate_t1";
- if(u_test(percentiles_pressure_rate_pd(:,2),trimMean_pressure_rate_hc(:,2))<0.05)   %---condition for passing the test---%
+ if(u_test(percentiles_pressure_rate_pd(:,2),percentiles_pressure_rate_hc(:,2))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -7214,7 +7085,7 @@ feature_name="snr_itke2_y_t1";
  
  
  feature_name="percentiles10_pressure_rate_t1";
- if(u_test(percentiles_pressure_rate_pd(:,3),trimMean_pressure_rate_hc(:,3))<0.05)   %---condition for passing the test---%
+ if(u_test(percentiles_pressure_rate_pd(:,3),percentiles_pressure_rate_hc(:,3))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -7226,7 +7097,7 @@ feature_name="snr_itke2_y_t1";
  
  
  feature_name="percentiles20_pressure_rate_t1";
- if(u_test(percentiles_pressure_rate_pd(:,4),trimMean_pressure_rate_hc(:,4))<0.05)   %---condition for passing the test---%
+ if(u_test(percentiles_pressure_rate_pd(:,4),percentiles_pressure_rate_hc(:,4))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -7238,7 +7109,7 @@ feature_name="snr_itke2_y_t1";
  
  
  feature_name="percentiles25_pressure_rate_t1";
- if(u_test(percentiles_pressure_rate_pd(:,5),trimMean_pressure_rate_hc(:,5))<0.05)   %---condition for passing the test---%
+ if(u_test(percentiles_pressure_rate_pd(:,5),percentiles_pressure_rate_hc(:,5))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -7250,7 +7121,7 @@ feature_name="snr_itke2_y_t1";
  
  
  feature_name="percentiles30_pressure_rate_t1";
- if(u_test(percentiles_pressure_rate_pd(:,6),trimMean_pressure_rate_hc(:,6))<0.05)   %---condition for passing the test---%
+ if(u_test(percentiles_pressure_rate_pd(:,6),percentiles_pressure_rate_hc(:,6))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -7262,7 +7133,7 @@ feature_name="snr_itke2_y_t1";
  
  
  feature_name="percentiles90_pressure_rate_t1";
- if(u_test(percentiles_pressure_rate_pd(:,7),trimMean_pressure_rate_hc(:,7))<0.05)   %---condition for passing the test---%
+ if(u_test(percentiles_pressure_rate_pd(:,7),percentiles_pressure_rate_hc(:,7))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -7274,7 +7145,7 @@ feature_name="snr_itke2_y_t1";
  
  
  feature_name="percentiles95_pressure_rate_t1";
- if(u_test(percentiles_pressure_rate_pd(:,8),trimMean_pressure_rate_hc(:,8))<0.05)   %---condition for passing the test---%
+ if(u_test(percentiles_pressure_rate_pd(:,8),percentiles_pressure_rate_hc(:,8))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -7286,7 +7157,7 @@ feature_name="snr_itke2_y_t1";
  
  
  feature_name="percentiles99_pressure_rate_t1";
- if(u_test(percentiles_pressure_rate_pd(:,9),trimMean_pressure_rate_hc(:,9))<0.05)   %---condition for passing the test---%
+ if(u_test(percentiles_pressure_rate_pd(:,9),percentiles_pressure_rate_hc(:,9))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -7297,7 +7168,7 @@ feature_name="snr_itke2_y_t1";
  endif;
  
  feature_name="moments3_pressure_rate_t1";
- if(u_test(percentiles_pressure_rate_pd(:,1),trimMean_pressure_rate_hc(:,1))<0.05)   %---condition for passing the test---%
+ if(u_test(moments_pressure_rate_pd(:,1),moments_pressure_rate_hc(:,1))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -7309,7 +7180,7 @@ feature_name="snr_itke2_y_t1";
  
  
  feature_name="moments4_pressure_rate_t1";
- if(u_test(percentiles_pressure_rate_pd(:,2),trimMean_pressure_rate_hc(:,2))<0.05)   %---condition for passing the test---%
+ if(u_test(moments_pressure_rate_pd(:,2),moments_pressure_rate_hc(:,2))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -7321,7 +7192,7 @@ feature_name="snr_itke2_y_t1";
  
  
  feature_name="moments5_pressure_rate_t1";
- if(u_test(percentiles_pressure_rate_pd(:,3),trimMean_pressure_rate_hc(:,3))<0.05)   %---condition for passing the test---%
+ if(u_test(moments_pressure_rate_pd(:,3),moments_pressure_rate_hc(:,3))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -7333,7 +7204,7 @@ feature_name="snr_itke2_y_t1";
  
  
  feature_name="moments6_pressure_rate_t1";
- if(u_test(percentiles_pressure_rate_pd(:,4),trimMean_pressure_rate_hc(:,4))<0.05)   %---condition for passing the test---%
+ if(u_test(moments_pressure_rate_pd(:,4),moments_pressure_rate_hc(:,4))<0.05)   %---condition for passing the test---%
  
   passed=[passed;feature_name];         %adding the name of the feature to the list of features which passed the test"
   
@@ -7350,5 +7221,3 @@ feature_name="snr_itke2_y_t1";
  save passed.txt passed;
  
  save failed.txt failed;
-  
-
