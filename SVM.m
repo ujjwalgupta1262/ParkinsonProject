@@ -1,112 +1,104 @@
-passed_vec = load("passed.txt");
-passed_features = passed_vec.passed;
+passed_vec = open("passed.txt","r").readlines()
+passed_vec = passed_vec[5:]
+for i in range(len(passed_vec)):
+	if(passed_vec[i][0] == "#"):
+		passed_vec.remove(passed_vec[i])
+	else:
+		passed_vec[i] = passed_vec[i].strip("\n")
 
-for i = 1:length(passed_features)
-	temp = passed_features(i,:);
-	temp = temp(temp ~= ' ');
-	temp_str = temp(1:length(temp) - 3);
-	flag = 0;
+passed_features = passed_vec
 
-	if(length(temp_str) > 7 && temp_str(1:8) == "trimMean") 
-		flag = 1;
-		if(temp_str(10) == "_")
-			column = str2num(temp_str(9));
-			temp_str = strcat(temp_str(1:8),temp_str(10:end));
+for i in xrange(len(passed_features))
+	temp = passed_features[i]
+	temp_str = temp[:-3]
+	flag = 0
+
+	if(len(temp_str) > 7 and temp_str[0:8] == "trimMean") 
+		flag = 1
+		if(temp_str[9] == "_")
+			column = int(temp_str[8])
+			temp_str = temp_str[0:8] + temp_str[9:]
 		else
-			column = str2num(temp_str(9:10));
-			temp_str = strcat(temp_str(1:8),temp_str(11:end));
-		end;
-	end;
+			column = int(temp_str[8:10])
+			temp_str = temp_str(0:8) + temp_str[11:]
+		
+	
 
-	if(length(temp_str) > 10 && temp_str(1:11) == "percentiles")
-		flag = 2;
-		if(temp_str(13) == "_")
-			column = str2num(temp_str(12));
-			temp_str = strcat(temp_str(1:11),temp_str(13:end));
+	if(len(temp_str) > 10 and temp_str[0:11] == "percentiles")
+		flag = 2
+		if(temp_str[12] == "_")
+			column = int(temp_str[11])
+			temp_str = temp_str[0:11] + temp_str[12:]
 		else
-			column = str2num(temp_str(12:13));
-			temp_str = strcat(temp_str(1:11),temp_str(14:end));
-		end;
-	end;
+			column = int(temp_str[11:13])
+			temp_str = temp_str[0:11] + temp_str[13:]
+		
+	
 
-	if(length(temp_str) > 6 && temp_str(1:7) == "moments") 
-		flag = 3;
-		column = str2num(temp_str(8));
-		temp_str = strcat(temp_str(1:7),temp_str(9:end));
-	end;
+	if(len(temp_str) > 6 and temp_str[0:7] == "moments") 
+		flag = 3
+		column = int(temp_str[7])
+		temp_str = temp_str[0:7] + temp_str[8:]
+	
 
-	temp_pd = strcat(temp_str,"_pd.txt");
-	temp_hc = strcat(temp_str,"_hc.txt");
+	temp_pd = temp_str + "_pd.txt"
 
 	try
-		vec_pd = importdata(temp_pd).data;
-	catch
-		vec_pd = importdata(temp_pd," ",5).data;
-	end_try_catch;
+		vec_pd = list(numpy.loadtxt(open(temp_pd,"rt"),delimiter = "\n"))
+	except
+		vec_pd = list(numpy.loadtxt(open(temp_pd,"rt"),delimiter = " "))
 
 	try
-		vec_hc = importdata(temp_hc).data;
-	catch
-		vec_hc = importdata(temp_hc," ",5).data;
-	end_try_catch;
+		vec_hc = list(numpy.loadtxt(open(temp_hc,"rt"),delimiter = "\n"))
+	except
+		vec_hc = list(numpy.loadtxt(open(temp_hc,"rt"),delimiter = " "))
 
 	if(flag == 0)
-		X = [vec_pd;vec_hc];
+		X = vec_pd + vec_hc
 
-	elseif (flag == 1)
+	elif (flag == 1)
 		if(column == 5)
-			X = [vec_pd(:,1);vec_hc(:,1)];
-		elseif(column == 10)
-			X = [vec_pd(:,2);vec_hc(:,2)];
-		elseif(column == 20)
-			X = [vec_pd(:,3);vec_hc(:,3)];
-		elseif(column == 30)
-			X = [vec_pd(:,4);vec_hc(:,4)];
-		elseif(column == 40)
-			X = [vec_pd(:,5);vec_hc(:,5)];
-		end;
+			X = vec_pd(:,1) + vec_hc(:,1)
+		elif(column == 10)
+			X = vec_pd(:,2) + vec_hc(:,2)
+		elif(column == 20)
+			X = vec_pd(:,3) + vec_hc(:,3)
+		elif(column == 30)
+			X = vec_pd(:,4) + vec_hc(:,4)
+		elif(column == 40)
+			X = vec_pd(:,5) + vec_hc(:,5)
+		
 
-	elseif (flag == 2)
+	elif (flag == 2)
 		if(column == 1)
-			X = [vec_pd(:,1);vec_hc(:,1)];
-		elseif(column == 5)
-			X = [vec_pd(:,2);vec_hc(:,2)];
-		elseif(column == 10)
-			X = [vec_pd(:,3);vec_hc(:,3)];
-		elseif(column == 20)
-			X = [vec_pd(:,4);vec_hc(:,4)];
-		elseif(column == 25)
-			X = [vec_pd(:,5);vec_hc(:,5)];
-		elseif(column == 30)
-			X = [vec_pd(:,6);vec_hc(:,6)];
-		elseif(column == 90)
-			X = [vec_pd(:,7);vec_hc(:,7)];
-		elseif(column == 95)
-			X = [vec_pd(:,8);vec_hc(:,8)];
-		elseif(column == 99)
-			X = [vec_pd(:,9);vec_hc(:,9)];
-		end;
+			X = vec_pd(:,1)+ vec_hc(:,1)
+		elif(column == 5)
+			X = vec_pd(:,2)+ vec_hc(:,2)
+		elif(column == 10)
+			X = vec_pd(:,3)+ vec_hc(:,3)
+		elif(column == 20)
+			X = vec_pd(:,4)+ vec_hc(:,4)
+		elif(column == 25)
+			X = vec_pd(:,5)+ vec_hc(:,5)
+		elif(column == 30)
+			X = vec_pd(:,6)+ vec_hc(:,6)
+		elif(column == 90)
+			X = vec_pd(:,7)+ vec_hc(:,7)
+		elif(column == 95)
+			X = vec_pd(:,8)+ vec_hc(:,8)
+		elif(column == 99)
+			X = vec_pd(:,9)+ vec_hc(:,9)
+		
 
-	elseif (flag == 3)
+	elif (flag == 3)
 		if(column == 3)
-			X = [vec_pd(:,1);vec_hc(:,1)];
-		elseif(column == 4)
-			X = [vec_pd(:,2);vec_hc(:,2)];
-		elseif(column == 5)
-			X = [vec_pd(:,3);vec_hc(:,3)];
-		elseif(column == 6)
-			X = [vec_pd(:,4);vec_hc(:,4)];
-		end;
-	end;
+			X = vec_pd(:,1)+ vec_hc(:,1)
+		elif(column == 4)
+			X = vec_pd(:,2)+ vec_hc(:,2)
+		elif(column == 5)
+			X = vec_pd(:,3)+ vec_hc(:,3)
+		elif(column == 6)
+			X = vec_pd(:,4)+ vec_hc(:,4)
+		
 	
-	y = [zeros(length(vec_pd),1);ones(length(vec_hc),1)];
-
-	model = svmtrain(X,y,0,gaussianKernel);
-
-	pred = svmPredict(model,X);
-
-	disp("Accuracy");
-
-	disp(mean(pred == y)*100);
-end;
-
+	y = [0]*len(vec_pd) + [1]*len(vec_hc)
