@@ -1,4 +1,5 @@
 import numpy as numpy
+from sklearn import svm
 import math
 
 def get_column(list,num_column):
@@ -7,6 +8,37 @@ def get_column(list,num_column):
         temp.append(i[num_column])
     return temp
 
+def getAccuracy(X,y,X_test_set,y_test_set):
+   length = len(X)
+   C_set = [0.001,0.003,0.01,0.03,0.1,1,3,10,30,100,300,1000]
+   for i in range(10):
+    #training sets
+    X_train = X[:i*length/10] + X[(i+1)*length/10:]
+    y_train = y[:i*length/10] + y[(i+1)*length/10:]
+    #test sets
+    X_test = X[i*length/10:(i+1)*length/10]
+    y_test = y[i*length/10:(i+1)*length/10]
+    #reshape and form arrays
+    X_train = numpy.asarray(X_train).reshape(-1,1)
+    X_test = numpy.asarray(X_test).reshape(-1,1)
+    #X_test_set = numpy.asarray(X_test_set).reshape(-1,1)
+    #reshape and form arrays
+    y_train = numpy.asarray(y_train)
+    y_test = numpy.asarray(y_test)
+    #y_test = numpy.asarray(y_test_set)
+    max_score = 0
+    for j in C_set:
+        clf = svm.SVC(C = j)
+        clf.fit(X_train,y_train)
+        score = clf.score(X_test,y_test)
+        if(score > max_score):
+            max_score = score
+            best_model = clf
+    acc = best_model.score(X_test_set,y_test_set)
+    return acc,max_score 
+    
+
+accuracy_list = []
 passed_vec = open("passed.txt", "r").readlines()
 passed_vec = passed_vec[5:]
 for i in range(len(passed_vec)):
@@ -18,7 +50,7 @@ for i in range(len(passed_vec)):
 
 
 passed_features = passed_vec
-
+dict_scores = {}
 for i in range(len(passed_features)):
     if(passed_features[i]!=-100):
         temp = passed_features[i]
@@ -55,7 +87,7 @@ for i in range(len(passed_features)):
 
     #print(temp_str)
         temp_pd = temp_str + "_pd.txt"
-        print(temp_pd)
+        #print(temp_pd)
         temp_hc=temp_str+ "_hc.txt"
 
         try:
@@ -117,7 +149,15 @@ for i in range(len(passed_features)):
             elif (column == 6):
                 X = get_column(vec_pd,3)+ get_column(vec_hc,3)
 
+        y = [0]*len(vec_pd) + [1]*len(vec_hc)
+        
+        score = getAccuracy(X[:-5],y[:-5],numpy.asarray(X[-5:]).reshape(-1,1),numpy.asarray(y[-5:]).reshape(-1,1))
+        accuracy_list.append([temp_str,score])
 
-        y = [0] * len(vec_pd) + [1] * len(vec_hc)
+accuracy_list.sort(key = lambda x : x[1],reverse = True)
+for i in accuracy_list:
+    print i
 
-        print(y)
+
+
+        
