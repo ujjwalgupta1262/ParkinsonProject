@@ -1,5 +1,6 @@
 import numpy as numpy
 from sklearn import svm
+import math
 
 def get_column(list, num_column):
     temp = []
@@ -17,11 +18,14 @@ def getAccuracy(X, y):
         score=0
         for i in range(10):
             # training sets
-            X_train = X[:i * length / 10] + X[(i + 1) * length / 10:]
-            y_train = y[:i * length / 10] + y[(i + 1) * length / 10:]
+            alpha=int(i * length / 10)
+            beta=int((i + 1) * length / 10)
+
+            X_train = X[:alpha] + X[beta:]
+            y_train = y[:alpha] + y[beta:]
             # test sets
-            X_test = X[i * length / 10:(i + 1) * length / 10]
-            y_test = y[i * length / 10:(i + 1) * length / 10]
+            X_test = X[alpha:beta]
+            y_test = y[alpha:beta]
             # reshape and form arrays
             X_train = numpy.asarray(X_train).reshape(-1, 1)
             X_test = numpy.asarray(X_test).reshape(-1, 1)
@@ -94,15 +98,21 @@ for i in range(len(passed_features)):
 
         try:
             vec_pd = list(numpy.loadtxt(open(temp_pd, "rt"), delimiter="\n"))
-            # print(vec_pd)
+            #vec_pd = [x for x in vec_pd if math.isnan(x)==False]
+
         except:
             vec_pd = list(numpy.genfromtxt(open(temp_pd, "rt"), delimiter=" "))
+            print(vec_pd)
+            #vec_pd = [x for x in vec_pd if math.isnan(x)==False]
             # print(len(vec_pd[0]))
-
+# All the Nan values were considered as Zero as essentially their contribbution remains null and void
         try:
             vec_hc = list(numpy.loadtxt(open(temp_hc, "rt"), delimiter="\n"))
+           # vec_hc = [x for x in vec_hc if math.isnan(x)==False]
         except:
+            print(temp_hc)
             vec_hc = list(numpy.genfromtxt(open(temp_hc, "rt"), delimiter=" "))
+            #vec_hc = [x for x in vec_hc if math.isnan(x)==False]
             # print(len(vec_hc[0]))
 
         if (flag == 0):
@@ -111,47 +121,67 @@ for i in range(len(passed_features)):
         elif (flag == 1):
             if (column == 5):
                 X = get_column(vec_pd, 0) + get_column(vec_hc, 0)
+                X = [x for x in X if math.isnan(x)==False]
             elif (column == 10):
                 X = get_column(vec_pd, 1) + get_column(vec_hc, 1)
+                X = [x for x in X if math.isnan(x)==False]
             elif (column == 20):
                 X = get_column(vec_pd, 2) + get_column(vec_hc, 2)
+                X = [x for x in X if math.isnan(x)==False]
             elif (column == 30):
                 X = get_column(vec_pd, 3) + get_column(vec_hc, 3)
+                X = [x for x in X if math.isnan(x)==False]
             elif (column == 40):
                 X = get_column(vec_pd, 4) + get_column(vec_hc, 4)
+                X = [x for x in X if math.isnan(x)==False]
 
         elif (flag == 2):
             if (column == 1):
                 X = get_column(vec_pd, 0) + get_column(vec_hc, 0)
+                X = [x for x in X if math.isnan(x)==False]
             elif (column == 5):
                 X = get_column(vec_pd, 1) + get_column(vec_hc, 1)
+                X = [x for x in X if math.isnan(x)==False]
             elif (column == 10):
                 X = get_column(vec_pd, 2) + get_column(vec_hc, 2)
+                X = [x for x in X if math.isnan(x)==False]
             elif (column == 20):
                 X = get_column(vec_pd, 3) + get_column(vec_hc, 3)
+                X = [x for x in X if math.isnan(x)==False]
             elif (column == 25):
                 X = get_column(vec_pd, 4) + get_column(vec_hc, 4)
+                X = [x for x in X if math.isnan(x)==False]
             elif (column == 30):
                 X = get_column(vec_pd, 5) + get_column(vec_hc, 5)
+                X = [x for x in X if math.isnan(x)==False]
             elif (column == 90):
                 X = get_column(vec_pd, 6) + get_column(vec_hc, 6)
+                X = [x for x in X if math.isnan(x)==False]
             elif (column == 95):
                 X = get_column(vec_pd, 7) + get_column(vec_hc, 7)
+                X = [x for x in X if math.isnan(x)==False]
             elif (column == 99):
                 X = get_column(vec_pd, 8) + get_column(vec_hc, 8)
+                X = [x for x in X if math.isnan(x)==False]
 
         elif (flag == 3):
             if (column == 3):
                 X = get_column(vec_pd, 0) + get_column(vec_hc, 0)
+                X = [x for x in X if math.isnan(x)==False]
             elif (column == 4):
                 X = get_column(vec_pd, 1) + get_column(vec_hc, 1)
+                X = [x for x in X if math.isnan(x)==False]
             elif (column == 5):
                 X = get_column(vec_pd, 2) + get_column(vec_hc, 2)
+                X = [x for x in X if math.isnan(x)==False]
             elif (column == 6):
                 X = get_column(vec_pd, 3) + get_column(vec_hc, 3)
+                X = [x for x in X if math.isnan(x)==False]
 
         y = [0] * len(vec_pd) + [1] * len(vec_hc)
 
+        print(X)
+        #print(y)
         score = getAccuracy(X,y)
         accuracy_list.append([temp_str, score])
 
