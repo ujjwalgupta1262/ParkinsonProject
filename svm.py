@@ -67,7 +67,7 @@ for i in range(len(passed_features)):
             break
         # print(temp_str)
         flag = 0
-
+        old_str = temp_str
         if (len(temp_str) > 7 and temp_str[0:8] == "trimMean"):
             flag = 1
             if (temp_str[9] == "_"):
@@ -102,7 +102,7 @@ for i in range(len(passed_features)):
 
         except:
             vec_pd = list(numpy.genfromtxt(open(temp_pd, "rt"), delimiter=" "))
-            print(vec_pd)
+            #print(vec_pd)
             #vec_pd = [x for x in vec_pd if math.isnan(x)==False]
             # print(len(vec_pd[0]))
 # All the Nan values were considered as Zero as essentially their contribbution remains null and void
@@ -110,7 +110,7 @@ for i in range(len(passed_features)):
             vec_hc = list(numpy.loadtxt(open(temp_hc, "rt"), delimiter="\n"))
            # vec_hc = [x for x in vec_hc if math.isnan(x)==False]
         except:
-            print(temp_hc)
+            #print(temp_hc)
             vec_hc = list(numpy.genfromtxt(open(temp_hc, "rt"), delimiter=" "))
             #vec_hc = [x for x in vec_hc if math.isnan(x)==False]
             # print(len(vec_hc[0]))
@@ -180,12 +180,15 @@ for i in range(len(passed_features)):
 
         y = [0] * len(vec_pd) + [1] * len(vec_hc)
 
-        print(X)
+        #print(X)
         #print(y)
         score = getAccuracy(X,y)
-        accuracy_list.append([temp_str, score])
+        accuracy_list.append([old_str+"_t2", score])
 
 accuracy_list.sort(key=lambda x: x[1], reverse=True)
+file = open ("overall_accuracy.txt","w")
 for i in accuracy_list:
-    print(i)
+    file.write(str(i))
+    file.write("\n")
+file.close()
 
