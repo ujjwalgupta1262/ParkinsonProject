@@ -77,7 +77,7 @@ for i in range(len(passed_features)):
             break
         # print(temp_str)
         flag = 0
-
+        old_str = temp_str
         if (len(temp_str) > 7 and temp_str[0:8] == "trimMean"):
             flag = 1
             if (temp_str[9] == "_"):
@@ -193,9 +193,12 @@ for i in range(len(passed_features)):
         #print(X)
         #print(y)
         score = getAccuracy(X,y)
-        accuracy_list.append([temp_str, score])
+        accuracy_list.append([old_str + "_t2", score])
 
 accuracy_list.sort(key=lambda x: x[1], reverse=True)
+file = open ("female_accuracy.txt","w")
 for i in accuracy_list:
-    print(i)
+    file.write(str(i))
+    file.write("\n")
+file.close()
 
