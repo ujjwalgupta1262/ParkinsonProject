@@ -1,5 +1,6 @@
 import numpy as numpy
 from sklearn import svm
+import random
 import math
 
 def get_female(list,label):
@@ -11,6 +12,19 @@ def get_female(list,label):
         temp = [list[i] for i in index_hc]
     return temp
 
+def combine(X,y):
+    temp = []
+    for i in range(len(X)):
+        temp.append([X[i],y[i]])
+    return temp
+
+def separate(list):
+    X = []
+    y = []
+    for i in list:
+        X.append(i[0])
+        y.append(i[1])
+    return (X,y)
 
 def get_column(list, num_column):
     temp = []
@@ -192,8 +206,15 @@ for i in range(len(passed_features)):
 
         #print(X)
         #print(y)
-        score = getAccuracy(X,y)
-        accuracy_list.append([old_str + "_t2", score])
+        score = 0
+        for i in range(50):
+            t = combine(X,y)
+            random.shuffle(t)
+            (X,y) = separate(t)
+            l = getAccuracy(X,y)[0]
+            print(l)
+            score += l
+        accuracy_list.append([old_str + "_t2", score/50])
 
 accuracy_list.sort(key=lambda x: x[1], reverse=True)
 file = open ("female_accuracy.txt","w")
