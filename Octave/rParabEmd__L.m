@@ -1,5 +1,5 @@
 % This program performs the Empirical Mode Decomposition accordingly to the paper 
-%       ìOn the HHT, its problems, and some solutionsî, Reference: Rato, R. T., Ortigueira, M. D., and Batista, A. G., 
+%       ‚ÄúOn the HHT, its problems, and some solutions‚Äù, Reference: Rato, R. T., Ortigueira, M. D., and Batista, A. G., 
 %       Mechanical Systems and Signal Processing , vol. 22, no. 6, pp. 1374-1394, August 2008.
 %
 %
