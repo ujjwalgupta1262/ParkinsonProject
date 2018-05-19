@@ -1,0 +1,2 @@
+['trimMean40_acc_on_t4', 0.4557499999999999]
+['percentiles1_pressure_rate_t4', 0.38635714285714295]
