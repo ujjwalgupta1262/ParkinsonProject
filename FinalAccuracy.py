@@ -9,13 +9,21 @@ def normalise(list):
     l = numpy.array(list)
     mean = numpy.mean(l, axis = 0)
     std = numpy.std(l,axis = 0)
-    return (l - mean)/std
+    epsilon = numpy.array(numpy.exp(-10))
+    return (l - mean)/(std+epsilon)
+
+def normaliseMS(list,mean,std):
+    l = numpy.array(list)
+    epsilon = numpy.array(numpy.exp(-10))
+    return (l - mean)/(std+epsilon)
 
 def getList(l,indices):
     return [l[i] for i in indices]
 
 def combine(X,y):
     temp = []
+    #print(len(X))
+    #print(len(y))
     for i in range(len(X)):
         temp_list = list(X[i])
         temp_list.append(y[i])
@@ -54,8 +62,8 @@ def getAccuracy(X, y):
             # test sets
             X_test = X[alpha:beta]
             y_test = y[alpha:beta]
+            X_test = normaliseMS(X_test,numpy.mean(numpy.array(X_train),axis  = 0),numpy.std(numpy.array(X_train),axis = 0))
             X_train = normalise(X_train)
-            X_test = normalise(X_test)
             # reshape and form arrays
             #X_train = numpy.asarray(X_train).reshape(-1, 1)
             #X_test = numpy.asarray(X_test).reshape(-1, 1)
@@ -87,6 +95,9 @@ def getData(filename):
         l[i][0] = (l[i][0])[3:-2]
         temp_str = l[i][0]
         flag = 0
+        column = 0
+        print("********************************")
+        print(temp_str)
         if len(temp_str) > 7 and temp_str[0:8] == 'trimMean':
             flag = 1
             if temp_str[9] == '_':
@@ -98,6 +109,7 @@ def getData(filename):
 
         if len(temp_str) > 10 and temp_str[0:11] == 'percentiles':
             flag = 2
+            #print(temp_str)
             if temp_str[12] == '_':
                 column = int(temp_str[11])
                 temp_str = temp_str[0:11] + temp_str[12:]
@@ -146,11 +158,11 @@ def getData(filename):
 
                 # vec_hc = [x for x in vec_hc if math.isnan(x)==False]
                 # print(len(vec_hc[0]))
-
+        print(temp_pd)
+        print(column)
         if flag == 0:
             X = vec_pd + vec_hc
         elif flag == 1:
-
             if column == 5:
                 X = get_column(vec_pd, 0) + get_column(vec_hc, 0)
                 X = [x for x in X if math.isnan(x) == False]
@@ -211,6 +223,7 @@ def getData(filename):
                 X = [x for x in X if math.isnan(x) == False]
 
         y = [0] * len(vec_pd) + [1] * len(vec_hc)
+        
         X_list = combine(X_list,X)
 
     return (X_list, y)
@@ -222,18 +235,22 @@ def getMaxAccuracyTotal(filename):
     features_X = [[]]*len(X_list)
     y = data[1]
     max_score = 0
+    fout = open("overall_results.txt","w")
     for i in range(len(X_list[0])):
         feature = get_column(X_list,i)
         features_X = combine(features_X,feature)
         tot_score = 0
-        for i in range(epochs):
+        for j in range(epochs):
             t = combine(features_X,y)
             random.shuffle(t)
             (features_X,y) = separate(t)
             tot_score += getAccuracy(features_X,y)[0]
         score = tot_score/epochs
+        fout.write(str(i) + " :" + str(score))
+        print(str(i) + " :" + str(score))
         if(score > max_score):
             max_score = score
+    fout.close()
     return max_score
 
 def getMaxAccuracyMale(filename):
@@ -245,19 +262,21 @@ def getMaxAccuracyMale(filename):
     y = [0]*len(index_hc) + [1]*len(index_pd)
     #print(y)
     max_score = 0
+    fout = open("male_results.txt","w")
     for i in range(len(X_list[0])):
         feature = get_column(X_list,i)
         features_X = combine(features_X,feature)
         tot_score = 0
-        for i in range(epochs):
+        for j in range(epochs):
             t = combine(features_X,y)
             random.shuffle(t)
             (features_X,y) = separate(t)
             tot_score += getAccuracy(features_X,y)[0]
         score = tot_score/epochs
-        score = getAccuracy(features_X,y)[0]
+        fout.write(str(i) + " :" + str(score))
         if(score > max_score):
             max_score = score
+    fout.close()
     return max_score  
 
 def getMaxAccuracyFemale(filename):
@@ -269,22 +288,25 @@ def getMaxAccuracyFemale(filename):
     y = [0]*len(index_hc) + [1]*len(index_pd)
     #print(y)
     max_score = 0
+    fout = open("female_results.txt","w")
     for i in range(len(X_list[0])):
         feature = get_column(X_list,i)
         features_X = combine(features_X,feature)
         tot_score = 0
-        for i in range(epochs):
+        for j in range(epochs):
             t = combine(features_X,y)
             random.shuffle(t)
             (features_X,y) = separate(t)
             tot_score += getAccuracy(features_X,y)[0]
         score = tot_score/epochs
+        fout.write(str(i) + " :" + str(score))
+
         if(score > max_score):
             max_score = score
+    fout.close()
     return max_score 
 
-
-print(getMaxAccuracyFemale("test.txt"))
+print(getMaxAccuracyTotal("overall_total_accuracy.txt"))
 
 
 
