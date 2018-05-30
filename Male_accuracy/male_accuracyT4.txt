@@ -1,3 +1,3 @@
-['rel_NCV_off_t4', 0.6491666666666667]
-['geoMean_jerk_off_t4', 0.6363333333333335]
-['percentiles1_pressure_rate_t4', 0.33033333333333315]
+['rel_NCV_off_t4', 0.6796666666666666]
+['geoMean_jerk_off_t4', 0.6688333333333335]
+['percentiles1_pressure_rate_t4', 0.34433333333333344]
