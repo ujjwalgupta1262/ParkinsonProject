@@ -7,7 +7,13 @@ import math
 def normalise(l):
     mean = numpy.mean(l, axis = 0)
     std = numpy.std(l,axis = 0)
-    return (l - mean)/std
+    epsilon=numpy.array([numpy.exp(-10)])
+    return (l - mean)/(std+epsilon)
+
+def normaliseMS(list,mean,std):
+    l = numpy.array(list)
+    epsilon = numpy.array(numpy.exp(-10))
+    return (l - mean)/(std+epsilon)
 
 def combine(X,y):
     temp = []
@@ -32,7 +38,7 @@ def get_column(list, num_column):
     return temp
 
 
-def getAccuracy(X, y):
+def getAccuracy(X, y,XTest,yTest):
     length = len(X)
     C_set = [0.001, 0.003, 0.01, 0.03, 0.1, 1, 3, 10, 30, 100, 300, 1000]
     max_score = 0
@@ -51,10 +57,8 @@ def getAccuracy(X, y):
             y_test = y[alpha:beta]
             # X_test.reshape(-1,1)
             # reshape and form arrays
-            X_train = numpy.asarray(X_train).reshape(-1, 1)
-            X_train=normalise(X_train)
-            X_test = numpy.asarray(X_test).reshape(-1, 1)
-            X_test=normalise(X_test)
+            X_test = normaliseMS(X_test,numpy.mean(numpy.array(X_train),axis=0),numpy.std(numpy.array(X_train),axis=0)).reshape(-1,1)
+            X_train = normalise(X_train).reshape(-1,1)
 
             # X_test_set = numpy.asarray(X_test_set).reshape(-1,1)
             # reshape and form arrays
@@ -67,13 +71,13 @@ def getAccuracy(X, y):
         if (score > max_score):
             max_score = score
             best_model = clf
-
-    acc = max_score / 10.0
+    XTest=normaliseMS(XTest,numpy.mean(numpy.array(X),axis=0),numpy.std(numpy.array(X),axis=0)).reshape(-1,1)
+    yTest=numpy.asarray(yTest)
+    acc = best_model.score(XTest,yTest)
     return acc, max_score
 
-
 accuracy_list = []
-passed_vec = open("passed.txt", "r").readlines()
+passed_vec = open("passed_t1.txt", "r").readlines()
 passed_vec = passed_vec[5:]
 for i in range(len(passed_vec)):
     if (passed_vec[i][0] == "#"):
@@ -117,10 +121,9 @@ for i in range(len(passed_features)):
             column = int(temp_str[7])
             temp_str = temp_str[0:7] + temp_str[8:]
 
-        # print(temp_str)
-        temp_pd = temp_str + "_pd_t8.txt"
+        temp_pd = temp_str + "_pd_t1.txt"
         # print(temp_pd)
-        temp_hc = temp_str + "_hc_t8.txt"
+        temp_hc = temp_str + "_hc_t1.txt"
 
         try:
             vec_pd = list(numpy.loadtxt(open(temp_pd, "rt"), delimiter="\n"))
@@ -207,21 +210,21 @@ for i in range(len(passed_features)):
         y = [0] * len(vec_pd) + [1] * len(vec_hc)
 
         score = 0
+       # print(temp_str)
         for i in range(50):
-
             X = [[i] for i in X]
            # print(X)
             t = combine(X,y)
             random.shuffle(t)
             (X,y) = separate(t)
-           # print(X)
-            #print(y)
-            score += getAccuracy(X,y)[0]
+            end=(int)(4*len(X)/5)
+            #print(end)
+            score += getAccuracy(X[:end], y[:end],X[end:],y[end:])[0]
 
-        accuracy_list.append([old_str+"_t8", score/50])
+        accuracy_list.append([old_str+"_t1", score/50])
 
 accuracy_list.sort(key=lambda x: x[1], reverse=True)
-file = open ("overall_accuracy_t8.txt","w")
+file = open ("overall_accuracy_t1_new.txt","w")
 for i in accuracy_list:
     file.write(str(i))
     file.write("\n")
