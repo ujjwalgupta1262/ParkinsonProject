@@ -1,5 +1,8 @@
 young_hc_ind = [1,3,4,7,9,11,12,13,16,19,21,22,23,24,25,26,28,30,31,33,34,35,38];
+%young_hc_ind = [1,3,4,7,9,11,12,13,18,20,21,22,23,24,25,27,29,31,32,33,36]; task1
 young_pd_ind = [6,8,12,22,23,24,26,27,31,32,35];
+%young_pd_ind = [6,8,12,22,23,24,26,27,31,32,35];    task1
+
 speed_hc=importdata("speed_hc_t2.txt","\n",5).data(young_hc_ind);
 NCV_on_hc=importdata("NCV_on_hc_t2.txt","\n",5).data(young_hc_ind);
 NCA_on_hc=importdata("NCA_on_hc_t2.txt","\n",5).data(young_hc_ind);
@@ -264,7 +267,7 @@ stdDevs_y_jerk_off_hc=importdata("stdDevs_y_jerk_off_hc_t2.txt","\n",5).data(you
 robustRange_y_jerk_off_hc=importdata("robustRange_y_jerk_off_hc_t2.txt","\n",5).data(young_hc_ind);
 interQuartiles_y_jerk_off_hc=importdata("interQuartiles_y_jerk_off_hc_t2.txt","\n",5).data(young_hc_ind);
 
-young_hc_ind = [2,5,6,8,9,10,11,14,15,19,22,23,25,26,30,31,32,35,36,38];
+%young_hc_ind = [2,5,6,8,9,10,11,14,15,19,22,23,25,26,30,31,32,35,36,38];
 
 arithMean_pressure_rate_hc=importdata("arithMean_pressure_rate_hc_t2.txt","\n",5).data(young_hc_ind);
 geoMean_pressure_rate_hc=importdata("geoMean_pressure_rate_hc_t2.txt","\n",5).data(young_hc_ind);
