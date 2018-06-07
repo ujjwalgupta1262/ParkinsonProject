@@ -1,0 +1,2 @@
+['percentiles1_pressure_rate_t6', 0.6200000000000002]
+['interQuartiles_vel_on_t6', 0.5777777777777781]

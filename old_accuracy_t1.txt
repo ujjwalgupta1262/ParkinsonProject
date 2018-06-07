@@ -1,0 +1,7 @@
+['ranges_pressure_rate_t1', 0.785]
+['moments5_pressure_rate_t1', 0.7]
+['moments6_pressure_rate_t1', 0.685]
+['percentiles1_pressure_rate_t1', 0.6375]
+['moments4_pressure_rate_t1', 0.6275]
+['moments3_pressure_rate_t1', 0.6125]
+['kurto_pressure_rate_t1', 0.61]
