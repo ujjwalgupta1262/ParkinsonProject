@@ -1,0 +1,20 @@
+# Created by Octave 3.8.0, Wed Jun 06 17:51:07 2018 +08 <ujjawal@ujjawals-MacBook-Pro.local>
+# name: old_passed
+# type: sq_string
+# elements: 7
+# length: 29
+kurto_pressure_rate _t1      
+# length: 29
+ranges_pressure_rate_t1      
+# length: 29
+percentiles1_pressure_rate_t1
+# length: 29
+moments3_pressure_rate_t1    
+# length: 29
+moments4_pressure_rate_t1    
+# length: 29
+moments5_pressure_rate_t1    
+# length: 29
+moments6_pressure_rate_t1    
+
+
