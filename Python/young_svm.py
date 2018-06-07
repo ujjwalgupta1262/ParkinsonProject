@@ -235,7 +235,7 @@ for i in range(len(passed_features)):
         accuracy_list.append([old_str + "_t2", score/50])
 
 accuracy_list.sort(key=lambda x: x[1], reverse=True)
-file = open ("young_accuracy.txt","w")
+file = open ("young_accuracy_t2.txt","w")
 for i in accuracy_list:
     file.write(str(i))
     file.write("\n")

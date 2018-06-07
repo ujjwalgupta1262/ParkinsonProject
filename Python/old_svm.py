@@ -16,7 +16,7 @@ def normaliseMS(list,mean,std):
 
 def get_old(list,label):
     index_pd = [0, 1, 2, 3, 4, 6, 8, 9, 10, 12, 13, 14, 15, 16, 17, 18, 19, 20, 24, 27, 28, 29, 32, 33, 35, 36]
-    index_hc = [1, 4, 5, 7, 9, 13, 14, 15, 16, 17, 19, 16, 28, 31, 35, 36]
+    index_hc = [1, 4, 5, 7, 9, 13, 14, 16, 17, 19, 26, 28, 31, 35, 36]
     if (label == "pd"):
         temp = [list[i] for i in index_pd]
     else:
@@ -235,7 +235,7 @@ for i in range(len(passed_features)):
         accuracy_list.append([old_str + "_t2", score/50])
 
 accuracy_list.sort(key=lambda x: x[1], reverse=True)
-file = open ("old_accuracy.txt","w")
+file = open ("old_accuracy_t2.txt","w")
 for i in accuracy_list:
     file.write(str(i))
     file.write("\n")
