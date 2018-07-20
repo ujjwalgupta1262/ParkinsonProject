@@ -1,8 +1,0 @@
-# Created by Octave 4.2.1, Thu Jun 07 12:46:10 2018 GMT <unknown@unknown>
-# name: young_passed
-# type: sq_string
-# elements: 1
-# length: 29
-percentiles1_pressure_rate_t1
-
-
