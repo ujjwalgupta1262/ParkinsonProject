@@ -1,0 +1,52 @@
+# Created by Octave 4.2.1, Thu Jun 07 12:35:43 2018 GMT <unknown@unknown>
+# name: young_passed
+# type: sq_string
+# elements: 23
+# length: 29
+norm_onTime_t8               
+# length: 29
+norm_offTime_t8              
+# length: 29
+robustRange_vel_off_t8       
+# length: 29
+interQuartiles_vel_off_t8    
+# length: 29
+arithMean_x_vel_off_t8       
+# length: 29
+geoMean_x_vel_off_t8         
+# length: 29
+robustRange_x_vel_off_t8     
+# length: 29
+interQuartiles_x_vel_off_t8  
+# length: 29
+geoMean_x_acc_off_t8         
+# length: 29
+interQuartiles_x_acc_off_t8  
+# length: 29
+snr_ce_x_t8                  
+# length: 29
+percentiles90_vel_off_t8     
+# length: 29
+percentiles95_vel_off_t8     
+# length: 29
+percentiles99_vel_off_t8     
+# length: 29
+trimMean5_x_vel_off_t8       
+# length: 29
+trimMean10_x_vel_off_t8      
+# length: 29
+percentiles90_x_vel_off_t8   
+# length: 29
+percentiles95_x_vel_off_t8   
+# length: 29
+percentiles99_x_vel_off_t8   
+# length: 29
+trimMean5_x_acc_off_t8       
+# length: 29
+trimMean10_x_acc_off_t8      
+# length: 29
+percentiles90_x_acc_off_t8   
+# length: 29
+percentiles1_pressure_rate_t8
+
+

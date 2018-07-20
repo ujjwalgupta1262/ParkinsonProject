@@ -1,0 +1,32 @@
+# Created by Octave 4.2.1, Thu Jun 07 12:43:47 2018 GMT <unknown@unknown>
+# name: young_passed
+# type: sq_string
+# elements: 13
+# length: 30
+norm_onTime_t7                
+# length: 30
+norm_offTime_t7               
+# length: 30
+kurto_jerk_on_t7
+# length: 30
+ranges_jerk_on_t7             
+# length: 30
+kurto_y_jerk_on_t7
+# length: 30
+stdDevs_pressure_rate_t7      
+# length: 30
+robustRange_pressure_rate_t7  
+# length: 30
+snr_ce_y_t7                   
+# length: 30
+moments4_jerk_on_t7           
+# length: 30
+moments5_jerk_on_t7           
+# length: 30
+percentiles1_pressure_rate_t7 
+# length: 30
+percentiles99_pressure_rate_t7
+# length: 30
+moments3_pressure_rate_t7     
+
+
