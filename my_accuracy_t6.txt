@@ -1,0 +1,5 @@
+['percentiles1_pressure_rate_t6', 0.63]
+['NCP_t6', 0.625]
+['y_shannon_i1_t6', 0.575]
+['y_renyi2_i1_t6', 0.525]
+['y_renyi3_i1_t6', 0.525]
