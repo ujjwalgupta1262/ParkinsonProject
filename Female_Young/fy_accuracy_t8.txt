@@ -1,3 +1,3 @@
-['percentiles99_y_vel_off_t8', 0.775]
-['percentiles1_pressure_rate_t8', 0.75]
-['robustRange_y_vel_off_t8', 0.6]
+['percentiles1_pressure_rate_t8', 0.77]
+['robustRange_y_vel_off_t8', 0.75]
+['percentiles99_y_vel_off_t8', 0.685]
