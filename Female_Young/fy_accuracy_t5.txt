@@ -1,0 +1,5 @@
+['robustRange_pressure_rate_t5', 0.8]
+['moments4_x_jerk_on_t5', 0.8]
+['percentiles1_pressure_rate_t5', 0.8]
+['percentiles99_pressure_rate_t5', 0.8]
+['moments3_x_jerk_on_t5', 0.65]

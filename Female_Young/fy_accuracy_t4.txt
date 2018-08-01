@@ -1,0 +1,5 @@
+['rel_NCA_off_t4', 0.75]
+['snr_tke1_y_t4', 0.75]
+['geoMean_y_jerk_on_t4', 0.7]
+['percentiles1_pressure_rate_t4', 0.7]
+['kurto_strokespeed_t4', 0.6]
