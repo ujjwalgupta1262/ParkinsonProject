@@ -1,0 +1,4 @@
+['rel_NCV_on_t7', 0.65]
+['NCV_on_t7', 0.47]
+['interQuartiles_acc_on_t7', 0.465]
+['percentiles1_pressure_rate_t7', 0.315]
