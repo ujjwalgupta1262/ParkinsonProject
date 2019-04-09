@@ -1,0 +1,369 @@
+1acc_train :0.870967741935483
+
+1acc :0.6999999999999998
+
+1precision:0.0
+
+1recall:0.0
+
+2acc_train :0.9754838709677424
+
+2acc :0.7899999999999997
+
+2precision:0.0
+
+2recall:0.0
+
+3acc_train :0.9677419354838712
+
+3acc :0.8719999999999994
+
+3precision:0.0
+
+3recall:0.0
+
+4acc_train :0.9322580645161289
+
+4acc :0.7279999999999999
+
+4precision:0.0
+
+4recall:0.0
+
+5acc_train :0.958709677419355
+
+5acc :0.8400000000000003
+
+5precision:0.0
+
+5recall:0.0
+
+6acc_train :0.9406451612903227
+
+6acc :0.7759999999999999
+
+6precision:0.0
+
+6recall:0.0
+
+7acc_train :0.9845161290322583
+
+7acc :0.8099999999999997
+
+7precision:0.0
+
+7recall:0.0
+
+8acc_train :0.9851612903225806
+
+8acc :0.8819999999999993
+
+8precision:0.0
+
+8recall:0.0
+
+9acc_train :0.9864516129032259
+
+9acc :0.8439999999999995
+
+9precision:0.0
+
+9recall:0.0
+
+10acc_train :0.9974193548387098
+
+10acc :0.8659999999999995
+
+10precision:0.0
+
+10recall:0.0
+
+11acc_train :0.9929032258064519
+
+11acc :0.8839999999999993
+
+11precision:0.0
+
+11recall:0.0
+
+12acc_train :0.9883870967741938
+
+12acc :0.7999999999999997
+
+12precision:0.0
+
+12recall:0.0
+
+13acc_train :1.0
+
+13acc :0.7999999999999997
+
+13precision:0.0
+
+13recall:0.0
+
+14acc_train :1.0
+
+14acc :0.8999999999999991
+
+14precision:0.0
+
+14recall:0.0
+
+15acc_train :1.0
+
+15acc :0.8999999999999991
+
+15precision:0.0
+
+15recall:0.0
+
+16acc_train :1.0
+
+16acc :0.8999999999999991
+
+16precision:0.0
+
+16recall:0.0
+
+17acc_train :1.0
+
+17acc :0.8999999999999991
+
+17precision:0.0
+
+17recall:0.0
+
+18acc_train :1.0
+
+18acc :0.6960000000000005
+
+18precision:0.0
+
+18recall:0.0
+
+19acc_train :1.0
+
+19acc :0.6659999999999999
+
+19precision:0.0
+
+19recall:0.0
+
+20acc_train :1.0
+
+20acc :0.6659999999999999
+
+20precision:0.0
+
+20recall:0.0
+
+21acc_train :1.0
+
+21acc :0.6000000000000005
+
+21precision:0.0
+
+21recall:0.0
+
+22acc_train :1.0
+
+22acc :0.6000000000000005
+
+22precision:0.0
+
+22recall:0.0
+
+23acc_train :1.0
+
+23acc :0.6080000000000005
+
+23precision:0.0
+
+23recall:0.0
+
+24acc_train :1.0
+
+24acc :0.6000000000000005
+
+24precision:0.0
+
+24recall:0.0
+
+25acc_train :1.0
+
+25acc :0.6000000000000005
+
+25precision:0.0
+
+25recall:0.0
+
+26acc_train :1.0
+
+26acc :0.6000000000000005
+
+26precision:0.0
+
+26recall:0.0
+
+27acc_train :1.0
+
+27acc :0.6000000000000005
+
+27precision:0.0
+
+27recall:0.0
+
+28acc_train :0.9993548387096775
+
+28acc :0.6080000000000005
+
+28precision:0.0
+
+28recall:0.0
+
+29acc_train :0.9980645161290324
+
+29acc :0.6240000000000004
+
+29precision:0.0
+
+29recall:0.0
+
+30acc_train :0.9993548387096775
+
+30acc :0.6080000000000005
+
+30precision:0.0
+
+30recall:0.0
+
+31acc_train :1.0
+
+31acc :0.6160000000000005
+
+31precision:0.0
+
+31recall:0.0
+
+32acc_train :0.9916129032258064
+
+32acc :0.9039999999999992
+
+32precision:0.0
+
+32recall:0.0
+
+33acc_train :0.9832258064516128
+
+33acc :0.9499999999999996
+
+33precision:0.0
+
+33recall:0.0
+
+34acc_train :0.9516129032258064
+
+34acc :1.0
+
+34precision:0.0
+
+34recall:0.0
+
+35acc_train :0.9612903225806452
+
+35acc :1.0
+
+35precision:0.0
+
+35recall:0.0
+
+36acc_train :0.9709677419354839
+
+36acc :1.0
+
+36precision:0.0
+
+36recall:0.0
+
+37acc_train :0.9612903225806452
+
+37acc :1.0
+
+37precision:0.0
+
+37recall:0.0
+
+38acc_train :0.8935483870967741
+
+38acc :1.0
+
+38precision:0.0
+
+38recall:0.0
+
+39acc_train :0.8935483870967741
+
+39acc :1.0
+
+39precision:0.0
+
+39recall:0.0
+
+40acc_train :0.9225806451612902
+
+40acc :1.0
+
+40precision:0.0
+
+40recall:0.0
+
+41acc_train :0.9709677419354839
+
+41acc :1.0
+
+41precision:0.0
+
+41recall:0.0
+
+42acc_train :0.9129032258064516
+
+42acc :1.0
+
+42precision:0.0
+
+42recall:0.0
+
+43acc_train :0.9129032258064516
+
+43acc :1.0
+
+43precision:0.0
+
+43recall:0.0
+
+44acc_train :0.9032258064516128
+
+44acc :1.0
+
+44precision:0.0
+
+44recall:0.0
+
+45acc_train :0.8645161290322579
+
+45acc :1.0
+
+45precision:0.0
+
+45recall:0.0
+
+46acc_train :0.8451612903225805
+
+46acc :1.0
+
+46precision:0.0
+
+46recall:0.0
+
+1.0
