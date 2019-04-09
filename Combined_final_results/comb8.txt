@@ -334,4 +334,500 @@
 
 42recall:0.24
 
-43acc_train :0.84
+43acc_train :0.8428070175438598
+
+43acc :0.5
+
+43precision:0.16
+
+43recall:0.32
+
+44acc_train :0.8821052631578948
+
+44acc :0.5
+
+44precision:0.12
+
+44recall:0.24
+
+45acc_train :0.9017543859649123
+
+45acc :0.5
+
+45precision:0.1
+
+45recall:0.2
+
+46acc_train :0.872280701754386
+
+46acc :0.5
+
+46precision:0.13
+
+46recall:0.26
+
+47acc_train :0.8821052631578948
+
+47acc :0.5
+
+47precision:0.12
+
+47recall:0.24
+
+48acc_train :0.8035087719298246
+
+48acc :0.5
+
+48precision:0.2
+
+48recall:0.4
+
+49acc_train :0.8329824561403509
+
+49acc :0.5
+
+49precision:0.17
+
+49recall:0.34
+
+50acc_train :0.8133333333333335
+
+50acc :0.5
+
+50precision:0.19
+
+50recall:0.38
+
+51acc_train :0.7838596491228071
+
+51acc :0.5
+
+51precision:0.22
+
+51recall:0.44
+
+52acc_train :0.7838596491228071
+
+52acc :0.5
+
+52precision:0.22
+
+52recall:0.44
+
+53acc_train :0.8526315789473685
+
+53acc :0.5
+
+53precision:0.15
+
+53recall:0.3
+
+54acc_train :0.7838596491228071
+
+54acc :0.5
+
+54precision:0.22
+
+54recall:0.44
+
+55acc_train :0.8035087719298246
+
+55acc :0.5
+
+55precision:0.2
+
+55recall:0.4
+
+56acc_train :0.7249122807017545
+
+56acc :0.5
+
+56precision:0.28
+
+56recall:0.56
+
+57acc_train :0.7740350877192984
+
+57acc :0.5
+
+57precision:0.23
+
+57recall:0.46
+
+58acc_train :0.7445614035087721
+
+58acc :0.5
+
+58precision:0.26
+
+58recall:0.52
+
+59acc_train :0.7838596491228071
+
+59acc :0.5
+
+59precision:0.22
+
+59recall:0.44
+
+60acc_train :0.8133333333333335
+
+60acc :0.5
+
+60precision:0.19
+
+60recall:0.38
+
+61acc_train :0.7347368421052632
+
+61acc :0.5
+
+61precision:0.27
+
+61recall:0.54
+
+62acc_train :0.7838596491228071
+
+62acc :0.5
+
+62precision:0.22
+
+62recall:0.44
+
+63acc_train :0.705263157894737
+
+63acc :0.5
+
+63precision:0.3
+
+63recall:0.6
+
+64acc_train :0.6856140350877195
+
+64acc :0.5
+
+64precision:0.32
+
+64recall:0.64
+
+65acc_train :0.7445614035087721
+
+65acc :0.5
+
+65precision:0.26
+
+65recall:0.52
+
+66acc_train :0.6954385964912282
+
+66acc :0.5
+
+66precision:0.31
+
+66recall:0.62
+
+67acc_train :0.6561403508771931
+
+67acc :0.5
+
+67precision:0.35
+
+67recall:0.7
+
+68acc_train :0.6954385964912282
+
+68acc :0.5
+
+68precision:0.31
+
+68recall:0.62
+
+69acc_train :0.6757894736842107
+
+69acc :0.5
+
+69precision:0.33
+
+69recall:0.66
+
+70acc_train :0.6659649122807018
+
+70acc :0.5
+
+70precision:0.34
+
+70recall:0.68
+
+71acc_train :0.6266666666666668
+
+71acc :0.5
+
+71precision:0.38
+
+71recall:0.76
+
+72acc_train :0.7150877192982458
+
+72acc :0.5
+
+72precision:0.29
+
+72recall:0.58
+
+73acc_train :0.6561403508771931
+
+73acc :0.5
+
+73precision:0.35
+
+73recall:0.7
+
+74acc_train :0.6954385964912282
+
+74acc :0.5
+
+74precision:0.31
+
+74recall:0.62
+
+75acc_train :0.6659649122807019
+
+75acc :0.5
+
+75precision:0.34
+
+75recall:0.68
+
+76acc_train :0.6757894736842107
+
+76acc :0.5
+
+76precision:0.33
+
+76recall:0.66
+
+77acc_train :0.7150877192982458
+
+77acc :0.5
+
+77precision:0.29
+
+77recall:0.58
+
+78acc_train :0.6266666666666668
+
+78acc :0.5
+
+78precision:0.38
+
+78recall:0.76
+
+79acc_train :0.6954385964912282
+
+79acc :0.5
+
+79precision:0.31
+
+79recall:0.62
+
+80acc_train :0.6070175438596492
+
+80acc :0.5
+
+80precision:0.4
+
+80recall:0.8
+
+81acc_train :0.5087719298245615
+
+81acc :0.5
+
+81precision:0.5
+
+81recall:1.0
+
+82acc_train :0.5087719298245615
+
+82acc :0.5
+
+82precision:0.5
+
+82recall:1.0
+
+83acc_train :0.5087719298245615
+
+83acc :0.5
+
+83precision:0.5
+
+83recall:1.0
+
+84acc_train :0.5185964912280704
+
+84acc :0.5
+
+84precision:0.49
+
+84recall:0.98
+
+85acc_train :0.5087719298245615
+
+85acc :0.5
+
+85precision:0.5
+
+85recall:1.0
+
+86acc_train :0.5087719298245615
+
+86acc :0.5
+
+86precision:0.5
+
+86recall:1.0
+
+87acc_train :0.5087719298245615
+
+87acc :0.5
+
+87precision:0.5
+
+87recall:1.0
+
+88acc_train :0.5087719298245615
+
+88acc :0.5
+
+88precision:0.5
+
+88recall:1.0
+
+89acc_train :0.5087719298245615
+
+89acc :0.5
+
+89precision:0.5
+
+89recall:1.0
+
+90acc_train :0.5087719298245615
+
+90acc :0.5
+
+90precision:0.5
+
+90recall:1.0
+
+91acc_train :0.5087719298245615
+
+91acc :0.5
+
+91precision:0.5
+
+91recall:1.0
+
+92acc_train :0.5087719298245615
+
+92acc :0.5
+
+92precision:0.5
+
+92recall:1.0
+
+93acc_train :0.5087719298245615
+
+93acc :0.5
+
+93precision:0.5
+
+93recall:1.0
+
+94acc_train :0.5087719298245615
+
+94acc :0.5
+
+94precision:0.5
+
+94recall:1.0
+
+95acc_train :0.5087719298245615
+
+95acc :0.5
+
+95precision:0.5
+
+95recall:1.0
+
+96acc_train :0.5087719298245615
+
+96acc :0.5
+
+96precision:0.5
+
+96recall:1.0
+
+97acc_train :0.5185964912280704
+
+97acc :0.5
+
+97precision:0.49
+
+97recall:0.98
+
+98acc_train :0.5185964912280704
+
+98acc :0.5
+
+98precision:0.49
+
+98recall:0.98
+
+99acc_train :0.5087719298245615
+
+99acc :0.5
+
+99precision:0.5
+
+99recall:1.0
+
+100acc_train :0.5087719298245615
+
+100acc :0.5
+
+100precision:0.5
+
+100recall:1.0
+
+101acc_train :0.5087719298245615
+
+101acc :0.5
+
+101precision:0.5
+
+101recall:1.0
+
+102acc_train :0.5087719298245615
+
+102acc :0.5
+
+102precision:0.5
+
+102recall:1.0
+
+103acc_train :0.5185964912280704
+
+103acc :0.5
+
+103precision:0.49
+
+103recall:0.98
+
+104acc_train :0.5087719298245615
+
+104acc :0.5
+
+104precision:0.5
+
+104recall:1.0
+
+0.776666666667
