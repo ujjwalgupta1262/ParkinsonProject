@@ -1,0 +1,438 @@
+# Created by Octave 3.8.0, Wed Jun 06 17:46:17 2018 +08 <ujjawal@ujjawals-MacBook-Pro.local>
+# name: old_passed
+# type: sq_string
+# elements: 216
+# length: 29
+speed_t8                     
+# length: 29
+rel_NCP_t8                   
+# length: 29
+arithMean_strokespeed_t8     
+# length: 29
+ranges_strokespeed_t8        
+# length: 29
+stdDevs_strokespeed_t8       
+# length: 29
+robustRange_strokespeed_t8   
+# length: 29
+interQuartiles_strokespeed_t8
+# length: 29
+arithMean_vel_on_t8          
+# length: 29
+geoMean_vel_on_t8            
+# length: 29
+medians_vel_on_t8            
+# length: 29
+stdDevs_vel_on_t8            
+# length: 29
+robustRange_vel_on_t8        
+# length: 29
+interQuartiles_vel_on_t8     
+# length: 29
+arithMean_acc_on_t8          
+# length: 29
+ranges_acc_on_t8             
+# length: 29
+medians_acc_on_t8            
+# length: 29
+stdDevs_acc_on_t8            
+# length: 29
+robustRange_acc_on_t8        
+# length: 29
+arithMean_jerk_on_t8         
+# length: 29
+medians_jerk_on_t8           
+# length: 29
+stdDevs_jerk_on_t8           
+# length: 29
+arithMean_x_vel_on_t8        
+# length: 29
+geoMean_x_vel_on_t8          
+# length: 29
+ranges_x_vel_on_t8           
+# length: 29
+medians_x_vel_on_t8          
+# length: 29
+stdDevs_x_vel_on_t8          
+# length: 29
+robustRange_x_vel_on_t8      
+# length: 29
+interQuartiles_x_vel_on_t8   
+# length: 29
+arithMean_x_vel_on_t8        
+# length: 29
+geoMean_x_vel_on_t8          
+# length: 29
+ranges_x_vel_on_t8           
+# length: 29
+medians_x_vel_on_t8          
+# length: 29
+stdDevs_x_vel_on_t8          
+# length: 29
+robustRange_x_vel_on_t8      
+# length: 29
+interQuartiles_x_vel_on_t8   
+# length: 29
+arithMean_x_acc_on_t8        
+# length: 29
+geoMean_x_acc_on_t8          
+# length: 29
+ranges_x_acc_on_t8           
+# length: 29
+stdDevs_x_acc_on_t8          
+# length: 29
+arithMean_x_jerk_on_t8       
+# length: 29
+geoMean_x_jerk_on_t8         
+# length: 29
+kurto_x_jerk_on _t8          
+# length: 29
+ranges_x_jerk_on_t8          
+# length: 29
+stdDevs_x_jerk_on_t8         
+# length: 29
+arithMean_y_vel_on_t8        
+# length: 29
+geoMean_y_vel_on_t8          
+# length: 29
+stdDevs_y_vel_on_t8          
+# length: 29
+robustRange_y_vel_on_t8      
+# length: 29
+interQuartiles_y_vel_on_t8   
+# length: 29
+arithMean_y_acc_on_t8        
+# length: 29
+geoMean_y_acc_on_t8          
+# length: 29
+stdDevs_y_acc_on_t8          
+# length: 29
+robustRange_y_acc_on_t8      
+# length: 29
+arithMean_y_jerk_on_t8       
+# length: 29
+stdDevs_y_jerk_on_t8         
+# length: 29
+robustRange_y_jerk_on_t8     
+# length: 29
+arithMean_vel_off_t8         
+# length: 29
+ranges_vel_off_t8            
+# length: 29
+stdDevs_vel_off_t8           
+# length: 29
+arithMean_acc_off_t8         
+# length: 29
+ranges_acc_off_t8            
+# length: 29
+stdDevs_acc_off_t8           
+# length: 29
+arithMean_jerk_off_t8        
+# length: 29
+ranges_jerk_off_t8           
+# length: 29
+stdDevs_jerk_off_t8          
+# length: 29
+robustRange_jerk_off_t8      
+# length: 29
+arithMean_x_vel_off_t8       
+# length: 29
+geoMean_x_vel_off_t8         
+# length: 29
+ranges_x_vel_off_t8          
+# length: 29
+stdDevs_x_vel_off_t8         
+# length: 29
+robustRange_x_vel_off_t8     
+# length: 29
+interQuartiles_x_vel_off_t8  
+# length: 29
+arithMean_x_acc_off_t8       
+# length: 29
+ranges_x_acc_off_t8          
+# length: 29
+stdDevs_x_acc_off_t8         
+# length: 29
+arithMean_x_jerk_off_t8      
+# length: 29
+ranges_x_jerk_off_t8         
+# length: 29
+stdDevs_x_jerk_off_t8        
+# length: 29
+robustRange_y_acc_off_t8     
+# length: 29
+robustRange_y_jerk_off_t8    
+# length: 29
+ranges_pressure_rate_t8      
+# length: 29
+x_renyi2_t8                  
+# length: 29
+x_renyi3_t8                  
+# length: 29
+snr_ce_x_t8                  
+# length: 29
+snr_ce_y_t8                  
+# length: 29
+snr_tke1_x_t8                
+# length: 29
+snr_tke2_x_t8                
+# length: 29
+x_shannon_i1_t8              
+# length: 29
+x_renyi2_i1_t8               
+# length: 29
+x_renyi3_i1_t8               
+# length: 29
+x_renyi2_i2_t8               
+# length: 29
+x_renyi3_i2_t8               
+# length: 29
+x_shannon_i2_t8              
+# length: 29
+snr_ice_x_t8                 
+# length: 29
+snr_ice_y_t8                 
+# length: 29
+snr_itke1_x_t8               
+# length: 29
+snr_itke2_x_t8               
+# length: 29
+trimMean5_strokespeed_t8     
+# length: 29
+percentiles90_strokespeed_t8 
+# length: 29
+percentiles95_strokespeed_t8 
+# length: 29
+percentiles99_strokespeed_t8 
+# length: 29
+moments4_strokespeed_t8      
+# length: 29
+moments6_strokespeed_t8      
+# length: 29
+trimMean5_vel_on_t8          
+# length: 29
+trimMean10_vel_on_t8         
+# length: 29
+trimMean20_vel_on_t8         
+# length: 29
+trimMean30_vel_on_t8         
+# length: 29
+trimMean40_vel_on_t8         
+# length: 29
+percentiles90_vel_on_t8      
+# length: 29
+percentiles95_vel_on_t8      
+# length: 29
+percentiles99_vel_on_t8      
+# length: 29
+moments4_vel_on_t8           
+# length: 29
+moments3_vel_off_t8          
+# length: 29
+moments4_vel_off_t8          
+# length: 29
+moments5_vel_off_t8          
+# length: 29
+moments6_vel_off_t8          
+# length: 29
+trimMean5_acc_on_t8          
+# length: 29
+trimMean10_acc_on_t8         
+# length: 29
+trimMean20_acc_on_t8         
+# length: 29
+trimMean30_acc_on_t8         
+# length: 29
+percentiles99_acc_on_t8      
+# length: 29
+moments3_acc_on_t8           
+# length: 29
+moments4_acc_on_t8           
+# length: 29
+moments5_acc_on_t8           
+# length: 29
+moments6_acc_on_t8           
+# length: 29
+moments3_acc_off_t8          
+# length: 29
+moments4_acc_off_t8          
+# length: 29
+moments5_acc_off_t8          
+# length: 29
+moments6_acc_off_t8          
+# length: 29
+trimMean5_jerk_on_t8         
+# length: 29
+trimMean10_jerk_on_t8        
+# length: 29
+trimMean20_jerk_on_t8        
+# length: 29
+trimMean30_jerk_on_t8        
+# length: 29
+trimMean40_jerk_on_t8        
+# length: 29
+percentiles90_jerk_on_t8     
+# length: 29
+percentiles95_jerk_on_t8     
+# length: 29
+moments3_jerk_on_t8          
+# length: 29
+moments4_jerk_on_t8          
+# length: 29
+moments6_jerk_on_t8          
+# length: 29
+percentiles99_jerk_off_t8    
+# length: 29
+moments3_jerk_off_t8         
+# length: 29
+moments4_jerk_off_t8         
+# length: 29
+moments5_jerk_off_t8         
+# length: 29
+moments6_jerk_off_t8         
+# length: 29
+trimMean5_x_vel_on_t8        
+# length: 29
+trimMean10_x_vel_on_t8       
+# length: 29
+trimMean20_x_vel_on_t8       
+# length: 29
+trimMean30_x_vel_on_t8       
+# length: 29
+trimMean40_x_vel_on_t8       
+# length: 29
+percentiles90_x_vel_on_t8    
+# length: 29
+percentiles95_x_vel_on_t8    
+# length: 29
+percentiles99_x_vel_on_t8    
+# length: 29
+moments3_x_vel_on_t8         
+# length: 29
+moments4_x_vel_on_t8         
+# length: 29
+moments5_x_vel_on_t8         
+# length: 29
+moments6_x_vel_on_t8         
+# length: 29
+percentiles99_x_vel_off_t8   
+# length: 29
+moments3_x_vel_off_t8        
+# length: 29
+moments4_x_vel_off_t8        
+# length: 29
+moments5_x_vel_off_t8        
+# length: 29
+moments6_x_vel_off_t8        
+# length: 29
+trimMean5_x_acc_on_t8        
+# length: 29
+trimMean10_x_acc_on_t8       
+# length: 29
+trimMean20_x_acc_on_t8       
+# length: 29
+trimMean30_x_acc_on_t8       
+# length: 29
+trimMean40_x_acc_on_t8       
+# length: 29
+percentiles95_x_acc_on_t8    
+# length: 29
+moments3_x_acc_on_t8         
+# length: 29
+moments4_x_acc_on_t8         
+# length: 29
+moments5_x_acc_on_t8         
+# length: 29
+moments6_x_acc_on_t8         
+# length: 29
+moments3_x_acc_off_t8        
+# length: 29
+moments4_x_acc_off_t8        
+# length: 29
+moments5_x_acc_off_t8        
+# length: 29
+moments6_x_acc_off_t8        
+# length: 29
+trimMean5_x_jerk_on_t8       
+# length: 29
+trimMean10_x_jerk_on_t8      
+# length: 29
+trimMean20_x_jerk_on_t8      
+# length: 29
+trimMean30_x_jerk_on_t8      
+# length: 29
+percentiles95_x_jerk_on_t8   
+# length: 29
+moments3_x_jerk_on_t8        
+# length: 29
+moments4_x_jerk_on_t8        
+# length: 29
+moments5_x_jerk_on_t8        
+# length: 29
+moments6_x_jerk_on_t8        
+# length: 29
+moments3_x_jerk_off_t8       
+# length: 29
+moments4_x_jerk_off_t8       
+# length: 29
+moments5_x_jerk_off_t8       
+# length: 29
+moments6_x_jerk_off_t8       
+# length: 29
+trimMean5_y_vel_on_t8        
+# length: 29
+trimMean10_y_vel_on_t8       
+# length: 29
+trimMean20_y_vel_on_t8       
+# length: 29
+trimMean30_y_vel_on_t8       
+# length: 29
+trimMean40_y_vel_on_t8       
+# length: 29
+percentiles90_y_vel_on_t8    
+# length: 29
+percentiles95_y_vel_on_t8    
+# length: 29
+percentiles99_y_vel_on_t8    
+# length: 29
+moments4_y_vel_on_t8         
+# length: 29
+trimMean5_y_acc_on_t8        
+# length: 29
+trimMean10_y_acc_on_t8       
+# length: 29
+trimMean20_y_acc_on_t8       
+# length: 29
+trimMean30_y_acc_on_t8       
+# length: 29
+trimMean40_y_acc_on_t8       
+# length: 29
+percentiles95_y_acc_on_t8    
+# length: 29
+percentiles99_y_acc_on_t8    
+# length: 29
+percentiles99_y_acc_off_t8   
+# length: 29
+trimMean5_y_jerk_on_t8       
+# length: 29
+trimMean10_y_jerk_on_t8      
+# length: 29
+trimMean20_y_jerk_on_t8      
+# length: 29
+trimMean30_y_jerk_on_t8      
+# length: 29
+percentiles90_y_jerk_on_t8   
+# length: 29
+percentiles95_y_jerk_on_t8   
+# length: 29
+percentiles99_y_jerk_on_t8   
+# length: 29
+percentiles99_y_jerk_off_t8  
+# length: 29
+percentiles1_pressure_rate_t8
+# length: 29
+moments5_pressure_rate_t8    
+# length: 29
+moments6_pressure_rate_t8    
+
+

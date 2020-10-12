@@ -1,0 +1,7 @@
+['percentiles20_x_vel_on_t4', (0.725, 7.25)]
+['y_renyi2_i2_t4', (0.55, 5.5)]
+['y_renyi3_i2_t4', (0.5083333333333333, 5.083333333333333)]
+['y_shannon_i2_t4', (0.05, 0.5)]
+['snr_ice_y_t4', (0.0, 0)]
+['trimMean40_acc_on_t4', (0.0, 0)]
+['percentiles1_pressure_rate_t4', (0.0, 0)]

@@ -1,0 +1,5 @@
+['interQuartiles_pressure_rate_t6', 0.565]
+['percentiles90_pressure_rate_t6', 0.51]
+['trimMean10_pressure_rate_t6', 0.47]
+['trimMean5_pressure_rate_t6', 0.455]
+['percentiles1_pressure_rate_t6', 0.33]

@@ -1,0 +1,3 @@
+['rel_NCV_off_t4', (0.4333333333333333, 4.333333333333333)]
+['geoMean_jerk_off_t4', (0.0, 0)]
+['percentiles1_pressure_rate_t4', (0.0, 0)]

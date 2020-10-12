@@ -1,0 +1,6 @@
+['rel_NCV_on_t7', 0.61]
+['trimMean30_x_jerk_off_t7', 0.6075]
+['trimMean40_strokespeed_t7', 0.5371428571428573]
+['percentiles30_x_jerk_off_t7', 0.495]
+['interQuartiles_vel_on_t7', 0.4475]
+['percentiles1_pressure_rate_t7', 0.37]

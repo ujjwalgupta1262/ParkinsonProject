@@ -1,0 +1,66 @@
+# Created by Octave 3.8.0, Wed Jun 06 17:45:24 2018 +08 <ujjawal@ujjawals-MacBook-Pro.local>
+# name: old_passed
+# type: sq_string
+# elements: 30
+# length: 29
+speed_t7                     
+# length: 29
+arithMean_strokespeed_t7     
+# length: 29
+geoMean_vel_on_t7            
+# length: 29
+stdDevs_vel_on_t7            
+# length: 29
+interQuartiles_vel_on_t7     
+# length: 29
+arithMean_x_vel_on_t7        
+# length: 29
+geoMean_x_vel_on_t7          
+# length: 29
+medians_x_vel_on_t7          
+# length: 29
+stdDevs_x_vel_on_t7          
+# length: 29
+arithMean_x_vel_on_t7        
+# length: 29
+geoMean_x_vel_on_t7          
+# length: 29
+medians_x_vel_on_t7          
+# length: 29
+stdDevs_x_vel_on_t7          
+# length: 29
+geoMean_x_jerk_on_t7         
+# length: 29
+robustRange_x_jerk_on_t7     
+# length: 29
+interQuartiles_y_vel_on_t7   
+# length: 29
+robustRange_x_acc_off_t7     
+# length: 29
+robustRange_x_jerk_off_t7    
+# length: 29
+kurto_y_vel_off _t7          
+# length: 29
+snr_itke2_x_t7               
+# length: 29
+trimMean5_x_vel_on_t7        
+# length: 29
+trimMean10_x_vel_on_t7       
+# length: 29
+trimMean20_x_vel_on_t7       
+# length: 29
+trimMean30_x_vel_on_t7       
+# length: 29
+trimMean40_x_vel_on_t7       
+# length: 29
+percentiles99_x_acc_off_t7   
+# length: 29
+percentiles95_x_jerk_on_t7   
+# length: 29
+percentiles99_x_jerk_on_t7   
+# length: 29
+percentiles99_x_jerk_off_t7  
+# length: 29
+percentiles1_pressure_rate_t7
+
+
