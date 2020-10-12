@@ -1,1 +1,0 @@
-['percentiles1_pressure_rate_t6', 0.6657142857142858]

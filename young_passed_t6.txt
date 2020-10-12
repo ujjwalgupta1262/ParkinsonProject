@@ -1,8 +1,0 @@
-# Created by Octave 3.8.0, Wed Jun 06 17:44:39 2018 +08 <ujjawal@ujjawals-MacBook-Pro.local>
-# name: young_passed
-# type: sq_string
-# elements: 1
-# length: 29
-percentiles1_pressure_rate_t6
-
-

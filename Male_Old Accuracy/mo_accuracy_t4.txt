@@ -1,4 +1,0 @@
-['geoMean_jerk_off_t4', 0.7080000000000003]
-['percentiles99_y_vel_off_t4', 0.6000000000000001]
-['robustRange_y_vel_off_t4', 0.5480000000000002]
-['percentiles1_pressure_rate_t4', 0.3999999999999999]

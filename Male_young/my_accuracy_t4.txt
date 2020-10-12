@@ -1,2 +1,0 @@
-['geoMean_y_vel_off_t4', 0.685]
-['percentiles1_pressure_rate_t4', 0.61]

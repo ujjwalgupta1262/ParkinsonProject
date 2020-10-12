@@ -1,2 +1,0 @@
-['percentiles5_vel_on_t1', 0.5342857142857143]
-['percentiles1_pressure_rate_t1', 0.43142857142857133]

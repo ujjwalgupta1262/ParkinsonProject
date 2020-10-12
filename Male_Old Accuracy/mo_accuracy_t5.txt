@@ -1,4 +1,0 @@
-['ranges_vel_on_t5', 0.6160000000000002]
-['kurto_x_jerk_on_t5', 0.528]
-['ranges_x_jerk_on_t5', 0.516]
-['percentiles1_pressure_rate_t5', 0.38399999999999984]

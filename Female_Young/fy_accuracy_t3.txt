@@ -1,3 +1,0 @@
-['percentiles1_pressure_rate_t3', 0.7]
-['percentiles99_pressure_rate_t3', 0.7]
-['robustRange_pressure_rate_t3', 0.55]

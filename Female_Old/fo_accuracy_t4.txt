@@ -1,7 +1,0 @@
-['percentiles1_pressure_rate_t4', 0.75]
-['moments6_pressure_rate_t4', 0.725]
-['moments4_pressure_rate_t4', 0.7166666666666667]
-['moments3_pressure_rate_t4', 0.7083333333333334]
-['moments5_pressure_rate_t4', 0.7083333333333334]
-['ranges_pressure_rate_t4', 0.6666666666666666]
-['trimMean40_acc_on_t4', 0.6666666666666666]
